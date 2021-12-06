@@ -1,26 +1,36 @@
 ---
-title: "Manuscript Title"
+title: "Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - metapangenome
+  - pangenome
+  - assembly graph
+  - reduced alphabet k-mer
+  - open reading frame
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: taylorreiter
+    name: Taylor Elaine Reiter
+    initials: TER
+    orcid: 0000-0002-7388-421X
+    twitter: ReiterTaylor
+    email: tereiter@ucdavis.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Population Health and Reproduction, University of California, Davis
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+  - github: bluegenes
+    name: N. Tessa Pierce-Ward
+    initials: NTP
+    orcid: 0000-0002-2942-5331
+    twitter: saltyscientist
+    email: ntpierce@ucdavis.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+     - Department of Population Health and Reproduction, University of California, Davis
+    funders: NSF 1711984
+  - github: ctb
+    name: C. Titus Brown
+    initials: CTB
+    orcid: 0000-0001-6001-2677
+    email: ctbrown@ucdavis.edu
+    affiliations:
+      - Department of Population Health and Reproduction, University of California, Davis
