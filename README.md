@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/gh-pages) branch hosts the contents of this directory at <https://taylorreiter.github.io/2021-paper-metapangenomes/>.
-The permalink for this webpage version is <https://taylorreiter.github.io/2021-paper-metapangenomes/v/d150e23a01bcbb94a9337675454c4179c1e48275/>.
+The permalink for this webpage version is <https://taylorreiter.github.io/2021-paper-metapangenomes/v/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://taylorreiter.github.io/2021-paper-metapangenomes/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`d150e23a01bcbb94a9337675454c4179c1e48275`](https://github.com/taylorreiter/2021-paper-metapangenomes/commit/d150e23a01bcbb94a9337675454c4179c1e48275).
+[`7d6660c190a8fe3c5b12fe44de20e4beee83bcd3`](https://github.com/taylorreiter/2021-paper-metapangenomes/commit/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3).
