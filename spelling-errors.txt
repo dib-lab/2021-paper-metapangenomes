@@ -35,7 +35,7 @@ iHMP
 illumina
 indels
 interrogans
-jaccard
+Jaccard
 json
 Leptospira
 Maguire
@@ -57,7 +57,7 @@ nonCDS
 novo
 nucleotides
 ORF
-orpheum
+Orpheum
 pagoo
 pangenome
 pangenomes
@@ -74,7 +74,7 @@ roary
 saltyscientist
 Scatterplots
 schtick
-sgc
+SGC
 SingleM
 snakefile
 SNPs

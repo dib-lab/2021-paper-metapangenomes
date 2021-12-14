@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-06'
+date-meta: '2021-12-14'
 author-meta:
 - Taylor Elaine Reiter
 - N. Tessa Pierce-Ward
@@ -22,8 +22,8 @@ header-includes: |-
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-06" />
-  <meta name="citation_publication_date" content="2021-12-06" />
+  <meta name="dc.date" content="2021-12-14" />
+  <meta name="citation_publication_date" content="2021-12-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@7d6660c](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/7d6660c190a8fe3c5b12fe44de20e4beee83bcd3)
-on December 6, 2021.
+from [taylorreiter/2021-paper-metapangenomes@8eec3e3](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/8eec3e3a219f8603d9291ecdde4a01c937a34ca8)
+on December 14, 2021.
 </em></small>
 
 ## Authors
