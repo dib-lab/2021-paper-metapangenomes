@@ -9,7 +9,7 @@ keywords:
 lang: en-US
 date-meta: '2021-12-14'
 author-meta:
-- Taylor Elaine Reiter
+- Taylor E. Reiter
 - N. Tessa Pierce-Ward
 - C. Titus Brown
 header-includes: |-
@@ -30,7 +30,7 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Taylor Elaine Reiter" />
+  <meta name="citation_author" content="Taylor E. Reiter" />
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
   <meta name="twitter:creator" content="@ReiterTaylor" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/85f4a2a02079d71d376967ca49d0535f32038eec/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/85f4a2a02079d71d376967ca49d0535f32038eec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/85f4a2a02079d71d376967ca49d0535f32038eec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/8eec3e3a219f8603d9291ecdde4a01c937a34ca8/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/85f4a2a02079d71d376967ca49d0535f32038eec/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@8eec3e3](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/8eec3e3a219f8603d9291ecdde4a01c937a34ca8)
+from [taylorreiter/2021-paper-metapangenomes@85f4a2a](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/85f4a2a02079d71d376967ca49d0535f32038eec)
 on December 14, 2021.
 </em></small>
 
@@ -81,7 +81,7 @@ on December 14, 2021.
 
 
 
-+ **Taylor Elaine Reiter**<br>
++ **Taylor E. Reiter**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-7388-421X](https://orcid.org/0000-0002-7388-421X)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}

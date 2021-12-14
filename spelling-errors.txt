@@ -4,7 +4,7 @@ assembleable
 bakta
 Barchart
 benchmarking
-bickhart
+Bickhart
 Bing
 bluegenes
 Boxplot
@@ -74,11 +74,11 @@ roary
 saltyscientist
 Scatterplots
 schtick
-SGC
+sgc
 SingleM
 snakefile
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 taxonomically
 taylorreiter
