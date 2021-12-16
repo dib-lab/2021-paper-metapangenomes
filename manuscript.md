@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-15'
+date-meta: '2021-12-16'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -22,8 +22,8 @@ header-includes: |-
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-15" />
-  <meta name="citation_publication_date" content="2021-12-15" />
+  <meta name="dc.date" content="2021-12-16" />
+  <meta name="citation_publication_date" content="2021-12-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/64c3792b0050542fbfd23463117d5832c1340bc6/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/64c3792b0050542fbfd23463117d5832c1340bc6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/64c3792b0050542fbfd23463117d5832c1340bc6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/64c3792b0050542fbfd23463117d5832c1340bc6/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@64c3792](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/64c3792b0050542fbfd23463117d5832c1340bc6)
-on December 15, 2021.
+from [taylorreiter/2021-paper-metapangenomes@d58f46e](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/d58f46e7bb01ad8b1edfd8362b186642e5258556)
+on December 16, 2021.
 </em></small>
 
 ## Authors
@@ -255,10 +255,17 @@ The best jaccard threshold decreases when there are fewer closely related genome
 
 Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted from short sequencing reads, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
 We used 12 metagenomes from a single individual that were sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) (CITE). 
-The individual was diagnosed with Crohn's disease, a subtype of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
-The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (FIGURE).
+The individual was diagnosed with Crohn's disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
+The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
 
+![
+](images/common_species_breakdown.png){#fig:metag_species}
 
+We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 10% of reads across metagenomes, for a total of nine metapangenomes (**Figure @fig:metag_species**).
+To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries.
+We first built an assembly graph from each metagenome, and then queried into this graph using the genome of interest. 
+Lastly, we predicted open reading frames from the matching sequencing reads using orpheum. 
+Given that assembly graph queries return related sequencing content from genomes with as little as 10^-1 jaccard similarity (~93% average nucleotide identity (ANI), CITE TESSA, SGC), and that the general cutoff for species is 95% ANI (CITE), we used species-level databases to perform open reading frame prediction. 
 
 + Time series iHMP (https://github.com/taylorreiter/2021-metapangenome-example).
 + Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
