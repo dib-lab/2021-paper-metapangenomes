@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@a8b9dbd](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/a8b9dbde0a3f6fc8372295aac9d24e1913946ede)
+from [taylorreiter/2021-paper-metapangenomes@99699c2](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/99699c227523dbd9c793a9138faa04a23ae1d508)
 on December 17, 2021.
 </em></small>
 
@@ -214,13 +214,14 @@ All reads we investigated had at least one mach at 100% identity to protein sequ
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
 Because ORF prediction is blind to pseudogenes, it may not be appropriate for species with many pseudogenes.
 
-TR: RE -- BLAST. I could make a BLAST database of GTDB protein sequences and do this more systematically, but it doesn't seem that important, so I haven't done it.
+[TR: RE -- BLAST. I could make a BLAST database of GTDB protein sequences and do this more systematically, but it doesn't seem that important, so I haven't done it.]
 
 + Why coding as noncoding? sequencing error?
 
 Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomes estimated from the genomes themselves.
-We estimated the jaccard similarity between genomes using protien k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarty between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads using the Mantel test.
-XXX
+We estimated the jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads using the Mantel test.
+Genomes that were most similar in one matrix were also most similar in another matrix (Mantel statistic = 0.9975, p < 0.001). 
+The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads. 
 
 The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database. 
@@ -259,8 +260,6 @@ The best jaccard threshold decreases when there are fewer closely related genome
 
 + k-mer size, alphabet selection
   + we don't have any evidence for this yet with these data sets.
-+ what are coding predicted as noncoding? "sequencing error"?
-+ Even with FP/FN rate, comp matrix & mantel test to show we get the same biological results.
 + Should/do I have to compare these results against FragGeneScan?
 
 ## K-mer-based metapangenomics combined with assembly graphs ... 

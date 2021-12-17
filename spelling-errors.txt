@@ -19,8 +19,6 @@ Determing
 encodings
 Eukaryotic
 euks
-FN
-FP
 FragGeneScan
 frameshift
 frameshifted
@@ -57,13 +55,12 @@ nucleotides
 ORF
 orpheum
 pagoo
-pangenome
+Pangenome
 pangenomes
 PANMER
 PGAP
 plasmids
 prokka
-protien
 pseudogenes
 RefSeq
 Reiter
@@ -71,7 +68,6 @@ ReiterTaylor
 roary
 saltyscientist
 SGC
-similarty
 SingleM
 SNPs
 sourmash
