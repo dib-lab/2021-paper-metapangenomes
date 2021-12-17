@@ -7,7 +7,7 @@
   <meta name="author" content="Taylor E. Reiter" />
   <meta name="author" content="N. Tessa Pierce-Ward" />
   <meta name="author" content="C. Titus Brown" />
-  <meta name="dcterms.date" content="2021-12-16" />
+  <meta name="dcterms.date" content="2021-12-17" />
   <meta name="keywords" content="metapangenome, pangenome, assembly graph, reduced alphabet k-mer, open reading frame" />
   <title>Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics</title>
   <style>
@@ -49,8 +49,8 @@
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-16" />
-  <meta name="citation_publication_date" content="2021-12-16" />
+  <meta name="dc.date" content="2021-12-17" />
+  <meta name="citation_publication_date" content="2021-12-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -74,9 +74,9 @@
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d58f46e7bb01ad8b1edfd8362b186642e5258556/">permalink</a>)
+(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/d58f46e7bb01ad8b1edfd8362b186642e5258556">taylorreiter/2021-paper-metapangenomes@d58f46e</a>
-on December 16, 2021.
+from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/1b42aa6b217e206f9ccbb103e0090893f55fa065">taylorreiter/2021-paper-metapangenomes@1b42aa6</a>
+on December 17, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -202,18 +202,25 @@ Using representative genomes from the 23 species above, as well as 20 additional
 <p>Using default parameters, orpheum accurately separated coding from non-coding reads when reads were simulated from genomes in GTDB (<strong>Figure <a href="#fig:orpheum_fig">5</a> A</strong>).
 For reads simulated from genomes not in GTDB, orpheum recovered the majority of coding reads when genomes of the same species were in the database (<strong>Figure <a href="#fig:orpheum_fig">5</a> A,B</strong>).
 Accuracy decreased with increasing taxonomic distance between the query genome and the closest relative in the database (<strong>Figure <a href="#fig:orpheum_fig">5</a> B</strong>).</p>
-<p>The majority of predictive capability originated from species-level databases.
-C beij, Thermo.</p>
 <p>For genomes that had at least species-level representatives in GTDB, the largest source of error was again non-coding reads being predicted as coding (<strong>Figure <a href="#fig:orpheum_fig">5</a> A</strong>).
-We hypothesized that these reads originated from pseudogenes.
-To assess this hypothesis, we used annotation files produced by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP), which annotates pseudogenes, for the XX genomes for which these files were available (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5001611/; https://pubmed.ncbi.nlm.nih.gov/33270901/)
-On average, XX% of non-coding reads that were predicted to be coding fell within pseudogenes annotated by the PGAP pipeline.
-Indeed, the worst performer was <em>Mycoplasmopsis bovis</em>, with 23% of non-coding reads predicted to be coding.
-<em>M. bovis</em> causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization <span class="citation" data-cites="C36yyFkE">[<a href="#ref-C36yyFkE" role="doc-biblioref">1</a>]</span>, processes that may be linked to bacterial host specialization <span class="citation" data-cites="j7k9ouA0 eaIZrRtn">[<a href="#ref-j7k9ouA0" role="doc-biblioref">2</a>,<a href="#ref-eaIZrRtn" role="doc-biblioref">3</a>]</span>.
+We hypothesized that these reads originated from pseudogenes as these genes would likely not be annotated as coding in the genomes the reads were simulated from, but may retain some k-mers contained in other genes in the database.
+To assess this hypothesis, we used annotation files produced by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP), which annotates pseudogenes, for the XX genomes for which these files were available (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5001611/; https://pubmed.ncbi.nlm.nih.gov/33270901/).
+On average, 12.4% (SD = 13.8%) of non-coding reads that were predicted to be coding fell within pseudogenes annotated by the PGAP pipeline.
+We then BLASTed a subset of the remaining non-coding read that were predicted to be coding against the NCBI nr database.
+All reads we investigated had at least one mach at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
+<!--Indeed, the worst performer was *Mycoplasmopsis bovis*, with 23% of non-coding reads predicted to be coding. 
+*M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
 Because ORF prediction is blind to pseudogenes, it may not be appropriate for species with many pseudogenes.</p>
+<p>TR: RE – BLAST. I could make a BLAST database of GTDB protein sequences and do this more systematically, but it doesn’t seem that important, so I haven’t done it.</p>
 <ul>
 <li>Why coding as noncoding? sequencing error?</li>
 </ul>
+<p>The majority of predictive capability originated from species-level databases.
+We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database.
+On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (SUPPLEMENTAL FIGURE).</p>
+<p>Decreasing the jaccard containment threshold increased the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (<strong>Figure <a href="#fig:orpheum_fig">5</a> C, Table <a href="#tbl:threshold">1</a></strong>).
+The jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.
+We suggest the results in <strong>Table <a href="#tbl:threshold">1</a></strong> be used as a guide for setting the jaccard threshold based on the taxonomy of the organism relative to the organisms in the database.</p>
 <div id="tbl:threshold" class="tablenos">
 <table id="tbl:threshold">
 <caption><span>Table 1:</span> Jaccard containment thresholds that maximize the Youden’s index depending on the taxonomic rank of the closest relative in GTDB.
@@ -266,8 +273,6 @@ Because ORF prediction is blind to pseudogenes, it may not be appropriate for sp
 </tbody>
 </table>
 </div>
-<p>Decreasing the jaccard containment threshold increases the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (<strong>Figure <a href="#fig:orpheum_fig">5</a> C, Table <a href="#tbl:threshold">1</a></strong>).
-The jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.</p>
 <div id="fig:orpheum_fig" class="fignos">
 <figure>
 <img src="images/orpheum_fig.png" alt="Figure 5: Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame. A) Percent of simulated coding or non-coding sequences predicted as coding, non-coding, or discarded based on quality metrics (see methods). Genomes are split by those in GTDB and those not in GTDB. Genomes not in GTDB are labelled by taxonomic assignment from GTDB-tk. Predictions were made using default parameters (jaccard containment = 0.5). B) Boxplots of the percent of coding reads that were recovered by Orpheum, separated by the level of taxonomic assignment achieved by GTDB-Tk. Orpheum recovers more coding sequences when there are closely related genomes in the database. C) Receiver operating curves for the jaccard containment thresholds. Curves are separated by the level of taxonomic assignment achieved by GTDB-Tk, and values are averaged across all genomes that fell within those categories. The best jaccard threshold decreases when there are fewer closely related genomes in the database. D) Databases constructed of only closely-related genomes recover the majority of coding sequences, but including increasingly distantly related genomes improves total coding recall." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame.</strong>
@@ -422,16 +427,8 @@ Reads are designated as non-coding if they don’t reach the jaccard similarity 
 + <span class="citation" data-cites="Tessa">[<a href="#ref-Tessa" role="doc-biblioref"><strong>Tessa?</strong></a>]</span> any relevant details would be very helpful :)</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-C36yyFkE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Complete Genome Sequencing of Mycobacterium bovis SP38 and Comparative Genomics of Mycobacterium bovis and M. tuberculosis Strains</strong> <div class="csl-block">Cristina Kraemer Zimpel, Paulo E Brandão, Antônio F de Souza Filho, Robson F de Souza, Cássia Y Ikuta, José Soares Ferreira Neto, Naila CSoler Camargo, Marcos Bryan Heinemann, Ana MS Guimarães</div> <em>Frontiers in Microbiology</em> (2017-12-05) <a href="https://doi.org/gcrm3v">https://doi.org/gcrm3v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3389/fmicb.2017.02389">10.3389/fmicb.2017.02389</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29259589">29259589</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5723337">PMC5723337</a></div></div>
-</div>
-<div id="ref-j7k9ouA0" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Host Specificity of Bacterial Pathogens</strong> <div class="csl-block">A Baumler, FC Fang</div> <em>Cold Spring Harbor Perspectives in Medicine</em> (2013-12-02) <a href="https://doi.org/gnsd7n">https://doi.org/gnsd7n</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/cshperspect.a010041">10.1101/cshperspect.a010041</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24296346">24296346</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3839602">PMC3839602</a></div></div>
-</div>
-<div id="ref-eaIZrRtn" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Gene Loss Dominates As a Source of Genetic Variation within Clonal Pathogenic Bacterial Species</strong> <div class="csl-block">Evgeni Bolotin, Ruth Hershberg</div> <em>Genome Biology and Evolution</em> (2015-08) <a href="https://doi.org/f7p9dp">https://doi.org/f7p9dp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gbe/evv135">10.1093/gbe/evv135</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26163675">26163675</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4558853">PMC4558853</a></div></div>
-</div>
+<div id="refs" role="doc-bibliography">
+
 </div>
 <!-- default theme -->
 
