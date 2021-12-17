@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/a8b9dbde0a3f6fc8372295aac9d24e1913946ede/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@47f5e32](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/47f5e322fad37eb55ed37b16ce914808a60f916d)
+from [taylorreiter/2021-paper-metapangenomes@a8b9dbd](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/a8b9dbde0a3f6fc8372295aac9d24e1913946ede)
 on December 17, 2021.
 </em></small>
 
@@ -218,6 +218,10 @@ TR: RE -- BLAST. I could make a BLAST database of GTDB protein sequences and do 
 
 + Why coding as noncoding? sequencing error?
 
+Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomes estimated from the genomes themselves.
+We estimated the jaccard similarity between genomes using protien k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarty between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads using the Mantel test.
+XXX
+
 The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database. 
 On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (SUPPLEMENTAL FIGURE).
@@ -264,7 +268,7 @@ The best jaccard threshold decreases when there are fewer closely related genome
 Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted from short sequencing reads, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
 We used 12 metagenomes from a single individual that were sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) (CITE). 
 The individual was diagnosed with Crohn's disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
-The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
+The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species** height=2.5in).
 
 ![
 ](images/common_species_breakdown.png){#fig:metag_species}

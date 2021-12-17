@@ -3,7 +3,7 @@ archaeal
 assembleable
 bakta
 benchmarking
-Bickhart
+bickhart
 Bing
 bluegenes
 Boxplot
@@ -32,7 +32,7 @@ iHMP
 illumina
 indels
 interrogans
-Jaccard
+jaccard
 json
 Leptospira
 Maguire
@@ -63,6 +63,7 @@ PANMER
 PGAP
 plasmids
 prokka
+protien
 pseudogenes
 RefSeq
 Reiter
@@ -70,6 +71,7 @@ ReiterTaylor
 roary
 saltyscientist
 SGC
+similarty
 SingleM
 SNPs
 sourmash
