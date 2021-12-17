@@ -3,7 +3,7 @@ archaeal
 assembleable
 bakta
 benchmarking
-bickhart
+Bickhart
 Bing
 bluegenes
 Boxplot
@@ -32,7 +32,7 @@ iHMP
 illumina
 indels
 interrogans
-jaccard
+Jaccard
 json
 Leptospira
 Maguire
@@ -58,7 +58,7 @@ ORF
 orpheum
 pagoo
 pangenome
-Pangenomes
+pangenomes
 PANMER
 PGAP
 plasmids
@@ -76,7 +76,7 @@ sourmash
 spacegraphcats
 taxonomically
 taylorreiter
-tk
+Tk
 transcriptome
 unassembled
 unculturable

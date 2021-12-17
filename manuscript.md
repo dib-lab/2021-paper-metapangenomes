@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/1b42aa6b217e206f9ccbb103e0090893f55fa065/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/47f5e322fad37eb55ed37b16ce914808a60f916d/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@1b42aa6](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/1b42aa6b217e206f9ccbb103e0090893f55fa065)
+from [taylorreiter/2021-paper-metapangenomes@47f5e32](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/47f5e322fad37eb55ed37b16ce914808a60f916d)
 on December 17, 2021.
 </em></small>
 
@@ -189,7 +189,7 @@ Alpha values were strongly correlated between gene- and k-mer based pangenomes (
 
 ![
 **Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes.** Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. \Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
-](images/pg_fig.png){#fig:pg_fig}
+](images/pg_fig.png){#fig:pg_fig height=2.5in}
 
 ## Jaccard containment between reduced alphabet k-mers and k-mers in databases accurately predicts open reading frames in short sequencing reads
 
