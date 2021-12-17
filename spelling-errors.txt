@@ -2,12 +2,10 @@ ANI
 archaeal
 assembleable
 bakta
-beij
 benchmarking
-Bickhart
+bickhart
 Bing
 bluegenes
-bovis
 Boxplot
 Boxplots
 Bruijn
@@ -34,7 +32,7 @@ iHMP
 illumina
 indels
 interrogans
-Jaccard
+jaccard
 json
 Leptospira
 Maguire
@@ -50,7 +48,6 @@ metapangenome
 metapangenomes
 metapangenomics
 Microbiome
-Mycoplasmopsis
 Nayfach
 NCBI
 nodegraph
@@ -67,7 +64,6 @@ PGAP
 plasmids
 prokka
 pseudogenes
-pseudogenization
 RefSeq
 Reiter
 ReiterTaylor
@@ -80,7 +76,6 @@ sourmash
 spacegraphcats
 taxonomically
 taylorreiter
-Thermo
 tk
 transcriptome
 unassembled
