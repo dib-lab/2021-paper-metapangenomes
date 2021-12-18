@@ -27,6 +27,23 @@ authors:
     affiliations:
      - Department of Population Health and Reproduction, University of California, Davis
     funders: NSF 1711984
+  - github: luizirber
+    name: Luiz Irber
+    initials: LI
+    orcid: 0000-0003-4371-9659
+    twitter: luizirber
+    email: lcirberjr@ucdavis.edu
+    affiliations:
+      - Graduate Group in Computer Science, UC Davis
+      - Department of Population Health and Reproduction, University of California, Davis
+  - github: olgabot
+    name: Olga Borisovna Botvinnik
+    initials: OBB
+    orcid: 0000-0003-4412-7970
+    twitter: olgabot
+    email: olga.botvinnik@czbiohub.org
+    affiliations:
+      - Data Sciences Platform, Chan Zuckerberg Biohub
   - github: ctb
     name: C. Titus Brown
     initials: CTB
