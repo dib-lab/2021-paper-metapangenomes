@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@a807dc0](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/a807dc0237789b484ebcec32fae03b6975f4d7f4)
+from [taylorreiter/2021-paper-metapangenomes@9c52424](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/9c524249148bae42b358d2c69227738641c71206)
 on December 18, 2021.
 </em></small>
 
@@ -243,7 +243,10 @@ All reads we investigated had at least one mach at 100% identity to protein sequ
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
 Because this method of open reading frame prediction cannot distinguish pseudogenes, it may not be appropriate for species with many pseudogenes.
 
-+ Why coding as noncoding? sequencing error?
+Some coding sequences were also predicted to be non-coding. 
+We hypothesized that this was caused by sequencing error introduced into the simulated reads.
+We mapped the simulated reads against the coding domain sequences from which they were derived and calculated mapping error rates. 
+While all reads mapped, the error rate was higher for reads that were predicted to be non-coding (Welch Two Sample t-test, estimate = 0.00523, p < 0.001).
 
 Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomes estimated from coding domain sequences in those genomes.
 We estimated the jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads.

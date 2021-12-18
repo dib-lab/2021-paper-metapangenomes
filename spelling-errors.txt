@@ -57,15 +57,14 @@ metronidazole
 Microbiome
 NCBI
 nodegraph
-noncoding
 novo
 nucleotides
 olgabot
 ORF
-orpheum
+Orpheum
 pagoo
 pangenome
-pangenomes
+Pangenomes
 PANMER
 Parabacteroides
 PGAP
@@ -80,7 +79,7 @@ roary
 saltyscientist
 SingleM
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 taxonomically
 taylorreiter
