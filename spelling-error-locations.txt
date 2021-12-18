@@ -21,7 +21,6 @@ content/02.introduction.md:14:mers
 content/02.introduction.md:15:mer
 content/02.introduction.md:16:mers
 content/02.introduction.md:17:mers
-content/03.results.md:7:png
 content/03.results.md:9:mers
 content/03.results.md:9:pangenomes
 content/03.results.md:11:dayhoff
@@ -49,7 +48,6 @@ content/03.results.md:22:mers
 content/03.results.md:22:mers
 content/03.results.md:22:mers
 content/03.results.md:22:pangenome
-content/03.results.md:23:png
 content/03.results.md:25:mers
 content/03.results.md:25:pangenomes
 content/03.results.md:25:pangenomes
@@ -86,7 +84,6 @@ content/03.results.md:36:mers
 content/03.results.md:37:frameshifted
 content/03.results.md:37:Pangenomes
 content/03.results.md:37:RefSeq
-content/03.results.md:38:png
 content/03.results.md:40:frameshifted
 content/03.results.md:40:mer
 content/03.results.md:40:pangenome
@@ -104,7 +101,6 @@ content/03.results.md:46:pangenome
 content/03.results.md:46:Pangenome
 content/03.results.md:46:Pangenome
 content/03.results.md:46:pangenomes
-content/03.results.md:47:png
 content/03.results.md:49:Jaccard
 content/03.results.md:49:mers
 content/03.results.md:49:mers
@@ -177,7 +173,6 @@ content/03.results.md:106:jaccard
 content/03.results.md:107:GTDB
 content/03.results.md:107:Tk
 content/03.results.md:108:jaccard
-content/03.results.md:110:png
 content/03.results.md:114:mer
 content/03.results.md:116:FragGeneScan
 content/03.results.md:118:mer
@@ -190,7 +185,6 @@ content/03.results.md:121:iHMP
 content/03.results.md:121:metagenomes
 content/03.results.md:121:Microbiome
 content/03.results.md:122:Crohn's
-content/03.results.md:126:png
 content/03.results.md:128:metagenomes
 content/03.results.md:128:metagenomes
 content/03.results.md:128:metapangenome
@@ -202,7 +196,6 @@ content/03.results.md:131:jaccard
 content/03.results.md:131:metagenome
 content/03.results.md:132:orpheum
 content/03.results.md:133:ANI
-content/03.results.md:134:metap
 content/03.results.md:134:metapangenomes
 content/03.results.md:136:metagenome
 content/03.results.md:136:metagenomes
@@ -246,15 +239,12 @@ content/03.results.md:158:Parabacteroides
 content/03.results.md:159:merdae
 content/03.results.md:159:metronidazole
 content/03.results.md:159:vulgatus
-content/03.results.md:163:metap
-content/03.results.md:163:metap
-content/03.results.md:163:png
-content/03.results.md:165:metapangenomics
-content/03.results.md:165:novo
-content/03.results.md:165:prokka
-content/03.results.md:169:mers
-content/03.results.md:172:mers
-content/03.results.md:174:png
+content/03.results.md:162:metap
+content/03.results.md:164:metapangenomics
+content/03.results.md:164:novo
+content/03.results.md:164:prokka
+content/03.results.md:168:mers
+content/03.results.md:171:mers
 content/04.discussion.md:3:metapangenomics
 content/04.discussion.md:4:mers
 content/04.discussion.md:4:mers
@@ -397,4 +387,3 @@ content/06.methods.md:60:GTDB
 content/06.methods.md:60:mer
 content/06.methods.md:60:sourmash
 content/95.appendix.md:4:GTDB
-content/95.appendix.md:5:png

@@ -11,6 +11,8 @@ date-meta: '2021-12-18'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
+- Luiz Irber
+- Olga Borisovna Botvinnik
 - C. Titus Brown
 header-includes: |-
   <!--
@@ -38,6 +40,15 @@ header-includes: |-
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0002-2942-5331" />
   <meta name="twitter:creator" content="@saltyscientist" />
+  <meta name="citation_author" content="Luiz Irber" />
+  <meta name="citation_author_institution" content="Graduate Group in Computer Science, UC Davis" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0003-4371-9659" />
+  <meta name="twitter:creator" content="@luizirber" />
+  <meta name="citation_author" content="Olga Borisovna Botvinnik" />
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+  <meta name="citation_author_orcid" content="0000-0003-4412-7970" />
+  <meta name="twitter:creator" content="@olgabot" />
   <meta name="citation_author" content="C. Titus Brown" />
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
@@ -47,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/a807dc0237789b484ebcec32fae03b6975f4d7f4/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@9d04357](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/9d04357e684259ca9ea1427e4495913c9a75572c)
+from [taylorreiter/2021-paper-metapangenomes@a807dc0](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/a807dc0237789b484ebcec32fae03b6975f4d7f4)
 on December 18, 2021.
 </em></small>
 
@@ -103,6 +114,28 @@ on December 18, 2021.
   <small>
      Department of Population Health and Reproduction, University of California, Davis
      · Funded by NSF 1711984
+  </small>
+
++ **Luiz Irber**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4371-9659](https://orcid.org/0000-0003-4371-9659)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [luizirber](https://github.com/luizirber)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [luizirber](https://twitter.com/luizirber)<br>
+  <small>
+     Graduate Group in Computer Science, UC Davis; Department of Population Health and Reproduction, University of California, Davis
+  </small>
+
++ **Olga Borisovna Botvinnik**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4412-7970](https://orcid.org/0000-0003-4412-7970)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [olgabot](https://github.com/olgabot)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [olgabot](https://twitter.com/olgabot)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub
   </small>
 
 + **C. Titus Brown**<br>
@@ -265,7 +298,7 @@ The individual was diagnosed with Crohn's disease, a sub type of inflammatory bo
 The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
 
 ![
-](images/common_species_breakdown.png){#fig:metag_species height=2.5in}
+](images/common_species_breakdown.png){#fig:metag_species height=3in}
 
 We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 2% of reads across metagenomes, for a total of six metapangenomes (**Figure @fig:metag_species**).
 To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries [@doi:10.1186/s13059-020-02066-4].
@@ -273,7 +306,7 @@ Assembly graphs contain all sequences in a metagenome, and assembly graph querie
 Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
 After retrieving reads in this way, we predicted open reading frames using orpheum. 
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) but returned by assembly graph queries.
-Using the predicted amino acid sequences, we built metapangenomes for each of the six species (**Figure @fig:metap**).
+Using the predicted amino acid sequences, we built metapangenomes for each of the six species (**Figure @fig:metap_fig**).
 
 Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare. 
 To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer than 10,000 k-mers (**Table @tbl:metap**).
@@ -301,8 +334,7 @@ Similarly, in *Parabacteroides distasonis* accessory elements present in weeks 4
 Both switches occur during metronidazole administration after the bloom of *P. merdae* and *P. vulgatus*.
 
 ![
-
-](images/metap.png){#fig:metap}
+](images/metap.png){#fig:metap_fig}
 
 + Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
 
