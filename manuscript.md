@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-17'
+date-meta: '2021-12-18'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -22,8 +22,8 @@ header-includes: |-
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-17" />
-  <meta name="citation_publication_date" content="2021-12-17" />
+  <meta name="dc.date" content="2021-12-18" />
+  <meta name="citation_publication_date" content="2021-12-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/99699c227523dbd9c793a9138faa04a23ae1d508/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@99699c2](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/99699c227523dbd9c793a9138faa04a23ae1d508)
-on December 17, 2021.
+from [taylorreiter/2021-paper-metapangenomes@ce93fcc](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/ce93fccb6429817e1bd97b632391c66103e89df3)
+on December 18, 2021.
 </em></small>
 
 ## Authors
@@ -123,25 +123,22 @@ on December 17, 2021.
 
 # Introduction
 
-Short read metagenomic sequencing has expanded our knowledge of microbial communities and diversity (CITE).
-Many of these insights are attributable to *de novo* assembly and binning, which estimate species-level composite genomes (metagenome-assembled genomes, *MAGs*) from genomes in a sample, capturing unculturable genomes which have expanded the tree of life and and our understanding of microbial metabolism in diverse environments (CITE: Tyson, Hug, Nayfach). 
-Along with these advances, the concept of metapangenomics has arisen as a framework for understanding how sets of genes that occur in closely related MAGs correlate with parameters in the environments in which they are sampled from (CITE: Delmont, Bing Ma, Hoarfrost).
-Like pangenome analysis of isolate genomes, metapangenomes reflect the metabolic and ecological plasticity of populations of microbes and give insights into the genes that support specific environmental adaptations (CITE: hoarfrost).
+Short read metagenomic sequencing has expanded our knowledge of microbial communities and diversity [@doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6; @doi:10.1038/s41579-019-0311-5].
+Many of these insights are attributable to *de novo* assembly and binning, which estimate species-level composite genomes (metagenome-assembled genomes, *MAGs*) from genomes in a sample, capturing unculturable genomes which have expanded the tree of life and and our understanding of microbial metabolism in diverse environments [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6]. 
+Along with these advances, the concept of metapangenomics has arisen as a framework for understanding how sets of genes that occur in closely related MAGs correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
+Like pangenome analysis of isolate genomes, metapangenomes reflect the metabolic and ecological plasticity of populations of microbes and give insights into the genes that support specific environmental adaptations [@doi:10.1038/s41396-019-0516-7].
 
 <!-- Really trying not to shit on de novo analysis, which really has given us many great things -->
-Metapangenomics is reliant on *de novo* metagenome analysis, but both assembly and binning introduce biases into analysis (CITE: CAMI, SGC, Barnum, Maguire, Bickhart).
+Metapangenomics is reliant on *de novo* metagenome analysis, but both assembly and binning introduce biases into analysis [@doi:10.1186/s13059-020-02066-4; @doi:10.1038/nmeth.4458; @doi:10.1101/2021.07.12.451567; @doi:10.1038/s41396-018-0081-5; @doi:10.1099/mgen.0.000436; @doi:10.1101/2021.05.04.442591].
 Low coverage or large amounts of variation (SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, etc.) cause assemblers to break contiguous sequences, producing short fragments or unassembled reads that are too short to be binned into MAGs (CITE).
-These biases disproportionately impact genomic islands and plasmids (CITE: Maguire), hot spots for evolution that support microbial adaptation to changing environments (CITE: Roth?).
+These biases disproportionately impact genomic islands and plasmids [@doi:10.1099/mgen.0.000436], hot spots for evolution that support microbial adaptation to changing environments [@doi:10.1101/2021.03.15.435471].
 
 To more fully represent the functional potential in metapangenomes, we present an analysis approach that relies on amino acid and reduced alphabet k-mers to accurately estimate microbial pangenomes. 
 K-mers are words of length *k* in DNA or protein sequences. 
-K-mer-based analysis has recently risen in popularity via sketching algorithms that sub sample sequences to facilitate rapid comparisons while maintaining similarity between samples (cite: Rowe). 
-In particular, long nucleotide k-mers preserve similarities between closely related genomes but are brittle to evolutionary distance (CITE: metapalette, sourmash?). 
+K-mer-based analysis has recently risen in popularity via sketching algorithms that sub sample sequences to facilitate rapid comparisons while maintaining similarity between samples [@doi:10.1186/s13059-019-1809-x]. 
+In particular, long nucleotide k-mers preserve similarities between closely related genomes but are brittle to evolutionary distance [@doi:10.1128/mSystems.00020-16] (CITE: Tessa). 
 By using amino acid k-mers and other reduced alphabets, sequence similarities are preserved across larger evolutionary distances.
 Combining this approach with accurate open reading frame prediction from short read sequences, this method can be applied without assembly.
-<!-- Sigh. I think writing an introduction like this maybe makes graph-based analysis unavoidable -->
-<!-- See third header in results for further self debate -->
-
 
 # Results
 
@@ -178,7 +175,7 @@ Other RefSeq exclusion criteria did not impact the correlation between the total
 **Genomes that are excluded from RefSeq for having many frameshifted proteins reduce similarity between gene- and k-mer-based pangenomes.**
 **A, B)** Scatter plots of the total number of distinct genes and k-mers per genome for the species *Leptospira interrogans*, where each point represents a single genome in the pangenome. 
 Removing genomes flagged with RefSeq exclusion criteria "many frameshifted proteins" improves the correlation between these variables. 
-**C)** Boxplot of R^2^ values between the total number of distinct genes and k-mers per genome. 
+**C)** Box plot of R^2^ values between the total number of distinct genes and k-mers per genome. 
 Pangenomes that contain genomes with the RefSeq exclusion criteria of "many frameshifted proteins" have significantly lower R^2^ values
 ](images/frameshift_fig.png){#fig:frameshift_fig}
 
@@ -194,8 +191,8 @@ Alpha values were strongly correlated between gene- and k-mer based pangenomes (
 ## Jaccard containment between reduced alphabet k-mers and k-mers in databases accurately predicts open reading frames in short sequencing reads
 
 Given that protein k-mers can accurately estimate bacterial and archaeal pangenomes, we next sought to determine whether open reading frames could be accurately predicted directly from short sequencing reads, as this would enable pangenome analysis without assembly.
-We evaluated whether orpheum, a tool recently developed to predict open reading frames in Eukaryotic short reads (CITE), could also perform this task in bacterial and archaeal sequences.
-Orpheum predicts open reading frames by comparing reduced alphabet k-mers in six frame translations of short sequencing reads against those in a database (jaccard containment) and assigns an open reading frame as coding if containment exceeds a user-defined threshold (CITE).
+We evaluated whether orpheum, a tool recently developed to predict open reading frames in Eukaryotic short reads [@doi:10.1101/2021.07.09.450799], could also perform this task in bacterial and archaeal sequences.
+Orpheum predicts open reading frames by comparing reduced alphabet k-mers in six frame translations of short sequencing reads against those in a database (jaccard containment) and assigns an open reading frame as coding if containment exceeds a user-defined threshold [@doi:10.1101/2021.07.09.450799].
 To evaluate orpheum, we constructed a database containing all k-mers in coding domain sequences from genomes in GTDB rs202.
 Using representative genomes from the 23 species above, as well as 20 additional genomes not in the GTDB rs202 database, we simulated short sequencing reads either from coding domain sequences or non-coding sequences and used these reads to test orpheum.
 
@@ -203,29 +200,27 @@ Using default parameters, orpheum accurately separated coding from non-coding re
 For reads simulated from genomes not in GTDB, orpheum recovered the majority of coding reads when genomes of the same species were in the database (**Figure @fig:orpheum_fig A,B**).
 Accuracy decreased with increasing taxonomic distance between the query genome and the closest relative in the database (**Figure @fig:orpheum_fig B**).
 
-
-For genomes that had at least species-level representatives in GTDB, the largest source of error was again non-coding reads being predicted as coding (**Figure @fig:orpheum_fig A**).
-We hypothesized that these reads originated from pseudogenes as these genes would likely not be annotated as coding in the genomes the reads were simulated from, but may retain some k-mers contained in other genes in the database.
-To assess this hypothesis, we used annotation files produced by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP), which annotates pseudogenes, for the XX genomes for which these files were available (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5001611/; https://pubmed.ncbi.nlm.nih.gov/33270901/).
+For genomes that had at least species-level representatives in GTDB, the largest source of error was non-coding reads being predicted as coding (**Figure @fig:orpheum_fig A**).
+We hypothesized that these reads originated from pseudogenes as these sequences would likely not be annotated as coding in the genomes from which the reads were simulated from, but may retain some k-mers contained in the database.
+To assess this hypothesis, we used annotation files produced by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP), which annotates pseudogenes, for the 23 genomes for which these files were available [@doi:10.1093/nar/gkw569; @doi:10.1093/nar/gkaa1105].
 On average, 12.4% (SD = 13.8%) of non-coding reads that were predicted to be coding fell within pseudogenes annotated by the PGAP pipeline.
 We then BLASTed a subset of the remaining non-coding read that were predicted to be coding against the NCBI nr database.
 All reads we investigated had at least one mach at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
 <!--Indeed, the worst performer was *Mycoplasmopsis bovis*, with 23% of non-coding reads predicted to be coding. 
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
-Because ORF prediction is blind to pseudogenes, it may not be appropriate for species with many pseudogenes.
-
-[TR: RE -- BLAST. I could make a BLAST database of GTDB protein sequences and do this more systematically, but it doesn't seem that important, so I haven't done it.]
+Because this method of open reading frame prediction cannot distinguish pseudogenes, it may not be appropriate for species with many pseudogenes.
 
 + Why coding as noncoding? sequencing error?
 
-Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomes estimated from the genomes themselves.
-We estimated the jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads using the Mantel test.
+Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomes estimated from coding domain sequences in those genomes.
+We estimated the jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads.
 Genomes that were most similar in one matrix were also most similar in another matrix (Mantel statistic = 0.9975, p < 0.001). 
-The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads. 
+The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads.
+This demonstrates that information recovered from open reading frame prediction from short read is similar to that derived directly from the genome sequence.
 
 The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database. 
-On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (SUPPLEMENTAL FIGURE).
+On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (**Figure @fig:orpheum_db**).
 
 Decreasing the jaccard containment threshold increased the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (**Figure @fig:orpheum_fig C, Table @tbl:threshold**).
 The jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.
@@ -233,7 +228,7 @@ We suggest the results in **Table @tbl:threshold** be used as a guide for settin
 
 
 |jaccard threshold | closest rank | mean sensitivity| mean specificity | mean Youden's index |
-|:-------------:|:---------------:|:----------------:|:----------------:|:------------:|
+|:-------------:|:------------:|:--------------:|:--------------:|:------------:|
 |          0.47 | genome       |          0.988 |           0.971|       0.959|
 |          0.39 | species      |          0.941 |           0.961|       0.902|
 |          0.17 | genus        |          0.790 |           0.862|       0.653|
@@ -265,22 +260,38 @@ The best jaccard threshold decreases when there are fewer closely related genome
 ## K-mer-based metapangenomics combined with assembly graphs ... 
 
 Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted from short sequencing reads, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
-We used 12 metagenomes from a single individual that were sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) (CITE). 
+We used 12 metagenomes from a single individual that were sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) [@doi:10.1038/s41586-019-1238-8]. 
 The individual was diagnosed with Crohn's disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
-The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species** height=2.5in).
+The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
 
 ![
-](images/common_species_breakdown.png){#fig:metag_species}
+](images/common_species_breakdown.png){#fig:metag_species height=2.5in}
 
 We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 10% of reads across metagenomes, for a total of nine metapangenomes (**Figure @fig:metag_species**).
-To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries.
-We first built an assembly graph from each metagenome, and then queried into this graph using the genome of interest. 
-Lastly, we predicted open reading frames from the matching sequencing reads using orpheum. 
-Given that assembly graph queries return related sequencing content from genomes with as little as 10^-1 jaccard similarity (~93% average nucleotide identity (ANI), CITE TESSA, SGC), and that the general cutoff for species is 95% ANI (CITE), we used species-level databases to perform open reading frame prediction. 
+To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries [@doi:10.1186/s13059-020-02066-4].
+Assembly graphs contain all sequences in a metagenome, and assembly graph queries return sequences in the metagenome that are either in the query or nearby to the query in the graph.
+Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
+After retrieving reads in this way, we predicted open reading frames using orpheum. 
+We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) but returned by assembly graph queries.
+Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (FIGURE).
 
-+ Time series iHMP (https://github.com/taylorreiter/2021-metapangenome-example).
+Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare. 
+To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer k-mers than two standard deviations below the mean (CHECK).
+XXXX
+
+Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (FIGURE).
+For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin administration,
+but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding metronidazole administration.
+While a portion of the *Parabacteroides merdae* metapangenome is present in early samples, the full genome is only detected after metronidazole administration when the fractional abundance of *P. merdae* increases starting at week 13.
+However, additional accessory elements are detected beginning at week 19, which coincides with a bloom of *P. merdae*. 
+
+In two bacterial species antibiotic administration appears to spur on strain switching for some species.
+In *Bacteroides uniformis*, one set of accessory elements present from weeks 0 - 11 is replaced by a new set in weeks 25-36.
+Similarly, in *Parabacteroides distasonis* accessory elements present in weeks 4, 9, and 11 are replaced by new accessory elements in weeks 25-36. 
+Both switches occur during metronidazole administration after the bloom of *P. merdae* and *P. vulgatus*.
+
+
 + Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
-+ Show that k-mers support pangenome visualization by demonstrating.
 
 ## Extra results that don't really fit in the paper, but I could force them to fit or we could put them in a different paper
 
@@ -353,7 +364,7 @@ This suggests that the number of k-mers in a genome could be used to predict the
 # Methods 
 
 <!-- Can I pretty plz keep these separate or do they need to be combined? -->
-All code is available at github.com/taylorreiter/2021-panmers and github.com/taylorreiter/2021-orpheum-sim.
+All code is available at github.com/taylorreiter/2021-panmers (results section 1), github.com/taylorreiter/2021-orpheum-sim (results section 2), and https://github.com/taylorreiter/2021-metapangenome-example (results section 3).
 
 ### Selection of benchmarking species for pangenome analysis
 We selected a species representative for each of the 23 phyla in GTDB rs202. 
@@ -417,3 +428,8 @@ We constructed a database from GTDB rs202 using sourmash XXX and using a k-mer s
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
+
+
+
+![The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
+](images/orpheum_supp1.png){#fig:orpheum_db height=3in}
