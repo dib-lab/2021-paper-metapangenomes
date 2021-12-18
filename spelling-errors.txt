@@ -44,7 +44,7 @@ metagenome
 metagenomes
 metagenomic
 metap
-metapangenome
+Metapangenome
 metapangenomes
 metapangenomics
 metronidazole
@@ -57,7 +57,7 @@ nucleotides
 ORF
 orpheum
 pagoo
-pangenome
+Pangenome
 pangenomes
 PANMER
 Parabacteroides

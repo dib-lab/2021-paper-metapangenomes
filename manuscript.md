@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/9d04357e684259ca9ea1427e4495913c9a75572c/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@77d3ac3](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/77d3ac37747016550f1c09e4560b278575f85c92)
+from [taylorreiter/2021-paper-metapangenomes@9d04357](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/9d04357e684259ca9ea1427e4495913c9a75572c)
 on December 18, 2021.
 </em></small>
 
@@ -267,13 +267,13 @@ The individual received three courses of antibiotics over the year and each cour
 ![
 ](images/common_species_breakdown.png){#fig:metag_species height=2.5in}
 
-We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 10% of reads across metagenomes, for a total of nine metapangenomes (**Figure @fig:metag_species**).
+We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 2% of reads across metagenomes, for a total of six metapangenomes (**Figure @fig:metag_species**).
 To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries [@doi:10.1186/s13059-020-02066-4].
 Assembly graphs contain all sequences in a metagenome, and assembly graph queries return sequences in the metagenome that are either in the query or nearby to the query in the graph.
 Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
 After retrieving reads in this way, we predicted open reading frames using orpheum. 
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) but returned by assembly graph queries.
-Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (**Figure @fig:metap**).
+Using the predicted amino acid sequences, we built metapangenomes for each of the six species (**Figure @fig:metap**).
 
 Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare. 
 To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer than 10,000 k-mers (**Table @tbl:metap**).
@@ -313,7 +313,7 @@ Lastly, we investigated whether the relationship between the number of k-mers in
 ![
 **The ratio of total distinct genes per genome to total distinct k-mers per genome is conserved across distantly related species.** 
 Each point represents a single genome, and genomes are colored by species.
-](images/all_pw_fig.png){#fig:all_pw_fig}
+](images/all_pw_fig.png){#fig:all_pw_fig height=3in}
 
 
 # Discussion
