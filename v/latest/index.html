@@ -74,9 +74,9 @@
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +90,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/">permalink</a>)
+(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/ce93fccb6429817e1bd97b632391c66103e89df3">taylorreiter/2021-paper-metapangenomes@ce93fcc</a>
+from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/77d3ac37747016550f1c09e4560b278575f85c92">taylorreiter/2021-paper-metapangenomes@77d3ac3</a>
 on December 18, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -314,11 +314,83 @@ Assembly graphs contain all sequences in a metagenome, and assembly graph querie
 Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome <span class="citation" data-cites="VsLophuT">[<a href="#ref-VsLophuT" role="doc-biblioref">8</a>]</span>.
 After retrieving reads in this way, we predicted open reading frames using orpheum.
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI <span class="citation" data-cites="12fAf7MKk">[<a href="#ref-12fAf7MKk" role="doc-biblioref">21</a>]</span>) but returned by assembly graph queries.
-Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (FIGURE).</p>
+Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (<strong>Figure ??</strong>).</p>
 <p>Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare.
-To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer k-mers than two standard deviations below the mean (CHECK).
-XXXX</p>
-<p>Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (FIGURE).
+To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer than 10,000 k-mers (<strong>Table <a href="#tbl:metap">2</a></strong>).</p>
+<div id="tbl:metap" class="tablenos">
+<table id="tbl:metap">
+<caption><span>Table 2:</span> Metapangenome estimates for each species.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">species</th>
+<th style="text-align: center;">n</th>
+<th style="text-align: center;">total</th>
+<th style="text-align: center;">core</th>
+<th style="text-align: center;">shell</th>
+<th style="text-align: center;">cloud</th>
+<th style="text-align: center;">alpha</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><em>Bacteroides fragilis</em></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">24819</td>
+<td style="text-align: center;">13983</td>
+<td style="text-align: center;">2797</td>
+<td style="text-align: center;">8039</td>
+<td style="text-align: center;">0.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><em>Bacteroides uniformis</em></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">32197</td>
+<td style="text-align: center;">12238</td>
+<td style="text-align: center;">7188</td>
+<td style="text-align: center;">12771</td>
+<td style="text-align: center;">0.73</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><em>Enterocloster bolteae</em></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">23620</td>
+<td style="text-align: center;">13189</td>
+<td style="text-align: center;">4324</td>
+<td style="text-align: center;">6107</td>
+<td style="text-align: center;">0.66</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><em>Parabacteroides distasonis</em></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">25789</td>
+<td style="text-align: center;">10922</td>
+<td style="text-align: center;">7960</td>
+<td style="text-align: center;">6907</td>
+<td style="text-align: center;">0.74</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><em>Parabacteroides merdae</em></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">19985</td>
+<td style="text-align: center;">12637</td>
+<td style="text-align: center;">1924</td>
+<td style="text-align: center;">5424</td>
+<td style="text-align: center;">0.82</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><em>Phocaeicola vulgatus</em></td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">41005</td>
+<td style="text-align: center;">12437</td>
+<td style="text-align: center;">8376</td>
+<td style="text-align: center;">20192</td>
+<td style="text-align: center;">0.65</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (<strong>Figure ??</strong>).
 For example, the <em>Phocaeicola vulgatus</em> metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin administration,
 but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding metronidazole administration.
 While a portion of the <em>Parabacteroides merdae</em> metapangenome is present in early samples, the full genome is only detected after metronidazole administration when the fractional abundance of <em>P. merdae</em> increases starting at week 13.
@@ -327,6 +399,8 @@ However, additional accessory elements are detected beginning at week 19, which 
 In <em>Bacteroides uniformis</em>, one set of accessory elements present from weeks 0 - 11 is replaced by a new set in weeks 25-36.
 Similarly, in <em>Parabacteroides distasonis</em> accessory elements present in weeks 4, 9, and 11 are replaced by new accessory elements in weeks 25-36.
 Both switches occur during metronidazole administration after the bloom of <em>P. merdae</em> and <em>P. vulgatus</em>.</p>
+<p>![</p>
+<p>](images/metap.png){#fig:metap}</p>
 <ul>
 <li>Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?</li>
 </ul>
@@ -504,6 +578,7 @@ Reads are designated as non-coding if they don’t reach the jaccard similarity 
 <div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>High throughput ANI analysis of 90K prokaryotic genomes reveals clear species boundaries</strong> <div class="csl-block">Chirag Jain, Luis M Rodriguez-R, Adam M Phillippy, Konstantinos T Konstantinidis, Srinivas Aluru</div> <em>Nature Communications</em> (2018-11-30) <a href="https://doi.org/gfknmg">https://doi.org/gfknmg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-018-07641-9">10.1038/s41467-018-07641-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30504855">30504855</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6269478">PMC6269478</a></div></div>
 </div>
 </div>
+<h1 id="appendixsupplementary-information">Appendix/Supplementary information</h1>
 <div id="fig:orpheum_db" class="fignos">
 <figure>
 <img src="images/orpheum_supp1.png" style="height:3in" alt="Figure 8: The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database." /><figcaption aria-hidden="true"><span>Figure 8:</span> The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.</figcaption>
