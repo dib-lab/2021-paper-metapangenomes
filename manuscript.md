@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/ce93fccb6429817e1bd97b632391c66103e89df3/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/77d3ac37747016550f1c09e4560b278575f85c92/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@ce93fcc](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/ce93fccb6429817e1bd97b632391c66103e89df3)
+from [taylorreiter/2021-paper-metapangenomes@77d3ac3](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/77d3ac37747016550f1c09e4560b278575f85c92)
 on December 18, 2021.
 </em></small>
 
@@ -273,13 +273,23 @@ Assembly graphs contain all sequences in a metagenome, and assembly graph querie
 Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
 After retrieving reads in this way, we predicted open reading frames using orpheum. 
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) but returned by assembly graph queries.
-Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (FIGURE).
+Using the predicted amino acid sequences, we built metapangenomes for each of the nine species (**Figure @fig:metap**).
 
 Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare. 
-To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer k-mers than two standard deviations below the mean (CHECK).
-XXXX
+To calculate the core, shell, and cloud fractions and to estimate the alpha of the metapangenome, we thresholded the number of k-mer, removing samples with fewer than 10,000 k-mers (**Table @tbl:metap**).
 
-Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (FIGURE).
+|species| n |total  |core |  shell  | cloud | alpha |
+|:--------------------------:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|*Bacteroides fragilis*      |  7| 24819 |13983 | 2797 | 8039 |0.76|
+|*Bacteroides uniformis*     |  9| 32197 |12238 | 7188 | 12771|0.73|
+|*Enterocloster bolteae*     |  4| 23620 |13189 | 4324 | 6107 |0.66|
+|*Parabacteroides distasonis*|  7| 25789 |10922 | 7960 | 6907 |0.74|
+|*Parabacteroides merdae*    |  6| 19985 |12637 | 1924 | 5424 |0.82|
+|*Phocaeicola vulgatus*      | 11| 41005 |12437 | 8376 |20192 |0.65|
+Table: Metapangenome estimates for each species.
+{#tbl:metap}
+
+Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap**).
 For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin administration,
 but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding metronidazole administration.
 While a portion of the *Parabacteroides merdae* metapangenome is present in early samples, the full genome is only detected after metronidazole administration when the fractional abundance of *P. merdae* increases starting at week 13.
@@ -290,6 +300,9 @@ In *Bacteroides uniformis*, one set of accessory elements present from weeks 0 -
 Similarly, in *Parabacteroides distasonis* accessory elements present in weeks 4, 9, and 11 are replaced by new accessory elements in weeks 25-36. 
 Both switches occur during metronidazole administration after the bloom of *P. merdae* and *P. vulgatus*.
 
+![
+
+](images/metap.png){#fig:metap}
 
 + Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
 
@@ -430,6 +443,8 @@ We constructed a database from GTDB rs202 using sourmash XXX and using a k-mer s
 <div id="refs"></div>
 
 
+
+# Appendix/Supplementary information
 
 ![The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
 ](images/orpheum_supp1.png){#fig:orpheum_db height=3in}

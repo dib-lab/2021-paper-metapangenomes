@@ -6,6 +6,7 @@ bakta
 benchmarking
 bickhart
 bluegenes
+bolteae
 Boxplots
 Bruijn
 cDBG
@@ -16,9 +17,11 @@ dayhoff
 Determing
 distasonis
 encodings
+Enterocloster
 Eukaryotic
 euks
 FragGeneScan
+fragilis
 frameshift
 frameshifted
 GenBank
@@ -40,6 +43,7 @@ metag
 metagenome
 metagenomes
 metagenomic
+metap
 metapangenome
 metapangenomes
 metapangenomics
@@ -54,12 +58,13 @@ ORF
 orpheum
 pagoo
 pangenome
-Pangenomes
+pangenomes
 PANMER
 Parabacteroides
 PGAP
 Phocaeicola
 plasmids
+png
 prokka
 pseudogenes
 RefSeq
@@ -69,7 +74,7 @@ roary
 saltyscientist
 SingleM
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 taxonomically
 taylorreiter
@@ -81,6 +86,5 @@ unculturable
 uniformis
 vulgatus
 Welch
-XXXX
 XXXXXXXX
 Youden’s
