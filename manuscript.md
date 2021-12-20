@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-18'
+date-meta: '2021-12-20'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-18" />
-  <meta name="citation_publication_date" content="2021-12-18" />
+  <meta name="dc.date" content="2021-12-20" />
+  <meta name="citation_publication_date" content="2021-12-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/2b2ac55aef9222c767fb6022a197159d4a8dabb5/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/2b2ac55aef9222c767fb6022a197159d4a8dabb5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/2b2ac55aef9222c767fb6022a197159d4a8dabb5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/9c524249148bae42b358d2c69227738641c71206/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/2b2ac55aef9222c767fb6022a197159d4a8dabb5/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@9c52424](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/9c524249148bae42b358d2c69227738641c71206)
-on December 18, 2021.
+from [taylorreiter/2021-paper-metapangenomes@2b2ac55](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/2b2ac55aef9222c767fb6022a197159d4a8dabb5)
+on December 20, 2021.
 </em></small>
 
 ## Authors
@@ -159,7 +159,7 @@ on December 18, 2021.
 Short read metagenomic sequencing has expanded our knowledge of microbial communities and diversity [@doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6; @doi:10.1038/s41579-019-0311-5].
 Many of these insights are attributable to *de novo* assembly and binning, which estimate species-level composite genomes (metagenome-assembled genomes, *MAGs*) from genomes in a sample, capturing unculturable genomes which have expanded the tree of life and and our understanding of microbial metabolism in diverse environments [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6]. 
 Along with these advances, the concept of metapangenomics has arisen as a framework for understanding how sets of genes that occur in closely related MAGs correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
-Like pangenome analysis of isolate genomes, metapangenomes reflect the metabolic and ecological plasticity of populations of microbes and give insights into the genes that support specific environmental adaptations [@doi:10.1038/s41396-019-0516-7].
+Like pangenomes inferred from isolate genomes, metapangenomes reflect the metabolic and ecological plasticity of populations of microbes and give insights into the genes that support specific environmental adaptations [@doi:10.1038/s41396-019-0516-7].
 
 <!-- Really trying not to shit on de novo analysis, which really has given us many great things -->
 Metapangenomics is reliant on *de novo* metagenome analysis, but both assembly and binning introduce biases into analysis [@doi:10.1186/s13059-020-02066-4; @doi:10.1038/nmeth.4458; @doi:10.1101/2021.07.12.451567; @doi:10.1038/s41396-018-0081-5; @doi:10.1099/mgen.0.000436; @doi:10.1101/2021.05.04.442591].
@@ -172,6 +172,12 @@ K-mer-based analysis has recently risen in popularity via sketching algorithms t
 In particular, long nucleotide k-mers preserve similarities between closely related genomes but are brittle to evolutionary distance [@doi:10.1128/mSystems.00020-16] (CITE: Tessa). 
 By using amino acid k-mers and other reduced alphabets, sequence similarities are preserved across larger evolutionary distances.
 Combining this approach with accurate open reading frame prediction from short read sequences, this method can be applied without assembly.
+
+**Things that need to be added to the intro:**
++ pangenome definition? utility?
++ metapangenomes can be estimated by mapping against isolate genomes, but incomplete reference databases may lead functional portions of the metapangenome unanalyzed.
+  + See delmont prochlorococcus for example of reference-based metapangenomics
++ graph introduction
 
 # Results
 
@@ -194,7 +200,7 @@ Performance varied minimally across encodings (**Figure @fig:violin_fig**) thus 
 + @Tessa: should I compare this against nucleotide k-mers at all? Bc I think that's the underlying assumption here, nucleotides don't work for this stuff.
 
 ![
-**K-size and alphabet do not impact pangenome estimation with k-mers.** Violin plots represent the distribution of R2 values for linear models (Total, Unique) or statistic values for mantel tests (Mantel). *Total* corresponds to correlation between total number of distinct genes and distinct k-mers in a genome. *Unique* corresponds to correlation between the number of unique genes and unique k-mers in genome. *Mantel* corresponds to a mantel test between the gene and k-mer presence-absence matrices.
+**K-size and alphabet do not impact pangenome estimation with k-mers.** Violin plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
 ](images/violin_fig.png){#fig:violin_fig}
 
 Performance across metrics varied dramatically for different pangenomes, with k-mers and genes highly correlated for some pangenomes and not correlated for others (**Figure @fig:violin_fig**) . 
@@ -218,7 +224,7 @@ We also compared whether pangenomes would be designated as open or closed by cal
 Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:pg_fig**). 
 
 ![
-**Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes.** Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. \Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
+**Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes.** Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
 ](images/pg_fig.png){#fig:pg_fig height=2.5in}
 
 ## Jaccard containment between reduced alphabet k-mers and k-mers in databases accurately predicts open reading frames in short sequencing reads
@@ -325,7 +331,7 @@ To calculate the core, shell, and cloud fractions and to estimate the alpha of t
 Table: Metapangenome estimates for each species.
 {#tbl:metap}
 
-Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap**).
+Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap_fig**).
 For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin administration,
 but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding metronidazole administration.
 While a portion of the *Parabacteroides merdae* metapangenome is present in early samples, the full genome is only detected after metronidazole administration when the fractional abundance of *P. merdae* increases starting at week 13.
@@ -470,6 +476,32 @@ Reads are designated as non-coding if they don't reach the jaccard similarity th
 
 We constructed a database from GTDB rs202 using sourmash XXX and using a k-mer size of 10.
 + @Tessa any relevant details would be very helpful :) 
+
+### Metapangenome analysis of iHMP metagenomes
+We used sourmash, spacegraphcats, and orpheum to peform metapangenome analysis of 12 iHMP time series gut microbiomes captured by short read shotgun metagenomes.
+We downloaded samples HSM6XRQB, HSM6XRQI, HSM6XRQK, HSM6XRQM, HSM6XRQO, HSM67VF9, HSM67VFD, HSM67VFJ, HSM7CYY7, HSM7CYYD, HSM7CYY9, HSM7CYYB from ibdmdb.org.
+We adapter and quality trimmed each sample with fastp (parameters `--detect_adapter_for_pe`, `--qualified_quality_phred 4`, `--length_required 31`, and `--correction`), removed human host sequencing reads with bbduk (parameters `k=31`, reference file https://drive.google.com/file/d/0B3llHR93L14wd0pSSnFULUlhcUk/edit?usp=sharing), and k-mer trimmed reads using khmer `trim-low-abund.py` (parameters `-C 3`, `-Z 18`, `-V`).
+We then used sourmash gather to infer the taxonomic profile of each sample, using the GTDB rs202 database (`k` = 31, https://osf.io/w4bcm/).
+We summarized the results to species-level using the GTDB taxonomy.
+We retained species with a cumulative sum of of at least 2% (sum of `f_unique_to_query`) across metagenome reads as query genomes.
+Within each species, we selected the genome with with largest cumulative `f_unique_to_query` across metagenomes. 
+We downloaded each genome from GenBank (**Table @tbl:acc**) and performed spacegraphcats assembly graph queries with each (parameters `ksize: 31`,
+`radius: 1`, `paired_reads: true`).
+Using the returned reads, we predicted open reading frames using orpheum `translate` (parameters `--jaccard-threshold 0.39`, `--alphabet protein`, `--peptide-ksize 10`) and using species-level GTDB databases.
+We sketched each set of translated reads using sourmash `sketch` (parameters `protein`, -p k=10,scaled=100,protein`), converted each sketch to a csv file, and then combined csv files for a single query species across all metagenomes. 
+This long format csv was used as input for the R pangenome package pagoo, using the `pagoo()` function.
+We used pagoo methods `pg$gg_binmap()`, `pg$summary_stats()`, and `pg$pg_power_law_fit()` to visualize the pangenome, calculate the size of the core, shell, and cloud, and estimate alpha. 
+
+| species | accession |
+|:-------:|:-----------:|
+| *Parabacteroides distasonis* | GCA_000162535.1 |
+| *Enterocloster bolteae* | GCF_003433765.1 |
+| *Bacteroides fragilis*   | GCF_003458955.1 |
+| *Parabacteroides merdae* | GCF_003475305.1 |
+| *Bacteroides uniformis*  | GCF_009020325.1 |
+| *Phocaeicola vulgatus*   | GCF_009025805.1 |
+Table: Query genome GTDB species names and GenBank accessions.
+{#tbl:acc}
 
 
 ## References {.page_break_before}
