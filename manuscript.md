@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/5a75202bfd24992c3befc74547fae82e1a07f26f/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/5a75202bfd24992c3befc74547fae82e1a07f26f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/5a75202bfd24992c3befc74547fae82e1a07f26f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/5a75202bfd24992c3befc74547fae82e1a07f26f/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@5a75202](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/5a75202bfd24992c3befc74547fae82e1a07f26f)
+from [taylorreiter/2021-paper-metapangenomes@ae68e76](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/ae68e76defb2665a3d8700a78b4cff0999275a9c)
 on December 21, 2021.
 </em></small>
 
@@ -354,14 +354,6 @@ To calculate the core, shell, and cloud fractions and to estimate the openness o
 |*Phocaeicola vulgatus*      | 11| 41005 |30.3%   |20.4%  | 49.2% |0.65|
 Table: Metapangenome estimates for each species. *n* designates the number of metagenomes used to estimate the total, core, shell, cloud, and alpha values.
 {#tbl:metap}
-
-              species  n total  core shell cloud     alpha core_pct shell_pct cloud_pct
-1       Bacteroides fragilis  7 24819 13983  2797  8039 0.7560484     56.3      11.3      32.4
-2      Bacteroides uniformis  9 32197 12238  7188 12771 0.7267620     38.0      22.3      39.7
-3      Enterocloster bolteae  4 23620 13189  4324  6107 0.6625238     55.8      18.3      25.9
-4 Parabacteroides distasonis  7 25789 10922  7960  6907 0.7352314     42.4      30.9      26.8
-5     Parabacteroides merdae  6 19985 12637  1924  5424 0.8158308     63.2       9.6      27.1
-6       Phocaeicola vulgatus 11 41005 12437  8376 20192 0.6463252     30.3      20.4      49.2
 
 Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap_fig**).
 For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin exposure,

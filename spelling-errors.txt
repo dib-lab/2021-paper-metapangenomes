@@ -49,7 +49,7 @@ illumina
 indels
 interrogans
 Irber
-Jaccard
+jaccard
 json
 Leptospira
 Luiz
@@ -65,7 +65,7 @@ metagenomic
 METAGENOMICS
 metap
 metapangenome
-metapangenomes
+Metapangenomes
 Metapangenomic
 metapangenomics
 metronidazole
@@ -81,7 +81,7 @@ ORF
 orpheum
 pagoo
 pangenome
-pangenomes
+Pangenomes
 pangenomics
 PANMER
 Parabacteroides
@@ -107,7 +107,7 @@ taylorreiter
 teh
 Tettelin
 tiem
-Tk
+tk
 transcriptome
 UC
 unbinnable
