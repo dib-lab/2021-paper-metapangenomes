@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/ae68e76defb2665a3d8700a78b4cff0999275a9c/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@ae68e76](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/ae68e76defb2665a3d8700a78b4cff0999275a9c)
+from [taylorreiter/2021-paper-metapangenomes@5534594](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/55345940a61ba5ce0dc05c1ebbe6b6012356deb8)
 on December 21, 2021.
 </em></small>
 
@@ -164,8 +164,8 @@ Many of these insights are attributable to *de novo* assembly and binning, which
 
 Along with these advances, the concept of metapangenomics has arisen as a framework for understanding how sets of metagenome-derived genes that are attributable to a group of organisms correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
 Metapangenomic methods borrow heavily from pangenome analysis.
-Pangenomes comprise all genes found within a group of organisms and reflect teh metabolic and ecological plasticity of that group (CITE).
-The pangenome is divided into core and accessory genes, where core genes are shared by almost all members in teh group and accessory genes are not.
+Pangenomes comprise all genes found within a group of organisms and reflect the metabolic and ecological plasticity of that group (CITE).
+The pangenome is divided into core and accessory genes, where core genes are shared by almost all members in the group and accessory genes are not.
 Core genes often encode primary metabolic function or other functions necessary for a group to live in a given environment (CITE), while accessory genes encode functions that facilitate adaptation to changing environments (CITE: Roth).
 The size of the pangenome reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches (CITE: Tettelin 2005).
 Open pangenomes are those which increase indefinitely in size when adding new genomes, while closed pangenomes do not.
@@ -173,12 +173,12 @@ Open pangenomes are those which increase indefinitely in size when adding new ge
 While pangenomes are traditionally inferred from isolate genomes, metapangenomics extends the ecological framework of pangenomics to metagenomes.
 Metapangenomes reflect the metabolic and ecological plasticity of populations of microbes and give insights into the genes that support specific environmental adaptations [@doi:10.1038/s41396-019-0516-7].
 This is achieved either through the application of pangenome methods to metagenome assembled genomes (MAGs) (CITE), or by mapping metagenomes against isolate-inferred pangenomes (CITE: Delmont).
-Both methods give valuable insight into the presence nad distribution of functional content in natural microbial communities, but either may introduce biases associated with unknown sequencing content (CITE: Segata, unknown).
+Both methods give valuable insight into the presence and distribution of functional content in natural microbial communities, but either may introduce biases associated with unknown sequencing content (CITE: Segata, unknown).
 MAGs are often incomplete or unrecoverable due to low sequencing coverage or large amounts of variation (SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, etc.), both of which cause short read assemblers to produce unbinnable short contiguous sequences.
 Unbinned sequences are disproportionately comprised of genomic islands and plasmids [@doi:10.1099/mgen.0.000436], hot spots for evolution that support microbial adaptation to changing environments [@doi:10.1101/2021.03.15.435471].
 In contrast, read mapping against isolate-inferred pangenomes may miss functional content present in the metagenome but missing from references, especially for species under represented or unrecorded in reference databases.
 
-These issues are not exclusive to metapangenome inference, and many recently developed analysis strategies overcome some of these baises.
+These issues are not exclusive to metapangenome inference, and many recently developed analysis strategies overcome some of these biases.
 These techniques largely rely on k-mers, words of length *k* in DNA or protein sequences.
 Metagenome k-mer profiles contain all sequences in a metagenome, including those which may not assemble or bin, or which aren't in reference databases.
 Long k-mers are also taxonomy-specific, where increasing k-mer length leads to sub-species discriminatory power [@doi:10.1128/mSystems.00020-16] (CITE: tessa).
@@ -479,7 +479,7 @@ We next created a labelled data set of simulated reads that were generated from 
 We annotated the genomes with bakta to produce CDS ranges, and used polyester to simulate reads from CDS or non-coding regions. 
 We used the default short read error profile within polyester.
 
-### Determing short read open reading frames with orpheum 
+### Determining short read open reading frames with orpheum 
 We used the orpheum tool to predict open reading frames from simulated short reads.
 Orpheum was developed to predict open reading frames in short RNA-seq reads from Eukaryotic organisms without a reference genome or transcriptome sequence.
 Orpheum perform six-frame translation on nucleotide sequencing reads, calculates k-mers in an amino acid, dayhoff, or hydrophobic-polar encoding at the designated k-mer length, and then estimates the jaccard similarity between k-mers in each translation frame and a database. 
