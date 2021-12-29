@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-21'
+date-meta: '2021-12-29'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Estimating microbial (meta)pangenomes with amino acid k-mers OR Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-21" />
-  <meta name="citation_publication_date" content="2021-12-21" />
+  <meta name="dc.date" content="2021-12-29" />
+  <meta name="citation_publication_date" content="2021-12-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/821d2eac79c21cf81811dedb6043e2e3eae32d1b/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/821d2eac79c21cf81811dedb6043e2e3eae32d1b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/821d2eac79c21cf81811dedb6043e2e3eae32d1b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/55345940a61ba5ce0dc05c1ebbe6b6012356deb8/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/821d2eac79c21cf81811dedb6043e2e3eae32d1b/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@5534594](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/55345940a61ba5ce0dc05c1ebbe6b6012356deb8)
-on December 21, 2021.
+from [taylorreiter/2021-paper-metapangenomes@821d2ea](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/821d2eac79c21cf81811dedb6043e2e3eae32d1b)
+on December 29, 2021.
 </em></small>
 
 ## Authors
@@ -166,7 +166,7 @@ Along with these advances, the concept of metapangenomics has arisen as a framew
 Metapangenomic methods borrow heavily from pangenome analysis.
 Pangenomes comprise all genes found within a group of organisms and reflect the metabolic and ecological plasticity of that group (CITE).
 The pangenome is divided into core and accessory genes, where core genes are shared by almost all members in the group and accessory genes are not.
-Core genes often encode primary metabolic function or other functions necessary for a group to live in a given environment (CITE), while accessory genes encode functions that facilitate adaptation to changing environments (CITE: Roth).
+Core genes often encode primary metabolism or other functions necessary for a group to live in a given environment (CITE), while accessory genes encode functions that facilitate adaptation to changing environments (CITE: Roth).
 The size of the pangenome reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches (CITE: Tettelin 2005).
 Open pangenomes are those which increase indefinitely in size when adding new genomes, while closed pangenomes do not.
 
@@ -197,6 +197,7 @@ We demonstrate the application of the method to species present over time in a t
 We use assembly graph genome queries to retrieve species-specific reads from the metagenome, predict open reading frames from those reads using orpheum, and build a metapangenome using protein k-mers.
 This approach for metapangenome estimation is minimally reliant on reference databases and is assembly-free.
 
+
 # Results
 
 We demonstrate ... / summarize results or something here
@@ -210,11 +211,11 @@ We demonstrate ... / summarize results or something here
 Pangenomes from isolates are typically built by assembling each isolate genome and predicting genes (open reading frames), clustering gene sequences from all genomes into a non-redundant set, and estimating the presence/absence or abundance of each gene in each genome. 
 To determine whether bacterial and archaeal pangenomes could be constructed from reduced alphabet k-mers, we compared pangenomes estimated from genes against those estimated from k-mers (amino acid, dayhoff, and hydrophobic-polar).
 We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy (CITE), with pangenome size ranging from 20-972 genomes (mean = 203 genomes).
-For each pangenome, we compared the total number of genes and k-mers and the total number of unique genes and k-mers within each genome. 
+For each pangenome, we compared the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
 We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test.
 
 For these three metrics, performance varied minimally across encodings and k-mer sizes (**Figure @fig:violin_fig**).
-This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor variations such as those introduced by third base pair wobble (CITE).
+This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor variations such as those introduced by codon degeneracy or evolutionary drift (CITE).
 Given that neither encoding nor k-mer size impacted these performance metrics, we selected protein k-mers with k = 10 to complete the rest of our analysis.
 Protein k-mers of length 10 have recently been shown to perform well for comparisons across variable taxonomic distances (CITE: TESSA).
 
@@ -226,11 +227,11 @@ Protein k-mers of length 10 have recently been shown to perform well for compari
 **K-size and alphabet do not impact pangenome estimation with k-mers.** Violin plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
 ](images/violin_fig.png){#fig:violin_fig}
 
-While performance across metrics was similar across encodings and k-mer sizes, it varied dramatically for different pangenomes: k-mers and genes highly correlated for some pangenomes and not correlated for others (**Figure @fig:violin_fig**). 
+While performance across metrics was similar for  encodings and k-mer sizes, it varied dramatically for different pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (**Figure @fig:violin_fig**). 
 We investigated pangenomes more closely to determine the source of the poor correlations and found that they were caused by the presence of many frameshifted proteins, one of many potential criteria for exclusion of GenBank genomes from RefSeq.
-For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, however 21 of 317 genomes contained frameshifted proteins. 
+For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins. 
 Removing these genomes increased the R^2^ to 0.87 (**Figure @fig:frameshift_fig A,B**).
-This trend was consistent across pangenomes, where pangenomes that had at least one genome that was excluded from RefSeq for having many frameshifted proteins had a significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes that did not (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:frameshift_fig C**).
+This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:frameshift_fig C**).
 Other RefSeq exclusion criteria did not impact the correlation between the total genes and k-mers per genome for a given pangenome.
 
 ![
@@ -242,7 +243,7 @@ Pangenomes that contain genomes with the RefSeq exclusion criteria of "many fram
 ](images/frameshift_fig.png){#fig:frameshift_fig}
 
 We next investigated whether other pangenome metrics were well correlated between k-mer-based and gene-based methods using pangenomes that did not contain genomes excluded from RefSeq for having many frameshifted proteins.
-For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud genome was strongly correlated (**Figure @fig:pg_fig**).
+For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:pg_fig**).
 We also compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model. 
 Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:pg_fig**). 
 
@@ -250,13 +251,13 @@ Alpha values were strongly correlated between gene- and k-mer based pangenomes (
 **Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes.** Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
 ](images/pg_fig.png){#fig:pg_fig height=2.5in}
 
-Taken together, these results show that reduced alphabet k-mers can accurately estimate pangenomes from bacterial and archaeal genomes.
+Taken together, these results show that reduced alphabet k-mers can accurately estimate key characteristics of pangenomes from bacterial and archaeal genomes.
 
 ## Jaccard containment between reduced alphabet k-mers and k-mers in databases accurately predicts open reading frames in short sequencing reads
 
-We next sought to determine whether open reading frames could be accurately predicted directly from short sequencing reads, as this would enable k-mer-based pangenome analysis from short reads.
+We next sought to determine whether open reading frames could be accurately predicted directly from short sequencing reads, as this would enable k-mer-based pangenome analysis without assembly.
 We evaluated whether orpheum, a tool recently developed to predict open reading frames in Eukaryotic short reads [@doi:10.1101/2021.07.09.450799], could also perform this task in bacterial and archaeal sequences.
-Orpheum predicts open reading frames by comparing reduced alphabet k-mers in six frame translations of short sequencing reads against those in a database (jaccard containment) and assigns an open reading frame as coding if containment exceeds a user-defined threshold [@doi:10.1101/2021.07.09.450799].
+Orpheum predicts open reading frames by comparing reduced alphabet k-mers in six frame translations of short sequencing reads against those in a database (Jaccard containment) and assigns an open reading frame as coding if containment exceeds a user-defined threshold [@doi:10.1101/2021.07.09.450799].
 To evaluate orpheum, we constructed a database containing all k-mers in coding domain sequences from genomes in GTDB rs202.
 Using representative genomes from the 23 species above, as well as 20 additional RefSeq genomes not in the GTDB rs202 database, we simulated short sequencing reads either from coding domain sequences or non-coding sequences and used these reads to test orpheum.
 
@@ -269,7 +270,7 @@ We hypothesized that these reads originated from pseudogenes as these sequences 
 To assess this hypothesis, we used annotation files produced by the NCBI Prokaryotic Genome Annotation Pipeline (PGAP), which annotates pseudogenes, for the 23 genomes for which these files were available [@doi:10.1093/nar/gkw569; @doi:10.1093/nar/gkaa1105].
 On average, 12.4% (SD = 13.8%) of non-coding reads that were predicted to be coding fell within pseudogenes annotated by the PGAP pipeline.
 We then BLASTed a subset of the remaining non-coding read that were predicted to be coding against the NCBI nr database.
-All reads we investigated had at least one mach at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
+All reads we investigated had at least one match at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
 <!--Indeed, the worst performer was *Mycoplasmopsis bovis*, with 23% of non-coding reads predicted to be coding. 
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
 Because this method of open reading frame prediction cannot distinguish pseudogenes, it may not be appropriate for species with many pseudogenes.
@@ -280,7 +281,7 @@ We mapped the simulated reads against the coding domain sequences from which the
 While all reads mapped, the error rate was higher for reads that were predicted to be non-coding than those predicted to be coding (Welch Two Sample t-test, estimate = 0.00523, p < 0.001).
 
 Protein k-mers from predicted open reading frames in the simulated short sequencing reads recapitulated similarity between genomic coding domain sequences.
-We estimated the jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads.
+We estimated the Jaccard similarity between genomes using protein k-mers (*k* = 10) from annotated coding domain sequences, and compared this against Jaccard similarity between genomes using protein k-mers from predicted open read frames in the simulated short sequencing reads.
 Genomes that were most similar in one matrix were also most similar in another matrix (Mantel statistic = 0.9975, p < 0.001). 
 The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads.
 This demonstrates that information recovered from open reading frame prediction from short read is similar to that derived directly from the genome sequence.
@@ -289,12 +290,12 @@ The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database. 
 On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (**Figure @fig:orpheum_db**).
 
-Decreasing the jaccard containment threshold increased the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (**Figure @fig:orpheum_fig C, Table @tbl:threshold**).
-The jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.
-On average, increasing the rank of the closest taxonomic relative in the database by one taxonomic level decreased the optimal jaccard containment threshold by 0.13.
+Decreasing the Jaccard containment threshold increased the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (**Figure @fig:orpheum_fig C, Table @tbl:threshold**).
+The Jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.
+On average, increasing the rank of the closest taxonomic relative in the database by one taxonomic level decreased the optimal Jaccard containment threshold by 0.13.
 
 
-|jaccard threshold | closest rank | mean sensitivity| mean specificity | mean Youden's index |
+|Jaccard threshold | closest rank | mean sensitivity| mean specificity | mean Youden's index |
 |:-------------:|:------------:|:--------------:|:--------------:|:------------:|
 |          0.47 | genome       |          0.988 |           0.971|       0.959|
 |          0.39 | species      |          0.941 |           0.961|       0.902|
@@ -303,19 +304,19 @@ On average, increasing the rank of the closest taxonomic relative in the databas
 Table: Jaccard containment thresholds that maximize the Youden's index depending on the taxonomic rank of the closest relative in GTDB.
 {#tbl:threshold}
 
-Overall, these results show that open reading frames can be accurately determined from short sequencing reads when closely related organisms have been previously sequenced.
+Overall, these results show that open reading frames can be accurately determined from short sequencing reads when closely related proteomes are available.
 
 ![
 **Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame.**
 **A)** Percent of simulated coding or non-coding sequences predicted as coding, non-coding, or discarded based on quality metrics (see methods). 
 Genomes are split by those in GTDB and those not in GTDB.
 Genomes not in GTDB are labelled by taxonomic assignment from GTDB-tk.
-Predictions were made using default parameters (jaccard containment = 0.5).
+Predictions were made using default parameters (Jaccard containment = 0.5).
 **B)** Boxplots of the percent of coding reads that were recovered by Orpheum, separated by the level of taxonomic assignment achieved by GTDB-Tk. 
 Orpheum recovers more coding sequences when there are closely related genomes in the database. 
-**C)** Receiver operating curves for the jaccard containment thresholds. 
+**C)** Receiver operating curves for the Jaccard containment thresholds. 
 Curves are separated by the level of taxonomic assignment achieved by GTDB-Tk, and values are averaged across all genomes that fell within those categories.
-The best jaccard threshold decreases when there are fewer closely related genomes in the database.
+The best Jaccard threshold decreases when there are fewer closely related genomes in the database.
 **D)** Databases constructed of only closely-related genomes recover the majority of coding sequences, but including increasingly distantly related genomes improves total coding recall. 
 ](images/orpheum_fig.png){#fig:orpheum_fig}
 
@@ -323,8 +324,8 @@ The best jaccard threshold decreases when there are fewer closely related genome
 
 ## K-mer-based metapangenomics combined with assembly graphs ... 
 
-Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted from short sequencing reads, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
-We used 12 metagenomes from a single individual that were sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) [@doi:10.1038/s41586-019-1238-8]. 
+Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted reliably from short sequencing data, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
+We used 12 metagenomes from a single individual sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) [@doi:10.1038/s41586-019-1238-8]. 
 The individual was diagnosed with Crohn's disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
 The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
 
@@ -336,12 +337,12 @@ Fractional abundances are colored by species, with only the six species that acc
 We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 2% of reads across metagenomes, for a total of six metapangenomes (**Figure @fig:metag_species**).
 To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries [@doi:10.1186/s13059-020-02066-4].
 Assembly graphs contain all sequences in a metagenome, and assembly graph queries return sequences in the metagenome that are either in the query or nearby to the query in the graph.
-Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
+Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 Jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
 After retrieving reads in this way, we predicted open reading frames using orpheum. 
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) that were returned by assembly graph queries.
 Using the predicted amino acid sequences, we built metapangenomes for each of the six species (**Figure @fig:metap_fig**).
 
-Unlike isolate genomes, metagenomes may contain a fraction of an organisms genome if the metagenome was not sequenced deeply or if an organism was rare. 
+Unlike isolate genomes, metagenomes may contain a fraction of an organism's genome if the metagenome was not sequenced deeply or if an organism was rare. 
 To calculate the core, shell, and cloud fractions and to estimate the openness of the metapangenome, we removed samples with fewer than 10,000 k-mers (**Table @tbl:metap**).
 
 |species| n |total  |core |  shell  | cloud | alpha |
@@ -372,13 +373,14 @@ Both switches occur during metronidazole administration after the bloom of *P. m
 + Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
 + What else, if anything, belongs in this section?
 
+
 # Discussion
 
 We present a method to perform assembly-free metapangenomics that is minimally reliant on reference databases.
 We show that pangenome metrics like core, cloud, and shell pangenome fractions can be accurately estimated with long amino acid k-mers and k-mers from other reduced alphabets.
 We then demonstrate accurate prediction of open reading frames in highly accurate short sequencing reads by comparing amino acid k-mers in all translation frames against a database of k-mers from all known bacterial and archaeal genomes in GTDB (rs202).
 Combining these tools enables pangenome estimation directly from quality controlled short sequencing reads.
-In the context of metagenomes, these approaches enable metapangenome estimation without the need to *de novo* assemble and bin sequences or map against reference databases, eliminating common sources of lost sequencing variation (cite spacegraphcats).
+In the context of metagenomes, these approaches enable metapangenome estimation without the need to *de novo* assemble and bin sequences, eliminating common sources of lost sequencing variation (cite spacegraphcats). These techniques also reduce the dependence of metapangenomics on complete or comprehensive reference databases, which can be important for understudied environments.
 
 The combination of these approaches is potentially most useful in the context of analyzing metagenome assembly graphs.
 Assembly graphs like compact de Bruijn graphs (cDBG) capture all sequences in a metagenome, including sequences with high strain variation or low coverage, which may not be captured by other analysis methods. 
@@ -422,7 +424,7 @@ PANMER discussion
 
 ### Other points
 
-+ While the number of genes per genome is increased for genomes with this exclusion criteria, there is no commiserate increase in the number of k-mers observed. 
++ While the number of genes per genome is increased for genomes with this exclusion criteria, there is no commensurate increase in the number of k-mers observed. 
 This suggests that the number of k-mers in a genome could be used to predict the expected range of predicted genes in a genome, and could be potentially used a quality control metric for annotated genomes.
 + While developed for the metapangenomics space, this study demonstrates that k-mer-based pangenomes will also work in isolate genomes. Given that building k-mer sketches and exact matching of k-mers between genomes is fast, this provides an alternative approach for building pangenomes. 
 + De novo metagenome analysis probably dramatically improves ORF prediction because of the inclusion of these genomes in GTDB.
@@ -502,7 +504,7 @@ Within each species, we selected the genome with with largest cumulative `f_uniq
 We downloaded each genome from GenBank (**Table @tbl:acc**) and performed spacegraphcats assembly graph queries with each (parameters `ksize: 31`,
 `radius: 1`, `paired_reads: true`).
 Using the returned reads, we predicted open reading frames using orpheum `translate` (parameters `--jaccard-threshold 0.39`, `--alphabet protein`, `--peptide-ksize 10`) and using species-level GTDB databases.
-We sketched each set of translated reads using sourmash `sketch` (parameters `protein`, -p k=10,scaled=100,protein`), converted each sketch to a csv file, and then combined csv files for a single query species across all metagenomes. 
+We sketched each set of translated reads using sourmash `sketch` (parameters `protein`, `-p k=10,scaled=100,protein`), converted each sketch to a csv file, and then combined csv files for a single query species across all metagenomes. 
 This long format csv was used as input for the R pangenome package pagoo, using the `pagoo()` function.
 We used pagoo methods `pg$gg_binmap()`, `pg$summary_stats()`, and `pg$pg_power_law_fit()` to visualize the pangenome, calculate the size of the core, shell, and cloud, and estimate alpha. 
 

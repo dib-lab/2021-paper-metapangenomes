@@ -18,6 +18,7 @@ cDBG
 cDBGs
 ciprofloxacin
 Crohn’s
+csv
 ctb
 CYY
 CYYB
@@ -47,7 +48,7 @@ illumina
 indels
 interrogans
 Irber
-Jaccard
+jaccard
 json
 Leptospira
 Luiz
@@ -62,7 +63,7 @@ metagenomes
 metagenomic
 METAGENOMICS
 metap
-metapangenome
+Metapangenome
 metapangenomes
 Metapangenomic
 metapangenomics
@@ -75,10 +76,10 @@ NOVO
 nucleotides
 olgabot
 ORF
-Orpheum
+orpheum
 pagoo
 pangenome
-pangenomes
+Pangenomes
 pangenomics
 PANMER
 Parabacteroides
@@ -87,6 +88,7 @@ PGAP
 Phocaeicola
 plasmids
 prokka
+proteomes
 pseudogenes
 RefSeq
 Reiter
