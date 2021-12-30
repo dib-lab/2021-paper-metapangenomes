@@ -63,7 +63,7 @@ metagenomes
 metagenomic
 METAGENOMICS
 metap
-Metapangenome
+metapangenome
 metapangenomes
 Metapangenomic
 metapangenomics
@@ -78,8 +78,8 @@ olgabot
 ORF
 orpheum
 pagoo
-pangenome
-Pangenomes
+Pangenome
+pangenomes
 pangenomics
 PANMER
 Parabacteroides
@@ -105,7 +105,7 @@ taxonomically
 taylorreiter
 Tettelin
 tiem
-tk
+Tk
 transcriptome
 UC
 unbinnable
