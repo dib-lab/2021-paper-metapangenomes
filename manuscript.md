@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2021-12-30'
+date-meta: '2022-02-08'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2021-12-30" />
-  <meta name="citation_publication_date" content="2021-12-30" />
+  <meta name="dc.date" content="2022-02-08" />
+  <meta name="citation_publication_date" content="2022-02-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/711c81f3ddfc7ebe0b30a0c687455144e8337728/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/711c81f3ddfc7ebe0b30a0c687455144e8337728/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/711c81f3ddfc7ebe0b30a0c687455144e8337728/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/711c81f3ddfc7ebe0b30a0c687455144e8337728/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@711c81f](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/711c81f3ddfc7ebe0b30a0c687455144e8337728)
-on December 30, 2021.
+from [taylorreiter/2021-paper-metapangenomes@d837274](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/d8372744f5957a17e452d7b065730e10aaa64703)
+on February 8, 2022.
 </em></small>
 
 ## Authors
@@ -157,22 +157,19 @@ on December 30, 2021.
 # Introduction
 
 Short read metagenomic sequencing has expanded our knowledge of microbial communities and diversity [@doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6; @doi:10.1038/s41579-019-0311-5].
-INTRODUCE REFERENCE BASED METAGENOMICS, DE NOVO METAGENOMICS.
-<!--
-Many of these insights are attributable to *de novo* assembly and binning, which estimate species-level composite genomes (metagenome-assembled genomes, *MAGs*) from genomes in a sample, capturing unculturable genomes which have expanded the tree of life and and our understanding of microbial metabolism in diverse environments [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6].
--->
+In particular, metagenome assembly and genome binning or annotation have produced catalogs of metagenome-assembled genomes and genes, revealing new species and functional potentially previously unobserved in cultured organisms [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6].
 
-Along with these advances, the concept of metapangenomics has arisen as a framework for understanding how sets of metagenome-derived genes that are attributable to a group of organisms correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
+Along with advances in metagenome sequencing and analysis, the concept of metapangenomics has arisen as a framework for understanding how sets of metagenome-derived genes that are attributable to a group of organisms correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
 Metapangenomic methods borrow heavily from pangenome analysis.
-Pangenomes comprise all genes found within a group of organisms and reflect the metabolic and ecological plasticity of that group (CITE).
+Pangenomes comprise all genomic elements -- usually open reading frames or genes -- found within a group of organisms and reflect the metabolic and ecological plasticity of that group [@doi:10.1073/pnas.0506758102; @doi:10.1038/s41396-021-01149-9].
 The pangenome is divided into core and accessory genes, where core genes are shared by almost all members in the group and accessory genes are not.
-Core genes often encode primary metabolism or other functions necessary for a group to live in a given environment (CITE), while accessory genes encode functions that facilitate adaptation to changing environments (CITE: Roth).
-The size of the pangenome reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches (CITE: Tettelin 2005).
+Core genes often encode primary metabolism or other functions necessary for a group to live in a given environment [@doi:10.1016/j.mib.2014.11.016], while accessory genes encode functions that facilitate adaptation to changing environments [@doi:10.1038/s41396-021-01149-9].
+The size of the pangenome reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches [@doi:10.1073/pnas.0506758102].
 Open pangenomes are those which increase indefinitely in size when adding new genomes, while closed pangenomes do not.
 
 While pangenomes are traditionally inferred from isolate genomes, metapangenomics extends the ecological framework of pangenomics to metagenomes.
-Metapangenomics gives insight into the genes that support specific environmental adaptations [@doi:10.1038/s41396-019-0516-7] by applying pangenome methods to metagenome assembled genomes (MAGs) (CITE), or by mapping metagenomes against isolate-inferred pangenomes (CITE: Delmont).
-Both methods give valuable insight into the presence and distribution of functional content in natural microbial communities, but either may introduce biases associated with unknown sequencing content (CITE: Segata, unknown).
+Metapangenomics gives insight into the genes that support specific environmental adaptations by applying pangenome methods to metagenome assembled genomes (MAGs) [@doi:10.1038/s41396-019-0516-7], or by mapping metagenomes against isolate-inferred pangenomes [@doi:10.7717/peerj.4320].
+Both methods give valuable insight into the presence and distribution of functional content in natural microbial communities, but either may introduce biases associated with unknown sequencing content [@doi:10.1186/s12915-019-0667-z].
 MAGs are often incomplete or unrecoverable due to low sequencing coverage or large amounts of variation (SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, etc.), both of which cause short read assemblers to produce unbinnable short contiguous sequences.
 Unbinned sequences are disproportionately comprised of genomic islands and plasmids [@doi:10.1099/mgen.0.000436], hot spots for evolution that support microbial adaptation to changing environments [@doi:10.1101/2021.03.15.435471].
 In contrast, read mapping against isolate-inferred pangenomes may miss functional content present in the metagenome but missing from references, especially for species under represented or unrecorded in reference databases.
@@ -180,41 +177,46 @@ In contrast, read mapping against isolate-inferred pangenomes may miss functiona
 These issues are not exclusive to metapangenome inference, and many recently developed analysis strategies overcome some of these biases.
 These techniques largely rely on k-mers, words of length *k* in DNA or protein sequences.
 Metagenome k-mer profiles contain all sequences in a metagenome, including those which may not assemble or bin, or which aren't in reference databases.
-Long k-mers are also taxonomy-specific, where increasing k-mer length leads to sub-species discriminatory power [@doi:10.1128/mSystems.00020-16] (CITE: tessa).
+Long k-mers are also taxonomy-specific, where increasing k-mer length leads to sub-species discriminatory power [@doi:10.1128/mSystems.00020-16] (CITE: TESSA).
 These properties have popularized the use of k-mers for metagenome analysis, primarily through lightweight sketching and compact de Bruijn assembly graphs (cDBGs). 
-Lightweight sketching facilitates fast and accurate sequence comparisons between potentially large data sets through random but consistent sub-sampling (CITE: Mash, gather paper).
-cDBGs maintain connectivity between k-mers and organize them into species-specific neighborhoods (CITE: barnum, sgc).
+Lightweight sketching facilitates fast and accurate sequence comparisons between potentially large data sets through random but consistent sub-sampling [@doi:10.1186/s13059-016-0997-x; @doi:10.1101/2022.01.11.475838].
+cDBGs maintain connectivity between k-mers and organize them into species-specific neighborhoods [@doi:10.1038/s41396-018-0081-5; @doi:10.1186/s13059-020-02066-4].
 
 <!--
 Metapangenomics is reliant on *de novo* metagenome analysis, but both assembly and binning introduce biases into analysis [@doi:10.1186/s13059-020-02066-4; @doi:10.1038/nmeth.4458; @doi:10.1101/2021.07.12.451567; @doi:10.1038/s41396-018-0081-5; @doi:10.1099/mgen.0.000436; @doi:10.1101/2021.05.04.442591].
 Low coverage or large amounts of variation (SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, etc.) cause assemblers to break contiguous sequences, producing short fragments or unassembled reads that are too short to be binned into MAGs (CITE).
 -->
 
-To more fully represent the functional potential in metapangenomes, we present an analysis approach that relies on amino acid and reduced alphabet k-mers to estimate microbial (meta)pangenomes. 
-In order to derive these k-mers directly from shotgun metagenome reads, we demonstrate the accuracy of a tool called orpheum for open reading frame prediction from short sequencing reads.
-We demonstrate the application of the method to species present over time in a time series metagenomes from a human gut microbiome.
-We use assembly graph genome queries to retrieve species-specific reads from the metagenome, predict open reading frames from those reads using orpheum, and build a metapangenome using protein k-mers.
+To more fully represent the functional potential in metapangenomes, we present an analysis approach that relies on amino acid k-mers and assembly graph queries to estimate microbial (meta)pangenomes.
 This approach for metapangenome estimation is minimally reliant on reference databases and is assembly-free.
-
 
 # Results
 
-We demonstrate ... / summarize results or something here
+In an effort to reconstruct metapangenomes without loss of information from assembly and binning [@doi:10.1186/s13059-020-02066-4; @doi:10.1038/nmeth.4458; @doi:10.1101/2021.07.12.451567; @doi:10.1038/s41396-018-0081-5; @doi:10.1099/mgen.0.000436; @doi:10.1101/2021.05.04.442591], we demonstrate a pipeline that relies on k-mers and assembly graphs for metapangenome estimation (**Figure @fig:overview**).
+We first show that amino acid k-mers accurately estimate microbial pangenomes by comparing amino acid profiles of proteomes (translated coding domain sequences) against the proteomes themselves (**Figure @fig:overview A**).
+To derive amino acid k-mers directly from shotgun metagenome reads, we next demonstrate the accuracy of a tool called orpheum for open reading frame prediction from short sequencing reads (**Figure @fig:overview B**).
+We use assembly graph genome queries to retrieve species-specific reads from the metagenome, predict open reading frames from those reads using orpheum, and build a metapangenome using protein k-mers (**Figure @fig:overview C**).
+We then apply this method to species present over time in a time series metagenomes from a human gut microbiome.
 
 ![
-**Organisms used in this paper**
-](images/tree_fig.png "tree fig"){#fig:tree_fig}
+**Overview of the pipeline used to build metapangenomes.** 
+Approaches that were developed or tested in this manuscript are outlined in grey.
+**A)** We tested whether degenerate k-mer alphabets could accurately represent bacterial and archaeal pangenomes. Using genomes annotated with prokka, we compared pangenomes built with roary, a field-standard pipeline, against pangenomes built with degenerate k-mer alphabet sketches.
+**B)** We tested whether open reading frames could be predicted directly from short sequencing reads using the tool orpheum. This panel is modified from [@doi:10.1101/2021.07.09.450799].
+**C)** We combined this approaches with metagenome assembly graph genome queries to estimate metapangenomes directly from metagenomes without assembly or binning.
+The blue and orange lines correspond to steps tested in panels **A** and **B**.
+](images/metapangenome_paper_overview.png){#fig:overview}
 
 ## Reduced alphabet k-mers accurately estimate characteristics of microbial pangenomes
 
 Pangenomes from isolates are typically built by assembling each isolate genome and predicting genes (open reading frames), clustering gene sequences from all genomes into a non-redundant set, and estimating the presence/absence or abundance of each gene in each genome. 
 To determine whether bacterial and archaeal pangenomes could be constructed from reduced alphabet k-mers, we compared pangenomes estimated from genes against those estimated from k-mers (amino acid, dayhoff, and hydrophobic-polar).
-We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy (CITE), with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes).
+We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy [@doi:10.1093/nar/gkab776], with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes).
 For each pangenome, we compared the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
 We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test.
 
 For these three metrics, performance varied minimally across encodings and k-mer sizes (**Figure @fig:violin_fig**).
-This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift (CITE).
+This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift (CITE?).
 Given that neither encoding nor k-mer size impacted these performance metrics, we selected protein k-mers with k = 10 to complete the rest of our analysis.
 Protein k-mers of length 10 have recently been shown to perform well for comparisons across variable taxonomic distances (CITE: TESSA).
 
@@ -241,7 +243,7 @@ Pangenomes that contain genomes with the RefSeq exclusion criteria of "many fram
 
 We next investigated whether other pangenome metrics were well correlated between our k-mer-based and the gene-based method roary using pangenomes that did not contain genomes excluded from RefSeq for having many frameshifted proteins (see Methods for details).
 For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:pg_fig**).
-We also compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model (CITE). 
+We also compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model [@doi:10.1016/j.mib.2008.09.006]. 
 Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:pg_fig**). 
 
 ![
@@ -441,19 +443,19 @@ This suggests that the number of k-mers in a genome could be used to predict the
 All code is available at github.com/taylorreiter/2021-panmers (results section 1), github.com/taylorreiter/2021-orpheum-sim (results section 2), and https://github.com/taylorreiter/2021-metapangenome-example (results section 3).
 
 ### Selection of benchmarking species for pangenome analysis
-We selected a species representative for each of the 23 phyla in GTDB rs202. 
+We selected a species representative for each of the 23 phyla in GTDB rs202 [@doi:10.1093/nar/gkab776]. 
 To select representative species, we first filtered species with fewer than 20 representatives and greater than 1000 representatives.
 While this approach scales beyond 1000 genomes, we elected to benchmark smaller sets to iterate over the potential parameter space more quickly.
 Of species remaining after filtering, we selected the species within each phyla that had the largest number of genomes.
 We downloaded these genomes from GenBank.
-Species names are in table XXX.
+Species names are recorded in **Figure @fig:tree_fig**.
 
 ### Calculating the gene-based pangenome with roary 
-To calculate the gene-based pangenome, we first annotated each genome using prokka with the `--metagenome` flag.
-We then used the resulting GFF annotations files to calculate the pangenome with roary using default settings.
+To calculate the gene-based pangenome, we first annotated each genome using prokka [@doi:10.1093/bioinformatics/btu153].
+We then used the resulting GFF annotations files to calculate the pangenome with roary using default settings [@doi:10.1093/bioinformatics/btv421].
 
 ### Calculating the k-mer based pangenome with sourmash 
-To calculate k-mer based pangenomes, we used sourmash `sketch` to generate signatures from the prokka-predicted amino acid sequences (`.faa` files). 
+To calculate k-mer based pangenomes, we used sourmash `sketch` to generate signatures from the bakta-predicted amino acid sequences (`.faa` files) [@doi:10.21105/joss.00027]. 
 We used the protein alphabet (k = 7, 8, 9, 10, 11), dayhoff alphabet (k = 13, 15, 17), and the hydrophobic-polar alphabet (k = 27, 31). 
 All signatures were calculated with a scaled value of 100.
 The scaled parameter controls the fraction of the total k-mers represented by the sketch; a scaled value of 100 indicates that 1/100th of the distinct k-mers in a genome were included in each sketch.
@@ -463,53 +465,52 @@ We converted signatures from json format into a genome x hash presence-absence m
 Using the presence-absence matrices for the gene-based and k-mer-based pangenomes, we correlated total genes/k-mers observed per genome and total unique genes/k-mers observed per genome for each species.
 We used the `rowSums()` function in R to determine the number of genes/unique genes per matrix, then used the `lm()` function with default parameters to correlate the values.
 We also used the Mantel test to determine whether genomes that were most similar in the gene presence-absence matrix were also most similar in the k-mer presence-absence matrix. 
-We used the `mantel()` function in the R vegan package to perform this test. 
+We used the `mantel()` function in the R vegan package to perform this test [@doi:10.1111/j.1654-1103.2003.tb02228.x]. 
 We used distance matrices calculated with the `dist()` function using the parameter `method = "binary"` as input to the mantel test.
 
 ### Generating standard pangenome metrics with pagoo 
-The pagoo R package provides functions to analyze bacterial pangenomes.
+The pagoo R package provides functions to analyze bacterial pangenomes [@doi:10.1016/j.crmeth.2021.100085].
 We used this package to generate standard pangenome metrics and visualizations.
 These metrics are based on the presence-absence matrices generated above and include calculation of the core, shell, and cloud genome sizes and estimation of the alpha value in Heaps law for estimation of pangenome openness.
 
 ### Augmenting benchmarking species set to include genomes not in GTDB for open reading frame prediction
 We next generated a benchmarking data set for open reading frame prediction. 
 We selected a genome from each of the 23 species evaluated above, choosing the GTDB rs202 representative genome for each species.
+Genome accessions are recorded in **Table @tbl:gtdb_acc**.
 Given that open reading frame prediction relies on a database, and we used k-mers in GTDB rs202 to generate this database, we also wanted to select genomes that were not in GTDB to evaluate this method.
 We determined the bacterial and archaeal genomes that were added to RefSeq after the construction of GTDB rs202 (April 2021-November 2021).
 From this set, we selected a representative genome from each of the distinct NCBI phyla represented among these genomes, 20 in total.
-Genome accessions are recorded in Table XXX.
+Genome accessions are recorded in **Table @tbl:refseq_acc**.
 We then ran GTDB-tk on these genomes to predict the GTDB taxonomy of each.
 
 ### Simulating coding domain sequence and non coding domain sequence reads with polyester
 We next created a labelled data set of simulated reads that were generated from either coding domain sequences (CDS) or non-coding regions within each genome.
-We annotated the genomes with bakta to produce CDS ranges, and used polyester to simulate reads from CDS or non-coding regions. 
+We annotated the genomes with bakta to produce CDS ranges [@doi:10.1099/mgen.0.000685], and used polyester to simulate reads from CDS or non-coding regions [@doi:10.1093/bioinformatics/btv272]. 
 We used the default short read error profile within polyester.
 
 ### Determining short read open reading frames with orpheum 
-We used the orpheum tool to predict open reading frames from simulated short reads.
-Orpheum was developed to predict open reading frames in short RNA-seq reads from Eukaryotic organisms without a reference genome or transcriptome sequence.
-Orpheum perform six-frame translation on nucleotide sequencing reads, calculates k-mers in an amino acid, dayhoff, or hydrophobic-polar encoding at the designated k-mer length, and then estimates the jaccard similarity between k-mers in each translation frame and a database. 
-It then selects all open reading frames based on a jaccard similarity threshold, and returns those reads as translated amino acid sequences.
+We used the orpheum tool to predict open reading frames from simulated short reads [@doi:10.1101/2021.07.09.450799].
+Orpheum was developed to predict open reading frames in short RNA-seq reads from Eukaryotic organisms without a reference genome or transcriptome sequence [@doi:10.1101/2021.07.09.450799].
+Orpheum perform six-frame translation on nucleotide sequencing reads, calculates k-mers in an amino acid, dayhoff, or hydrophobic-polar encoding at the designated k-mer length, and then estimates the Jaccard similarity between k-mers in each translation frame and a database. 
+It then selects all open reading frames based on a Jaccard similarity threshold, and returns those reads as translated amino acid sequences.
 Open reading frames are excluded if they contain stop codons, low complexity sequences, or if the read is too short to perform translation.
-Reads are designated as non-coding if they don't reach the jaccard similarity threshold and are not excluded for other reasons.
+Reads are designated as non-coding if they don't reach the Jaccard similarity threshold and are not excluded for other reasons.
 <!-- Is it jaccard similarity? It's whichever one makes sense and I always get them confused -->
 
 We constructed a database from GTDB rs202 using sourmash XXX and using a k-mer size of 10.
 + @Tessa any relevant details would be very helpful :) 
 
 ### Metapangenome analysis of iHMP metagenomes
-We used sourmash, spacegraphcats, and orpheum to peform metapangenome analysis of 12 iHMP time series gut microbiomes captured by short read shotgun metagenomes.
+We used sourmash, spacegraphcats, and orpheum to peform metapangenome analysis of 12 iHMP time series gut microbiomes captured by short read shotgun metagenomes [@doi:10.1038/s41586-019-1237-9].
 We downloaded samples HSM6XRQB, HSM6XRQI, HSM6XRQK, HSM6XRQM, HSM6XRQO, HSM67VF9, HSM67VFD, HSM67VFJ, HSM7CYY7, HSM7CYYD, HSM7CYY9, HSM7CYYB from ibdmdb.org.
-We adapter and quality trimmed each sample with fastp (parameters `--detect_adapter_for_pe`, `--qualified_quality_phred 4`, `--length_required 31`, and `--correction`), removed human host sequencing reads with bbduk (parameters `k=31`, reference file https://drive.google.com/file/d/0B3llHR93L14wd0pSSnFULUlhcUk/edit?usp=sharing), and k-mer trimmed reads using khmer `trim-low-abund.py` (parameters `-C 3`, `-Z 18`, `-V`).
-We then used sourmash gather to infer the taxonomic profile of each sample, using the GTDB rs202 database (`k` = 31, https://osf.io/w4bcm/).
+We adapter and quality trimmed each sample with fastp (parameters `--detect_adapter_for_pe`, `--qualified_quality_phred 4`, `--length_required 31`, and `--correction`), removed human host sequencing reads with bbduk (parameters `k=31`, reference file https://drive.google.com/file/d/0B3llHR93L14wd0pSSnFULUlhcUk/edit?usp=sharing), and k-mer trimmed reads using khmer `trim-low-abund.py` (parameters `-C 3`, `-Z 18`, `-V`) [@doi:10.12688/f1000research.6924.1].
+We then used sourmash gather to infer the taxonomic profile of each sample, using the GTDB rs202 database (`k` = 31, https://osf.io/w4bcm/) [@doi:10.1038/s41586-019-1237-9].
 We summarized the results to species-level using the GTDB taxonomy.
-We retained species with a cumulative sum of of at least 2% (sum of `f_unique_to_query`) across metagenome reads as query genomes.
-Within each species, we selected the genome with with largest cumulative `f_unique_to_query` across metagenomes. 
-We downloaded each genome from GenBank (**Table @tbl:acc**) and performed spacegraphcats assembly graph queries with each (parameters `ksize: 31`,
-`radius: 1`, `paired_reads: true`).
+We retained species with a cumulative sum of at least 2% (sum of `f_unique_to_query`) across metagenome reads as query genomes.
+We downloaded each genome from GenBank (**Table @tbl:acc**) and performed spacegraphcats assembly graph queries with each (parameters `ksize: 31`, `radius: 1`, `paired_reads: true`) [@doi:10.1186/s13059-020-02066-4].
 Using the returned reads, we predicted open reading frames using orpheum `translate` (parameters `--jaccard-threshold 0.39`, `--alphabet protein`, `--peptide-ksize 10`) and using species-level GTDB databases.
-We sketched each set of translated reads using sourmash `sketch` (parameters `protein`, `-p k=10,scaled=100,protein`), converted each sketch to a csv file, and then combined csv files for a single query species across all metagenomes. 
-This long format csv was used as input for the R pangenome package pagoo, using the `pagoo()` function.
+We sketched each set of translated reads using sourmash `sketch` (parameters `protein`, `-p k=10,scaled=100,protein`) [@doi:10.21105/joss.00027], converted each sketch to a csv file, and then combined csv files for a single query species across all metagenomes. 
+This long format csv was used as input for the R pangenome package pagoo, using the `pagoo()` function [@doi:10.1016/j.crmeth.2021.100085].
 We used pagoo methods `pg$gg_binmap()`, `pg$summary_stats()`, and `pg$pg_power_law_fit()` to visualize the pangenome, calculate the size of the core, shell, and cloud, and estimate alpha. 
 
 | species | accession |
@@ -533,5 +534,65 @@ Table: Query genome GTDB species names and GenBank accessions.
 
 # Appendix/Supplementary information
 
-![The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
+![
+**Organisms used in this paper.**
+](images/tree_fig.png "tree fig"){#fig:tree_fig}
+
+![
+The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
 ](images/orpheum_supp1.png){#fig:orpheum_db height=3in}
+
+
+| accession       | superkingdom | phylum                | class                  | order                 | family                   | genus                   | species                             | NCBI taxid | NCBI organism name                                       |
+|-----------------|--------------|-----------------------|------------------------|-----------------------|--------------------------|-------------------------|-------------------------------------|------------|----------------------------------------------------------|
+| GCF_000012125.1 | d__Bacteria  | p__Chlamydiota        | c__Chlamydiia          | o__Chlamydiales       | f__Chlamydiaceae         | g__Chlamydia            | s__Chlamydia trachomatis            | 315277     | Chlamydia trachomatis A/HAR-13                           |
+| GCF_000381045.1 | d__Bacteria  | p__Deinococcota       | c__Deinococci          | o__Deinococcales      | f__Thermaceae            | g__Thermus              | s__Thermus scotoductus              | 1123391    | Thermus scotoductus DSM 8553                             |
+| GCF_900156205.1 | d__Bacteria  | p__Spirochaetota      | c__Leptospirae         | o__Leptospirales      | f__Leptospiraceae        | g__Leptospira           | s__Leptospira interrogans           | 173        | Leptospira interrogans                                   |
+| GCA_900315925.1 | d__Bacteria  | p__Firmicutes_C       | c__Negativicutes       | o__Acidaminococcales  | f__Acidaminococcaceae    | g__Succiniclasticum     | s__Succiniclasticum sp900315925     | 1387507    | uncultured Selenomonadales bacterium                     |
+| GCF_004006635.1 | d__Bacteria  | p__Fusobacteriota     | c__Fusobacteriia       | o__Fusobacteriales    | f__Fusobacteriaceae      | g__Fusobacterium_C      | s__Fusobacterium_C necrophorum      | 143388     | Fusobacterium necrophorum subsp. necrophorum             |
+| GCA_903857495.1 | d__Bacteria  | p__Acidobacteriota    | c__Holophagae          | o__Holophagales       | f__Holophagaceae         | g__Geothrix             | s__Geothrix sp903857495             | 904990     | uncultured Holophagaceae bacterium                       |
+| GCF_006742205.1 | d__Bacteria  | p__Firmicutes         | c__Bacilli             | o__Staphylococcales   | f__Staphylococcaceae     | g__Staphylococcus       | s__Staphylococcus epidermidis       | 1282       | Staphylococcus epidermidis                               |
+| GCF_002006445.1 | d__Bacteria  | p__Firmicutes_A       | c__Clostridia          | o__Clostridiales      | f__Clostridiaceae        | g__Clostridium          | s__Clostridium beijerinckii         | 1520       | Clostridium beijerinckii                                 |
+| GCA_903861715.1 | d__Bacteria  | p__Patescibacteria    | c__Paceibacteria       | o__Moranbacterales    | f__GWC2-37-73            | g__CAIPMZ01             | s__CAIPMZ01 sp903861715             | 77133      | uncultured bacterium                                     |
+| GCF_000008025.1 | d__Bacteria  | p__Proteobacteria     | c__Alphaproteobacteria | o__Rickettsiales      | f__Anaplasmataceae       | g__Wolbachia            | s__Wolbachia pipientis              | 163164     | Wolbachia endosymbiont of Drosophila melanogaster        |
+| GCF_000830885.1 | d__Bacteria  | p__Chloroflexota      | c__Dehalococcoidia     | o__Dehalococcoidales  | f__Dehalococcoidaceae    | g__Dehalococcoides      | s__Dehalococcoides mccartyi_B       | 1432061    | Dehalococcoides mccartyi CG5                             |
+| GCF_000299235.1 | d__Bacteria  | p__Nitrospirota_A     | c__Leptospirillia      | o__Leptospirillales   | f__Leptospirillaceae     | g__Leptospirillum_A     | s__Leptospirillum_A rubarum         | 1048260    | Leptospirillum ferriphilum ML-04                         |
+| GCA_000635495.1 | d__Bacteria  | p__Cyanobacteria      | c__Cyanobacteriia      | o__PCC-6307           | f__Cyanobiaceae          | g__Prochlorococcus_A    | s__Prochlorococcus_A sp000635495    | 1471472    | Prochlorococcus sp. scB243_495K23                        |
+| GCA_903852495.1 | d__Bacteria  | p__Desulfobacterota_F | c__Desulfuromonadia    | o__Geobacterales      | f__Pseudopelobacteraceae | g__Pseudopelobacter     | s__Pseudopelobacter sp903852495     | 214033     | uncultured Geobacteraceae bacterium                      |
+| GCA_903869265.1 | d__Bacteria  | p__Desulfobacterota   | c__Desulfobulbia       | o__Desulfobulbales    | f__Desulfurivibrionaceae | g__UBA2262              | s__UBA2262 sp903869265              | 34034      | uncultured delta proteobacterium                         |
+| GCF_000020225.1 | d__Bacteria  | p__Verrucomicrobiota  | c__Verrucomicrobiae    | o__Verrucomicrobiales | f__Akkermansiaceae       | g__Akkermansia          | s__Akkermansia muciniphila          | 349741     | Akkermansia muciniphila ATCC BAA-835                     |
+| GCF_900478295.1 | d__Bacteria  | p__Campylobacterota   | c__Campylobacteria     | o__Campylobacterales  | f__Helicobacteraceae     | g__Helicobacter         | s__Helicobacter pylori              | 102618     | Helicobacter pylori NCTC 11637 = CCUG 17874 = ATCC 43504 |
+| GCF_000154205.1 | d__Bacteria  | p__Bacteroidota       | c__Bacteroidia         | o__Bacteroidales      | f__Bacteroidaceae        | g__Bacteroides          | s__Bacteroides uniformis            | 411479     | Bacteroides uniformis ATCC 8492                          |
+| GCF_000196555.1 | d__Bacteria  | p__Actinobacteriota   | c__Actinomycetia       | o__Actinomycetales    | f__Bifidobacteriaceae    | g__Bifidobacterium      | s__Bifidobacterium longum           | 565042     | Bifidobacterium longum subsp. longum JCM 1217            |
+| GCF_000012285.1 | d__Archaea   | p__Thermoproteota     | c__Thermoproteia       | o__Sulfolobales       | f__Sulfolobaceae         | g__Sulfolobus           | s__Sulfolobus acidocaldarius        | 330779     | Sulfolobus acidocaldarius DSM 639                        |
+| GCF_000970205.1 | d__Archaea   | p__Halobacteriota     | c__Methanosarcinia     | o__Methanosarcinales  | f__Methanosarcinaceae    | g__Methanosarcina       | s__Methanosarcina mazei             | 213585     | Methanosarcina mazei S-6                                 |
+| GCA_900314695.1 | d__Archaea   | p__Methanobacteriota  | c__Methanobacteria     | o__Methanobacteriales | f__Methanobacteriaceae   | g__Methanobrevibacter_A | s__Methanobrevibacter_A sp900314695 | 253161     | uncultured Methanobrevibacter sp.                        |
+| GCF_900083515.1 | d__Archaea   | p__Thermoplasmatota   | c__Thermoplasmata      | o__Thermoplasmatales  | f__Thermoplasmataceae    | g__Cuniculiplasma       | s__Cuniculiplasma divulgatum        | 1673428    | Cuniculiplasma divulgatum                                |
+Table: GTDB genomes used to benchmark orpheum accuracy.
+{#tbl:gtdb_acc}
+
+
+| accession       | NCBI taxid | NCBI organism name                      |
+|-----------------|------------|-----------------------------------------|
+| GCF_003428625.2 | 2303751    | Acidipila sp. 4G-K13                    |
+| GCF_001700755.2 | 1160719    | Cutibacterium granulosum DSM 20700      |
+| GCF_001884725.2 | 336810     | Candidatus Sulcia muelleri              |
+| GCF_015356815.2 | 225148     | Candidatus Rhabdochlamydia porcellionis |
+| GCF_019599295.1 | 2866714    | Oscillochloris sp. ZM17-4               |
+| GCF_020520145.1 | 936456     | Desulfurispirillum indicum              |
+| GCF_019175305.1 | 2286       | Saccharolobus shibatae                  |
+| GCF_018282115.1 | 2732530    | Synechocystis sp. PCC 7338              |
+| GCF_018863415.1 | 2774531    | Deinococcus sp. SYSU M49105             |
+| GCF_013456555.2 | 1710539    | Natrinema sp. YPL30                     |
+| GCF_000167435.2 | 1314       | Streptococcus pyogenes                  |
+| GCF_018205295.1 | 859        | Fusobacterium necrophorum               |
+| GCF_019173545.1 | 1455061    | Candidatus Magnetobacterium casensis    |
+| GCF_018398935.1 | 1123043    | Telmatocola sphagniphila                |
+| GCF_000145825.2 | 629264     | Pseudomonas syringae Cit 7              |
+| GCF_002442595.2 | 139        | Borreliella burgdorferi                 |
+| GCF_009156025.2 | 28903      | Mycoplasmopsis bovis                    |
+| GCF_019688735.1 | 2867247    | Thermosulfurimonas sp. F29              |
+| GCF_018588215.1 | 1755816    | Thermosipho sp. 1244                    |
+| GCF_018336995.1 | 239935     | Akkermansia muciniphila                 |
+Table: RefSeq genomes not in the GTDB rs202 database used to benchmark orpheum accuracy.
+{#tbl:refseq_acc}
