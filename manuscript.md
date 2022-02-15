@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@7bcce04](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6)
+from [taylorreiter/2021-paper-metapangenomes@3ecb272](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3ecb272fff96536c0ece23377af00b36d1ea14a8)
 on February 15, 2022.
 </em></small>
 

@@ -158,7 +158,7 @@ metagenome
 metagenomes
 metagenomic
 metap
-metapangenome
+Metapangenome
 metapangenomes
 Metapangenomic
 metapangenomics
@@ -172,7 +172,7 @@ Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
 metronidazole
-microbiome
+Microbiome
 microbiomes
 Moranbacterales
 muciniphila
@@ -186,7 +186,7 @@ Negativicutes
 Nitrospirota
 nodegraph
 novo
-NUCLEOTIDES
+nucleotides
 olgabot
 ORF
 orpheum
