@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@3809d9b](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607)
+from [taylorreiter/2021-paper-metapangenomes@7bcce04](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/7bcce04ad89cbe7a8abae4bf4e769473cba9edc6)
 on February 15, 2022.
 </em></small>
 
@@ -246,7 +246,7 @@ Alpha values were strongly correlated between gene- and k-mer based pangenomes (
 
 Taken together, these results show that reduced alphabet k-mers can accurately estimate key characteristics of pangenomes from bacterial and archaeal genomes.
 
-## K-mer methods accurately predicts open reading frames in short sequencing reads
+## K-mer methods accurately predict open reading frames in short sequencing reads
 
 We next sought to determine whether open reading frames could be accurately predicted directly from short sequencing reads, as this would enable k-mer-based pangenome analysis without assembly.
 Without accurate open reading frame prediction, reads would need to be translated into all six translation frames prior to k-mer decomposition.

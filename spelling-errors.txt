@@ -158,7 +158,7 @@ metagenome
 metagenomes
 metagenomic
 metap
-Metapangenome
+metapangenome
 metapangenomes
 Metapangenomic
 metapangenomics
@@ -172,7 +172,7 @@ Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
 metronidazole
-Microbiome
+microbiome
 microbiomes
 Moranbacterales
 muciniphila
@@ -263,7 +263,7 @@ Thermosipho
 Thermosulfurimonas
 Thermus
 tiem
-Tk
+tk
 trachomatis
 transcriptome
 UBA
