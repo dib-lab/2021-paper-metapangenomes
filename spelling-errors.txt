@@ -36,6 +36,7 @@ Borreliella
 Botvinnik
 bovis
 Boxplots
+boxplt
 Bruijn
 burgdorferi
 CAIPMZ
@@ -157,10 +158,10 @@ metagenome
 metagenomes
 metagenomic
 metap
-metapangenome
+Metapangenome
 metapangenomes
 Metapangenomic
-Metapangenomics
+metapangenomics
 Methanobacteria
 Methanobacteriaceae
 Methanobacteriales
@@ -171,7 +172,7 @@ Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
 metronidazole
-microbiome
+Microbiome
 microbiomes
 Moranbacterales
 muciniphila
@@ -185,10 +186,10 @@ Negativicutes
 Nitrospirota
 nodegraph
 novo
-nucleotides
+NUCLEOTIDES
 olgabot
 ORF
-Orpheum
+orpheum
 Oscillochloris
 Paceibacteria
 pagoo
@@ -196,6 +197,7 @@ pangenome
 pangenomes
 pangenomics
 PANMER
+panmers
 Parabacteroides
 Patescibacteria
 PCC
@@ -230,7 +232,7 @@ Selenomonadales
 shibatae
 SingleM
 SNPs
-Sourmash
+sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
@@ -261,7 +263,7 @@ Thermosipho
 Thermosulfurimonas
 Thermus
 tiem
-tk
+Tk
 trachomatis
 transcriptome
 UBA

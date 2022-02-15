@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-02-08'
+date-meta: '2022-02-15'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-02-08" />
-  <meta name="citation_publication_date" content="2022-02-08" />
+  <meta name="dc.date" content="2022-02-15" />
+  <meta name="citation_publication_date" content="2022-02-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/d8372744f5957a17e452d7b065730e10aaa64703/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@d837274](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/d8372744f5957a17e452d7b065730e10aaa64703)
-on February 8, 2022.
+from [taylorreiter/2021-paper-metapangenomes@3809d9b](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3809d9b7f83b88f6fb4ec01efa82e1ccba35c607)
+on February 15, 2022.
 </em></small>
 
 ## Authors
@@ -211,44 +211,38 @@ The blue and orange lines correspond to steps tested in panels **A** and **B**.
 
 Pangenomes from isolates are typically built by assembling each isolate genome and predicting genes (open reading frames), clustering gene sequences from all genomes into a non-redundant set, and estimating the presence/absence or abundance of each gene in each genome. 
 To determine whether bacterial and archaeal pangenomes could be constructed from reduced alphabet k-mers, we compared pangenomes estimated from genes against those estimated from k-mers (amino acid, dayhoff, and hydrophobic-polar).
-We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy [@doi:10.1093/nar/gkab776], with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes).
+We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy [@doi:10.1093/nar/gkab776], with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes) (**Figure S @fig:tree_fig**).
 For each pangenome, we compared the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
 We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test.
 
-For these three metrics, performance varied minimally across encodings and k-mer sizes (**Figure @fig:violin_fig**).
+For these three metrics, performance varied minimally across encodings and k-mer sizes, varied dramatically for different pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (**Figure S @fig:boxplt_fig**).
+We investigated pangenomes more closely to determine the source of the poor correlations and found that they were caused by the presence of many frameshifted proteins, one of many potential criteria for exclusion of GenBank genomes from RefSeq.
+For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins. 
+Removing these genomes increased the R^2^ to 0.87 (**Figure @fig:panmers_fig A**).
+This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:panmers_fig B**).
+Other RefSeq exclusion criteria did not impact the correlation between the total genes and k-mers per genome for a given pangenome.
+
+![
+**Amino acid k-mers accurately estimate microbial pangenomes.**
+**A, B)** Genomes that are excluded from RefSeq for having many frameshifted proteins reduce similarity between gene- and k-mer-based pangenomes.
+**A)** Scatter plot of the total number of genes and k-mers per genome for the species *Leptospira interrogans*, where each point represents a single genome in the pangenome. 
+Removing genomes flagged with RefSeq exclusion criteria "many frameshifted proteins" improves the correlation between these variables. 
+**B)** Box plot of R^2^ values between the total number of genes and k-mers per genome. 
+Pangenomes that contain genomes with the RefSeq exclusion criteria of "many frameshifted proteins" have significantly lower R^2^ values.
+**C)** Box plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. Only pangenomes that do not contain genomes with the RefSeq exclusion criteria "many frameshifted proteins" are plotted. K-mer size corresponds to the number of amino acid sequences used for the k-mer for all k-mers except *k* = 31, which corresponds to the number of nucleotides. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
+**D)** Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes. Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
+](images/panmers_fig.png){#fig:panmers_fig}
+
+
+TRANSITION, MENTION NUCLEOTIDES, REFERENCE NEW FIGURE PANEL
 This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift (CITE?).
 Given that neither encoding nor k-mer size impacted these performance metrics, we selected protein k-mers with k = 10 to complete the rest of our analysis.
 Protein k-mers of length 10 have recently been shown to perform well for comparisons across variable taxonomic distances (CITE: TESSA).
 
-+ Should I compare this against nucleotide k-mers at all? Bc I think that's the underlying assumption here, nucleotides don't work for this stuff. Tessa stuff sort of already shows this.
-
-![
-**K-mer size and encoding do not impact pangenome estimation with k-mers.** Violin plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
-](images/violin_fig.png){#fig:violin_fig}
-
-While performance across metrics was similar for  encodings and k-mer sizes, it varied dramatically for different pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (**Figure @fig:violin_fig**). 
-We investigated pangenomes more closely to determine the source of the poor correlations and found that they were caused by the presence of many frameshifted proteins, one of many potential criteria for exclusion of GenBank genomes from RefSeq.
-For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins. 
-Removing these genomes increased the R^2^ to 0.87 (**Figure @fig:frameshift_fig A**).
-This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:frameshift_fig B**).
-Other RefSeq exclusion criteria did not impact the correlation between the total genes and k-mers per genome for a given pangenome.
-
-![
-**Genomes that are excluded from RefSeq for having many frameshifted proteins reduce similarity between gene- and k-mer-based pangenomes.**
-**A)** Scatter plot of the total number of genes and k-mers per genome for the species *Leptospira interrogans*, where each point represents a single genome in the pangenome. 
-Removing genomes flagged with RefSeq exclusion criteria "many frameshifted proteins" improves the correlation between these variables. 
-**B)** Box plot of R^2^ values between the total number of genes and k-mers per genome. 
-Pangenomes that contain genomes with the RefSeq exclusion criteria of "many frameshifted proteins" have significantly lower R^2^ values
-](images/frameshift_fig.png){#fig:frameshift_fig}
-
 We next investigated whether other pangenome metrics were well correlated between our k-mer-based and the gene-based method roary using pangenomes that did not contain genomes excluded from RefSeq for having many frameshifted proteins (see Methods for details).
-For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:pg_fig**).
+For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:panmers_fig** D).
 We also compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model [@doi:10.1016/j.mib.2008.09.006]. 
-Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:pg_fig**). 
-
-![
-**Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes.** Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
-](images/pg_fig.png){#fig:pg_fig height=2.5in}
+Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:panmers_fig** D). 
 
 Taken together, these results show that reduced alphabet k-mers can accurately estimate key characteristics of pangenomes from bacterial and archaeal genomes.
 
@@ -535,12 +529,20 @@ Table: Query genome GTDB species names and GenBank accessions.
 # Appendix/Supplementary information
 
 ![
-**Organisms used in this paper.**
+**Organisms used in this paper.** The is the default GTDB rs202 tree, with tips representing species not used in this paper removed.
 ](images/tree_fig.png "tree fig"){#fig:tree_fig}
 
 ![
-The slight increase observable for some species is a results in different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
+**K-mer size and encoding do not impact pangenome estimation with k-mers.** Box plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. All pangenomes are included, whether they contain genomes with the RefSeq exclusion criteria "many frameshifted proteins" or not. See figure legend for **Figure @fig:panmers_fig** for a description of Total, Unique, and Mantel.
+](images/boxplt_fig.png){#fig:boxplt_fig}
+
+![
+**Percent of reads encoding coding domain sequences (CDS) that were predicted to be coding.** There is no change between the percent of reads predicted to be derived from coding domain sequences when a species-level database is used versus when all of GTDB is used to predict open reading frames
+The slight increase observable for some species is a result of different thresholds, where we used 0.39 for the species database and 0.5 for the GTDB rs202 database.
 ](images/orpheum_supp1.png){#fig:orpheum_db height=3in}
+
+
+
 
 
 | accession       | superkingdom | phylum                | class                  | order                 | family                   | genus                   | species                             | NCBI taxid | NCBI organism name                                       |
