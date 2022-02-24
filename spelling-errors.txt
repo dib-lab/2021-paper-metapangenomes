@@ -97,7 +97,6 @@ euks
 fastp
 ferriphilum
 Firmicutes
-FragGeneScan
 fragilis
 frameshift
 frameshifted
@@ -158,10 +157,10 @@ metagenome
 metagenomes
 metagenomic
 metap
-Metapangenome
+metapangenome
 metapangenomes
 Metapangenomic
-metapangenomics
+Metapangenomics
 Methanobacteria
 Methanobacteriaceae
 Methanobacteriales
@@ -172,7 +171,7 @@ Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
 metronidazole
-Microbiome
+microbiome
 microbiomes
 Moranbacterales
 muciniphila
@@ -193,7 +192,7 @@ orpheum
 Oscillochloris
 Paceibacteria
 pagoo
-pangenome
+Pangenome
 pangenomes
 pangenomics
 PANMER
@@ -232,7 +231,7 @@ Selenomonadales
 shibatae
 SingleM
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
