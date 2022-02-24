@@ -9,7 +9,7 @@
   <meta name="author" content="Luiz Irber" />
   <meta name="author" content="Olga Borisovna Botvinnik" />
   <meta name="author" content="C. Titus Brown" />
-  <meta name="dcterms.date" content="2022-02-15" />
+  <meta name="dcterms.date" content="2022-02-24" />
   <meta name="keywords" content="metapangenome, pangenome, assembly graph, reduced alphabet k-mer, open reading frame" />
   <title>Protein k-mers enable assembly-free microbial metapangenomics</title>
   <style>
@@ -51,8 +51,8 @@
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-02-15" />
-  <meta name="citation_publication_date" content="2022-02-15" />
+  <meta name="dc.date" content="2022-02-24" />
+  <meta name="citation_publication_date" content="2022-02-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -85,9 +85,9 @@
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3ecb272fff96536c0ece23377af00b36d1ea14a8/">permalink</a>)
+(<a href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3ecb272fff96536c0ece23377af00b36d1ea14a8">taylorreiter/2021-paper-metapangenomes@3ecb272</a>
-on February 15, 2022.
+from <a href="https://github.com/taylorreiter/2021-paper-metapangenomes/tree/155259309b3f4c405973c4450159e03761aa7006">taylorreiter/2021-paper-metapangenomes@1552593</a>
+on February 24, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -211,12 +211,19 @@ To determine whether bacterial and archaeal pangenomes could be constructed from
 We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy <span class="citation" data-cites="vFApiGX2">[<a href="#ref-vFApiGX2" role="doc-biblioref">23</a>]</span>, with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes) (<strong>Figure S <a href="#fig:tree_fig">6</a></strong>).
 For each pangenome, we compared the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
 We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test.</p>
-<p>For these three metrics, performance varied minimally across encodings and k-mer sizes, varied dramatically for different pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (<strong>Figure S <a href="#fig:boxplt_fig">7</a></strong>).
+<p>For these three metrics, performance varied minimally across encodings and k-mer sizes, but varied dramatically between different pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (<strong>Figure S <a href="#fig:boxplt_fig">7</a></strong>).
 We investigated pangenomes more closely to determine the source of the poor correlations and found that they were caused by the presence of many frameshifted proteins, one of many potential criteria for exclusion of GenBank genomes from RefSeq.
 For example, <em>Leptospira interrogans</em> had an R<sup>2</sup> of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins.
 Removing these genomes increased the R<sup>2</sup> to 0.87 (<strong>Figure <a href="#fig:panmers_fig">2</a> A</strong>).
 This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R<sup>2</sup> values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (<strong>Figure <a href="#fig:panmers_fig">2</a> B</strong>).
 Other RefSeq exclusion criteria did not impact the correlation between the total genes and k-mers per genome for a given pangenome.</p>
+<p>Using pangenomes that contained no genomes excluded from RefSeq for containing many frameshifted proteins (n = 13), we found that k-mer size encoding had little impact on the accuracy of pangenome estimation with k-mers (<strong>Figure <a href="#fig:panmers_fig">2</a> C</strong>).
+This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift (CITE?).
+The one exception was for nucleotide k-mers (<em>k</em> = 31), which did not correlate as strongly with gene-based pangenomes.
+This supports the use of reduced alphabet k-mer encodings over nucleotide k-mers for construction of pangenomes.
+Given that neither encoding nor k-mer size impacted these performance metrics, we selected protein k-mers with k = 10 to complete the rest of our analysis as this combination was the only combination to fall among the top five performers across all three metrics.
+In addition, protein k-mers of length 10 have recently been shown to perform well for comparisons across variable taxonomic distances (CITE: TESSA).
+<!-- TR: should this comment be moved to the discussion? --></p>
 <div id="fig:panmers_fig" class="fignos">
 <figure>
 <img src="images/panmers_fig.png" alt="Figure 2: Amino acid k-mers accurately estimate microbial pangenomes. A, B) Genomes that are excluded from RefSeq for having many frameshifted proteins reduce similarity between gene- and k-mer-based pangenomes. A) Scatter plot of the total number of genes and k-mers per genome for the species Leptospira interrogans, where each point represents a single genome in the pangenome. Removing genomes flagged with RefSeq exclusion criteria “many frameshifted proteins” improves the correlation between these variables. B) Box plot of R2 values between the total number of genes and k-mers per genome. Pangenomes that contain genomes with the RefSeq exclusion criteria of “many frameshifted proteins” have significantly lower R2 values. C) Box plots representing the distribution of R2 values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. Only pangenomes that do not contain genomes with the RefSeq exclusion criteria “many frameshifted proteins” are plotted. K-mer size corresponds to the number of amino acid sequences used for the k-mer for all k-mers except k = 31, which corresponds to the number of nucleotides. Total corresponds to correlations between the total number of distinct genes and k-mers in a genome. Unique corresponds to correlations between the number of unique genes and k-mers in genome. Mantel corresponds to mantel tests between the gene and k-mer presence-absence matrices. D) Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes. Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (&gt;95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Amino acid k-mers accurately estimate microbial pangenomes.</strong>
@@ -229,13 +236,12 @@ Pangenomes that contain genomes with the RefSeq exclusion criteria of “many fr
 <strong>D)</strong> Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes. Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (&gt;95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.</figcaption>
 </figure>
 </div>
-<p>TRANSITION, MENTION NUCLEOTIDES, REFERENCE NEW FIGURE PANEL
-This is likely because the genomes of the same species are closely related, so any reduced alphabet k-mer is sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift (CITE?).
-Given that neither encoding nor k-mer size impacted these performance metrics, we selected protein k-mers with k = 10 to complete the rest of our analysis.
-Protein k-mers of length 10 have recently been shown to perform well for comparisons across variable taxonomic distances (CITE: TESSA).</p>
-<p>We next investigated whether other pangenome metrics were well correlated between our k-mer-based and the gene-based method roary using pangenomes that did not contain genomes excluded from RefSeq for having many frameshifted proteins (see Methods for details).
+<p>We next investigated whether other pangenome metrics were well correlated between our k-mer-based and the gene-based method roary (see Methods for details).
 For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (<strong>Figure <a href="#fig:panmers_fig">2</a></strong> D).
-We also compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model <span class="citation" data-cites="MSOGoMuF">[<a href="#ref-MSOGoMuF" role="doc-biblioref">24</a>]</span>.
+The content of the core genomes was also similar between pangenomes built with different methods.
+Focusing on genes or k-mers shared between all genomes in a pangenome, and limiting our inquiry to pangenomes with at least five genes shared between all genomes (n = 11), we found that the core k-mers contained an average of 83.9% (SD = 15.4%) of sequences in the core genes, while the core genes contained an average of 73.5% (SD = 16.9%) of the sequences in the core k-mers.
+This indicates congruence in the functional content represented by the core fractions of both pangenome types.
+Lastly, we compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model <span class="citation" data-cites="MSOGoMuF">[<a href="#ref-MSOGoMuF" role="doc-biblioref">24</a>]</span>.
 Alpha values were strongly correlated between gene- and k-mer based pangenomes (<strong>Figure <a href="#fig:panmers_fig">2</a></strong> D).</p>
 <p>Taken together, these results show that reduced alphabet k-mers can accurately estimate key characteristics of pangenomes from bacterial and archaeal genomes.</p>
 <h2 id="k-mer-methods-accurately-predict-open-reading-frames-in-short-sequencing-reads">K-mer methods accurately predict open reading frames in short sequencing reads</h2>
@@ -247,9 +253,9 @@ Orpheum predicts open reading frames by comparing reduced alphabet k-mers in six
 To evaluate orpheum, we constructed a database containing all k-mers in coding domain sequences from genomes in GTDB rs202.
 Using representative genomes from the 23 species above, as well as 20 additional RefSeq genomes not in the GTDB rs202 database, we simulated short sequencing reads either from coding domain sequences or non-coding sequences and used these reads to test orpheum.</p>
 <p>Using default parameters, orpheum accurately separated coding from non-coding reads when reads were simulated from genomes in GTDB (<strong>Figure <a href="#fig:orpheum_fig">3</a> A</strong>).
-On average, XX% of reads that were coding were predicted to be non-coding, while XX% of reads that were non-coding were predicted to be coding.
+On average, 5.3% (SD = 2.8%) of reads that were coding were predicted to be non-coding, while 4.9% (SD = 1.5%) of reads that were non-coding were predicted to be coding.
 For reads simulated from genomes not in GTDB, orpheum recovered the majority of coding reads when genomes of the same species were in the database (<strong>Figure <a href="#fig:orpheum_fig">3</a> A,B</strong>).
-On average, XX% of reads that were coding were predicted to be non-coding, while XX% of reads that were non-coding were predicted to be coding.
+On average, 30.2% (SD = 27.1%) of reads that were coding were predicted to be non-coding, while 4.8% (SD = 5.5%) of reads that were non-coding were predicted to be coding.
 Accuracy decreased with increasing taxonomic distance between the query genome and the closest relative in the database (<strong>Figure <a href="#fig:orpheum_fig">3</a> B</strong>).</p>
 <p>For genomes that had at least species-level representatives in GTDB, the largest source of error was non-coding reads being predicted as coding (<strong>Figure <a href="#fig:orpheum_fig">3</a> A</strong>).
 We hypothesized that these reads originated from pseudogenes as these sequences would likely not be annotated as coding in the genomes from which the reads were simulated from, but may retain some k-mers contained in the database.
@@ -330,7 +336,7 @@ On average, increasing the rank of the closest taxonomic relative in the databas
 <p>Overall, these results show that open reading frames can be accurately determined from short sequencing reads when closely related proteomes are available.</p>
 <div id="fig:orpheum_fig" class="fignos">
 <figure>
-<img src="images/orpheum_fig.png" alt="Figure 3: Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame. A) Percent of simulated coding or non-coding sequences predicted as coding, non-coding, or discarded based on quality metrics (see methods). Genomes are split by those in GTDB and those not in GTDB. Genomes not in GTDB are labelled by taxonomic assignment from GTDB-tk. Predictions were made using default parameters (Jaccard containment = 0.5). B) Boxplots of the percent of coding reads that were recovered by Orpheum, separated by the level of taxonomic assignment achieved by GTDB-Tk. Orpheum recovers more coding sequences when there are closely related genomes in the database. C) Receiver operating curves for the Jaccard containment thresholds. Curves are separated by the level of taxonomic assignment achieved by GTDB-Tk, and values are averaged across all genomes that fell within those categories. The best Jaccard threshold decreases when there are fewer closely related genomes in the database. D) Databases constructed of only closely-related genomes recover the majority of coding sequences, but including increasingly distantly related genomes improves total coding recall." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame.</strong>
+<img src="images/orpheum_fig.png" alt="Figure 3: Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame. A) Percent of simulated coding or non-coding sequences predicted as coding, non-coding, or discarded based on quality metrics (see methods). Genomes are split by those in GTDB and those not in GTDB. Genomes not in GTDB are labelled by taxonomic assignment from GTDB-tk. Predictions were made using default parameters (Jaccard containment = 0.5). B) Boxplots of the percent of coding reads that were recovered by Orpheum, separated by the level of taxonomic assignment achieved by GTDB-Tk. Orpheum recovers more coding sequences when there are closely related genomes in the database. C) Receiver operating curves for the Jaccard containment thresholds. Curves are separated by the level of taxonomic assignment achieved by GTDB-Tk, and values are averaged across all genomes that fell within those categories. The best Jaccard threshold decreases when there are fewer closely related genomes in the database." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Orpheum correctly assigned short sequencing reads as coding or non-coding and selects the correct open reading frame.</strong>
 <strong>A)</strong> Percent of simulated coding or non-coding sequences predicted as coding, non-coding, or discarded based on quality metrics (see methods).
 Genomes are split by those in GTDB and those not in GTDB.
 Genomes not in GTDB are labelled by taxonomic assignment from GTDB-tk.
@@ -339,14 +345,11 @@ Predictions were made using default parameters (Jaccard containment = 0.5).
 Orpheum recovers more coding sequences when there are closely related genomes in the database.
 <strong>C)</strong> Receiver operating curves for the Jaccard containment thresholds.
 Curves are separated by the level of taxonomic assignment achieved by GTDB-Tk, and values are averaged across all genomes that fell within those categories.
-The best Jaccard threshold decreases when there are fewer closely related genomes in the database.
-<strong>D)</strong> Databases constructed of only closely-related genomes recover the majority of coding sequences, but including increasingly distantly related genomes improves total coding recall.</figcaption>
+The best Jaccard threshold decreases when there are fewer closely related genomes in the database.</figcaption>
 </figure>
 </div>
-<ul>
-<li>Should/do I have to compare these results against FragGeneScan?</li>
-</ul>
-<h2 id="k-mer-based-metapangenomics-combined-with-assembly-graphs">K-mer-based metapangenomics combined with assembly graphs …</h2>
+<!-- TR: Should/do I have to compare these results against FragGeneScan? -->
+<h2 id="k-mer-based-metapangenomics-combined-with-assembly-graphs-reveals-strain-dynamics">K-mer-based metapangenomics combined with assembly graphs reveals strain dynamics</h2>
 <p>Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted reliably from short sequencing data, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
 We used 12 metagenomes from a single individual sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) <span class="citation" data-cites="UotiKLjf">[<a href="#ref-UotiKLjf" role="doc-biblioref">27</a>]</span>.
 The individual was diagnosed with Crohn’s disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract.
@@ -728,7 +731,7 @@ We used pagoo methods <code>pg$gg_binmap()</code>, <code>pg$summary_stats()</cod
 <h1 id="appendixsupplementary-information">Appendix/Supplementary information</h1>
 <div id="fig:tree_fig" class="fignos">
 <figure>
-<img src="images/tree_fig.png" alt="Figure 6: Organisms used in this paper. The is the default GTDB rs202 tree, with tips representing species not used in this paper removed." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Organisms used in this paper.</strong> The is the default GTDB rs202 tree, with tips representing species not used in this paper removed.</figcaption>
+<img src="images/tree_fig.png" alt="Figure 6: GTDB species used in this paper. These species were used to benchmark pangenome construction with reduced alphabet k-mers and open reading frame prediction from short sequencing reads. The trees are the default GTDB rs202 trees, with tips representing species not used in this paper removed." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>GTDB species used in this paper.</strong> These species were used to benchmark pangenome construction with reduced alphabet k-mers and open reading frame prediction from short sequencing reads. The trees are the default GTDB rs202 trees, with tips representing species not used in this paper removed.</figcaption>
 </figure>
 </div>
 <div id="fig:boxplt_fig" class="fignos">
