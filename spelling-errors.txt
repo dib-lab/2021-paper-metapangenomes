@@ -156,15 +156,15 @@ mer
 merdae
 mers
 metachercant
-Metagenome
+metagenome
 metagenomes
 metagenomic
 metap
 metapalette
-Metapangenome
+metapangenome
 metapangenomes
 Metapangenomic
-Metapangenomics
+metapangenomics
 Methanobacteria
 Methanobacteriaceae
 Methanobacteriales
@@ -174,7 +174,7 @@ Methanosarcina
 Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
-metronidazole
+Metronidazole
 microbiome
 microbiomes
 Moranbacterales
@@ -198,7 +198,7 @@ oxidoreductase
 Paceibacteria
 pagoo
 pangenome
-Pangenomes
+pangenomes
 pangenomics
 PANMER
 panmers
@@ -221,7 +221,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-RefSeq
+refseq
 Reiter
 ReiterTaylor
 Rhabdochlamydia
@@ -237,7 +237,7 @@ sfig
 shibatae
 SingleM
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
@@ -268,7 +268,7 @@ Thermosipho
 Thermosulfurimonas
 Thermus
 tiem
-tk
+Tk
 topoisomerase
 trachomatis
 transcriptome

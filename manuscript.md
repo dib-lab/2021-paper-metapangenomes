@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@3cce01d](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3cce01dc24c20e080410349b50862e81e2fba840)
+from [taylorreiter/2021-paper-metapangenomes@0247b90](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/0247b90b630d43dfab7aaed7a01c062c3a3ae56b)
 on March 10, 2022.
 </em></small>
 
@@ -391,7 +391,10 @@ Fractional abundances are colored by species, with only the six species that acc
 Intersections are colored by species. 
 **C)** Bar plots indicating the average fraction of reads used to build the k~aa~-mer metapangenome that mapped first against the reference pangenome, then against the *de novo* metapangenome, or were unmapped. 
 More reads mapped in amino acid space than in nucleotide space.
+Only the fraction of reads that mapped to the reference pangenome and the fraction reads that were unmapped are labelled.
 **D)** Bar plots of the fraction of k~aa~-mer metapangenome sequences that were anchored to a given strain using the sourmash gather algorithm against the GTDB rs202 database (*k* = 51).
+Only genomes that accounted for greater than 2% of the weighted fractional abundance and that were annotated as the same species are colored.
+Weeks in which the species was low-abundance are excluded.
 Starting at at week 13, sequences from previously unobserved strains were detected within each metapangenome.
 This timing coincides with metronidazole administration.
 ](images/metap_figure_panel.png){#fig:metap_fig}
