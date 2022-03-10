@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-02-24'
+date-meta: '2022-03-10'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-02-24" />
-  <meta name="citation_publication_date" content="2022-02-24" />
+  <meta name="dc.date" content="2022-03-10" />
+  <meta name="citation_publication_date" content="2022-03-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/155259309b3f4c405973c4450159e03761aa7006/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/3cce01dc24c20e080410349b50862e81e2fba840/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@1552593](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/155259309b3f4c405973c4450159e03761aa7006)
-on February 24, 2022.
+from [taylorreiter/2021-paper-metapangenomes@3cce01d](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/3cce01dc24c20e080410349b50862e81e2fba840)
+on March 10, 2022.
 </em></small>
 
 ## Authors
@@ -329,35 +329,49 @@ The best Jaccard threshold decreases when there are fewer closely related genome
 Given that amino acid k-mers accurately estimated pangenomes, and that the correct open reading frame could be predicted reliably from short sequencing data, we next combined these approaches to perform metapangenome analysis from short read shotgun metagenomes.
 We used 12 metagenomes from a single individual sampled over the course of a year by the Integrated Human Microbiome Project (iHMP) [@doi:10.1038/s41586-019-1238-8]. 
 The individual was diagnosed with Crohn's disease, a sub type of inflammatory bowel disease characterized by inflammation along the gastrointestinal tract. 
-The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metag_species**).
+The individual received three courses of antibiotics over the year and each course was separated by weeks without antibiotics (**Figure @fig:metap_fig A**).
 
-![
-**Antibiotic courses and corresponding gut microbiome profiles for a single individual with Crohn's disease.**
-Fractional abundances are colored by species, with only the six species that accounted for greater than 2% of all metagenome reads displayed.
-](images/common_species_breakdown.png){#fig:metag_species height=3in}
 
-We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 2% of reads across metagenomes, for a total of six metapangenomes (**Figure @fig:metag_species**).
+We estimated the metapangenome for each species that was detected in all 12 metagenomes and that accounted for at least 2% of reads across metagenomes, for a total of six metapangenomes (**Figure @fig:metap_fig A**).
 To obtain all sequencing reads that originated from genomes of these species, we performed assembly graph genome queries [@doi:10.1186/s13059-020-02066-4].
 Assembly graphs contain all sequences in a metagenome, and assembly graph queries return sequences in the metagenome that are either in the query or nearby to the query in the graph.
 Assembly graph genome queries return sequencing reads that originate from genomes in the metagenome that have as little as 0.1 Jaccard similarity (approximately 93% average nucleotide identity (ANI) (CITE: TESSA)) to the query genome [@doi:10.1186/s13059-020-02066-4].
 After retrieving reads in this way, we predicted open reading frames using orpheum. 
 We used species-level databases as these were successful in the context of isolate genomes not in the database (see above) and because they would be more likely to filter out reads beyond the species boundary (95% ANI [@doi:10.1038/s41467-018-07641-9]) that were returned by assembly graph queries.
-Using the predicted amino acid sequences, we built metapangenomes for each of the six species (**Figure @fig:metap_fig**).
+Using the predicted amino acid sequences, we built k~aa~-mer metapangenomes for each of the six species (**Figure @fig:overview C, @fig:metap_sfig, Table @tbl:metap**).
 
-Unlike isolate genomes, metagenomes may contain a fraction of an organism's genome if the metagenome was not sequenced deeply or if an organism was rare. 
-To calculate the core, shell, and cloud fractions and to estimate the openness of the metapangenome, we removed samples with fewer than 10,000 k-mers (**Table @tbl:metap**).
+We compared these metapangenomes against reference pangenomes built using genomes of the same species in GTDB and against *de novo* metapangenomes built from MAGs of the same species that were assembled and binned from these samples (see Methods).
+Almost all sequences from the reference pangenome occurred within the k~aa~-mer metapangenomes (**Figure @fig:metap_fig B**), indicating we recovered the majority of sequencing variation contained within the reference pangenome. 
+Further, a large fraction of sequences were shared between the *de novo* metapangenome and the k~aa~-mer metapangenome (**Figure @fig:metap_fig B**), indicating we also recover the majority of variation captured by assembly and binning.
 
-|species| n |total  |core |  shell  | cloud | alpha |
-|:--------------------------:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|*Bacteroides fragilis*      |  7| 24819 | 56.3%  | 11.3% | 32.4%  |0.76|
-|*Bacteroides uniformis*     |  9| 32197 |38.0%   | 22.3% | 39.7% |0.73|
-|*Enterocloster bolteae*     |  4| 23620 |55.8%   | 18.3% | 25.9% |0.66|
-|*Parabacteroides distasonis*|  7| 25789 |42.4%   | 30.9% | 26.8% |0.74|
-|*Parabacteroides merdae*    |  6| 19985 |63.2%   | 9.6%  | 27.1% |0.82|
-|*Phocaeicola vulgatus*      | 11| 41005 |30.3%   |20.4%  | 49.2% |0.65|
-Table: Metapangenome estimates for each species. *n* designates the number of metagenomes used to estimate the total, core, shell, cloud, and alpha values.
-{#tbl:metap}
+A large fraction of k-mers were only represented in the k~aa~-mer metapangenome.
+To determine whether these sequences represented true biological variation from our query species and not contamination from other species, we next iteratively mapped the reads that were used to build the k~aa~-mer against the reference pangenome and the *de novo* metapangenome (**Figure @fig:metap_fig C**).
+The majority of reads mapped against the reference pangenomes (mean XX, SD XX), a few of the unmapped reads mapped against the *de novo* metapangenome (mean XX, SD XX), and XX% of reads did not map.
+We repeated this process a second time but mapped in amino acid space.
+Mapping in amino acid space improves sensitivity over nucleotide mapping [@doi:10.1093/bioinformatics/btx021].
+The fraction of reads that mapped increased by an average of XX% (SD), accounting for XX% of total reads and indicating that a substantial fraction of distinct sequences in the k~aa~-mer metapangenome represent diverged sequences with similar amino acid sequences.
 
+On average, XX% (SD) of reads from the k~aa~-mer metapangenome were unaccounted for after mapping against other (meta)pangenomes.
+We assembled and annotated these reads, and BLASTed the resultant protein sequences against the NCBI nr database.
+Of XX predicted genes with a BLAST hit, XX% matched sequences from the same species as the top hit.
+This suggests our method recovers functional sequences even if those sequences are not in MAGs or in reference databases (in this case, in NCBI nr but not GTDB).
+
+<!-- A small fraction (XX%) of reads did not map or assemble and annotate.
+While we cannot confirm the identity of these reads, we presume these reads represent true variation attributable to the species investigated. 
+OR BLASTP a subset using orpheum? -->
+
+Visualization the k~aa~-mer metapangenomes alongside sequencing depth information, we observed dynamics in the presence of species (**Figure @fig:metap_sfig A**) or strains (**Figure @fig:metap_sfig B**) in response to antibiotic administration.
+The fluctuation of the presence of species indicates that antibiotic administration impacted the community structure of the gut microbiome, as is expected [@doi:10.3390/biomedicines8110502].
+This is exemplified by periodic blooms of *Enterocloster bolteae*, an organism associated with disturbance succession [@doi:10.1101/gr.138198.112].
+
+Similarly, we detected fluctuations in the strains of species present in the community, with presumed strain switches occurring on or after the start of metronidazole administration at week 13 (**Figure @fig:metap_fig D**).
+Both ciprofloxacin and metronidazole are broad-spectrum antibiotics, but they differ in their mechanisms of action. 
+Ciprofloxacin mainly impacts gram negative bacteria through the inhibition of DNA replication by inhibiting DNA topoisomerase and DNA gyrase. 
+In contrast, metronidazole targets anaerobic bacteria via reduction by pyruvate:ferredoxin oxidoreductase system which creates an electron sink that produces free radicals that are toxic to cells [@doi:10.1093/jac/31.1.9]. 
+Metronidazole treatment disproportionately impacts the presence of anaerobes in the gut microbiome [@doi:10.1007/s10350-004-0623-y].
+To confirm that fluctuating accessory elements in metapangenomes reflected strain switches, we compared the nucleotide k-mer content in each query neighborhood against the GTDB database to determine which strains were present.
+We used a k-mer size of 51, as this is indicative of strain-level similarity (CITE: metapalette, tessa).
+<!--
 Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap_fig**).
 For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin exposure,
 but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding with metronidazole administration.
@@ -368,12 +382,19 @@ In two bacterial species, antibiotic administration appears to spur on strain sw
 In *Bacteroides uniformis*, one set of accessory elements present from weeks 0 - 11 is replaced by a new set in weeks 25-36.
 Similarly, in *Parabacteroides distasonis*, accessory elements present in weeks 4, 9, and 11 are replaced by new accessory elements in weeks 25-36. 
 Both switches occur during metronidazole administration after the bloom of *P. merdae* and *P. vulgatus*.
+-->
 
-![
-](images/metap.png){#fig:metap_fig}
-
-+ Do I need to compare these results against typical metapangenomics? like do de novo assembly, binning, prokka? etc?
-+ What else, if anything, belongs in this section?
+![****
+**A)** Antibiotic courses and corresponding gut microbiome profiles for a single individual with Crohn's disease.
+Fractional abundances are colored by species, with only the six species that accounted for greater than 2% of all metagenome reads displayed.
+**B)** Upset plot of amino acid k-mers (*k* = 10) present in the k~aa~-mer metapangenomes, the *de novo* metapangenomes, and the reference pangenome. 
+Intersections are colored by species. 
+**C)** Bar plots indicating the average fraction of reads used to build the k~aa~-mer metapangenome that mapped first against the reference pangenome, then against the *de novo* metapangenome, or were unmapped. 
+More reads mapped in amino acid space than in nucleotide space.
+**D)** Bar plots of the fraction of k~aa~-mer metapangenome sequences that were anchored to a given strain using the sourmash gather algorithm against the GTDB rs202 database (*k* = 51).
+Starting at at week 13, sequences from previously unobserved strains were detected within each metapangenome.
+This timing coincides with metronidazole administration.
+](images/metap_figure_panel.png){#fig:metap_fig}
 
 
 # Discussion
@@ -546,8 +567,29 @@ The slight increase observable for some species is a result of different thresho
 ](images/orpheum_supp1.png){#fig:orpheum_db height=3in}
 
 
+|species| n |total  |core |  shell  | cloud | alpha |
+|:--------------------------:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|*Bacteroides fragilis*      |  7| 24819 |56.3%   | 11.3% | 32.4% |0.76|
+|*Bacteroides uniformis*     |  9| 32197 |38.0%   | 22.3% | 39.7% |0.73|
+|*Enterocloster bolteae*     |  4| 23620 |55.8%   | 18.3% | 25.9% |0.66|
+|*Parabacteroides distasonis*|  7| 25789 |42.4%   | 30.9% | 26.8% |0.74|
+|*Parabacteroides merdae*    |  6| 19985 |63.2%   | 9.6%  | 27.1% |0.82|
+|*Phocaeicola vulgatus*      | 11| 41005 |30.3%   |20.4%  | 49.2% |0.65|
+Table: Metapangenome estimates for each species. *n* designates the number of metagenomes used to estimate the total, core, shell, cloud, and alpha values. Unlike isolate genomes, metagenomes may contain a fraction of an organism's genome if the metagenome was not sequenced deeply or if an organism was rare. 
+To calculate the core, shell, and cloud fractions and to estimate the openness of the metapangenome, we removed samples with fewer than 10,000 k-mers.
+{#tbl:metap}
 
-
+![**k~aa~-mer metapangenomes for six species.** Each species contains a four-panel figure.
+The first panel is a binmap plot. 
+Dark colors represent k-mers that are present in each sample. 
+Blue shades represent time points when the sampled individual was not on antibiotics, while green shades represent time points when the individual was on antibiotics. 
+The second panel represents an estimated number of base pairs in the metagenome detected to originate from that species. 
+The third panel represents an estimated fraction of the metagenome assigned to that species.
+The fourth panel represents the number of bins produced for that species from that sample using a *de novo* metagenome assembly and binning approach.
+The two values represented in the second and third panels and the species assignations used to infer the value represented in the fourth panel were inferred using the sourmash gather algorithm against the GTDB rs202 database.
+**A)** Species for which presence-absence fluctuated over the time series. 
+**B)** Species for which strain presence-absence fluctuated over the time series.
+](images/metap.png){#fig:metap_sfig}
 
 | accession       | superkingdom | phylum                | class                  | order                 | family                   | genus                   | species                             | NCBI taxid | NCBI organism name                                       |
 |-----------------|--------------|-----------------------|------------------------|-----------------------|--------------------------|-------------------------|-------------------------------------|------------|----------------------------------------------------------|

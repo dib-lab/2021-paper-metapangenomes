@@ -28,6 +28,7 @@ benchmarking
 bickhart
 Bifidobacteriaceae
 Bifidobacterium
+binmap
 Biohub
 bluegenes
 bolteae
@@ -53,7 +54,7 @@ Chlamydiales
 Chlamydiia
 Chlamydiota
 Chloroflexota
-ciprofloxacin
+Ciprofloxacin
 Clostridia
 Clostridiaceae
 Clostridiales
@@ -95,6 +96,7 @@ epidermidis
 Eukaryotic
 euks
 fastp
+ferredoxin
 ferriphilum
 Firmicutes
 fragilis
@@ -116,6 +118,7 @@ GFF
 granulosum
 GTDB
 GWC
+gyrase
 Halobacteriota
 HAR
 Helicobacteraceae
@@ -130,6 +133,7 @@ indels
 indicum
 interrogans
 Irber
+iteratively
 Jaccard
 JCM
 json
@@ -152,12 +156,12 @@ mer
 merdae
 mers
 metachercant
-metag
-metagenome
+Metagenome
 metagenomes
 metagenomic
 metap
-metapangenome
+metapalette
+Metapangenome
 metapangenomes
 Metapangenomic
 Metapangenomics
@@ -190,10 +194,11 @@ olgabot
 ORF
 orpheum
 Oscillochloris
+oxidoreductase
 Paceibacteria
 pagoo
-Pangenome
-pangenomes
+pangenome
+Pangenomes
 pangenomics
 PANMER
 panmers
@@ -216,7 +221,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-refseq
+RefSeq
 Reiter
 ReiterTaylor
 Rhabdochlamydia
@@ -228,10 +233,11 @@ saltyscientist
 scB
 scotoductus
 Selenomonadales
+sfig
 shibatae
 SingleM
 SNPs
-Sourmash
+sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
@@ -263,6 +269,7 @@ Thermosulfurimonas
 Thermus
 tiem
 tk
+topoisomerase
 trachomatis
 transcriptome
 UBA
@@ -270,6 +277,7 @@ UC
 unbinnable
 Unbinned
 uniformis
+unmapped
 Verrucomicrobiae
 Verrucomicrobiales
 Verrucomicrobiota
