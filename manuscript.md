@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-03-10'
+date-meta: '2022-03-11'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-03-10" />
-  <meta name="citation_publication_date" content="2022-03-10" />
+  <meta name="dc.date" content="2022-03-11" />
+  <meta name="citation_publication_date" content="2022-03-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1e5b08366157fa697ac033523839970039d92317/" />
+  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1e5b08366157fa697ac033523839970039d92317/" />
+  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/1e5b08366157fa697ac033523839970039d92317/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/0247b90b630d43dfab7aaed7a01c062c3a3ae56b/))
+([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/1e5b08366157fa697ac033523839970039d92317/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@0247b90](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/0247b90b630d43dfab7aaed7a01c062c3a3ae56b)
-on March 10, 2022.
+from [taylorreiter/2021-paper-metapangenomes@1e5b083](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/1e5b08366157fa697ac033523839970039d92317)
+on March 11, 2022.
 </em></small>
 
 ## Authors
@@ -344,47 +344,42 @@ We compared these metapangenomes against reference pangenomes built using genome
 Almost all sequences from the reference pangenome occurred within the k~aa~-mer metapangenomes (**Figure @fig:metap_fig B**), indicating we recovered the majority of sequencing variation contained within the reference pangenome. 
 Further, a large fraction of sequences were shared between the *de novo* metapangenome and the k~aa~-mer metapangenome (**Figure @fig:metap_fig B**), indicating we also recover the majority of variation captured by assembly and binning.
 
-A large fraction of k-mers were only represented in the k~aa~-mer metapangenome.
-To determine whether these sequences represented true biological variation from our query species and not contamination from other species, we next iteratively mapped the reads that were used to build the k~aa~-mer against the reference pangenome and the *de novo* metapangenome (**Figure @fig:metap_fig C**).
-The majority of reads mapped against the reference pangenomes (mean XX, SD XX), a few of the unmapped reads mapped against the *de novo* metapangenome (mean XX, SD XX), and XX% of reads did not map.
+A large fraction of k-mers were only represented in the k~aa~-mer metapangenome (**Figure @fig:metap_fig B**).
+To determine whether these sequences represented true biological variation from our query species and not contamination from other species, we next iteratively mapped the reads that were used to build the k~aa~-mer metapangenome against the reference pangenome and the *de novo* metapangenome (**Figure @fig:metap_fig C**).
+The majority of reads mapped against the reference pangenomes (mean = 92.2%, SD = 12.4%), a few of the unmapped reads mapped against the *de novo* metapangenome (mean = 0.8%, SD = 1.3%), and 7.1% (SD = 12.3%) of reads did not map.
 We repeated this process a second time but mapped in amino acid space.
 Mapping in amino acid space improves sensitivity over nucleotide mapping [@doi:10.1093/bioinformatics/btx021].
-The fraction of reads that mapped increased by an average of XX% (SD), accounting for XX% of total reads and indicating that a substantial fraction of distinct sequences in the k~aa~-mer metapangenome represent diverged sequences with similar amino acid sequences.
+The fraction of reads that mapped increased by an average of 1.7% (Welch Two Sample Paired t-test, estimate = 1.9, p < 0.001), accounting for 94.6% of total reads and indicating that a substantial fraction of distinct sequences in the k~aa~-mer metapangenome represent diverged sequences with similar amino acid sequences.
 
-On average, XX% (SD) of reads from the k~aa~-mer metapangenome were unaccounted for after mapping against other (meta)pangenomes.
-We assembled and annotated these reads, and BLASTed the resultant protein sequences against the NCBI nr database.
-Of XX predicted genes with a BLAST hit, XX% matched sequences from the same species as the top hit.
+On average, 5.4% (SD = 12%) of reads from the k~aa~-mer metapangenome were unaccounted for after mapping against other (meta)pangenomes.
+We assembled and annotated these reads, and BLASTed the 88 resultant protein sequences against the NCBI nr database.
+Of 56 predicted genes with a BLAST hit, 76.8% matched sequences from the same species or closest specified lineage level as the top hit.
 This suggests our method recovers functional sequences even if those sequences are not in MAGs or in reference databases (in this case, in NCBI nr but not GTDB).
 
 <!-- A small fraction (XX%) of reads did not map or assemble and annotate.
+Of that reads that did not map, we had low expectation that the majority would assemble, as we expect many of these reads to represent diverged sequences of genes that were already represented in other (meta)pangenomes 
 While we cannot confirm the identity of these reads, we presume these reads represent true variation attributable to the species investigated. 
 OR BLASTP a subset using orpheum? -->
 
-Visualization the k~aa~-mer metapangenomes alongside sequencing depth information, we observed dynamics in the presence of species (**Figure @fig:metap_sfig A**) or strains (**Figure @fig:metap_sfig B**) in response to antibiotic administration.
+Visualizing the k~aa~-mer metapangenomes alongside sequencing depth information, we observed dynamics in the presence of species (**Figure @fig:metap_sfig A**) or strains (**Figure @fig:metap_sfig B**) in response to antibiotic administration.
 The fluctuation of the presence of species indicates that antibiotic administration impacted the community structure of the gut microbiome, as is expected [@doi:10.3390/biomedicines8110502].
 This is exemplified by periodic blooms of *Enterocloster bolteae*, an organism associated with disturbance succession [@doi:10.1101/gr.138198.112].
 
-Similarly, we detected fluctuations in the strains of species present in the community, with presumed strain switches occurring on or after the start of metronidazole administration at week 13 (**Figure @fig:metap_fig D**).
-Both ciprofloxacin and metronidazole are broad-spectrum antibiotics, but they differ in their mechanisms of action. 
-Ciprofloxacin mainly impacts gram negative bacteria through the inhibition of DNA replication by inhibiting DNA topoisomerase and DNA gyrase. 
-In contrast, metronidazole targets anaerobic bacteria via reduction by pyruvate:ferredoxin oxidoreductase system which creates an electron sink that produces free radicals that are toxic to cells [@doi:10.1093/jac/31.1.9]. 
+Similarly, we detected changes in accessory k~aa~-mers, the majority of which appeared or disappeared on or after the start of metronidazole administration at week 13 (**Figure @fig:metap_sfig B**).
+Metronidazole targets anaerobic bacteria via reduction by pyruvate:ferredoxin oxidoreductase system which creates an electron sink that produces free radicals that are toxic to cells [@doi:10.1093/jac/31.1.9]. 
 Metronidazole treatment disproportionately impacts the presence of anaerobes in the gut microbiome [@doi:10.1007/s10350-004-0623-y].
-To confirm that fluctuating accessory elements in metapangenomes reflected strain switches, we compared the nucleotide k-mer content in each query neighborhood against the GTDB database to determine which strains were present.
+We hypothesized that fluctuations in accessory k~aa~-mers reflected strain-level turn over in the community.
+To confirm this, we compared the nucleotide k-mer content in each query neighborhood against the GTDB database to determine which strains were present (**Figure @fig:metap_fig D**).
 We used a k-mer size of 51, as this is indicative of strain-level similarity (CITE: metapalette, tessa).
-<!--
-Using our metapangenome approach, we identified interesting patterns in accessory gene presence associated with antibiotic exposure (**Figure @fig:metap_fig**).
-For example, the *Phocaeicola vulgatus* metapangenome is stable for the first 11 weeks of sampling even during ciprofloxacin exposure,
-but a portion of the accessory genome corresponding to XX% of the total metapangenome disappears at week 13, coinciding with metronidazole administration.
-While a portion of the *Parabacteroides merdae* metapangenome is present in early samples, the full genome is only detected after metronidazole administration when the fractional abundance of *P. merdae* increases starting at week 13.
-However, additional accessory elements are detected beginning at week 19, which coincides with a bloom of *P. merdae*. 
+In each of the three species we investigated, we identified different patterns of strain fluctuations.
+In *Bacteroides uniformis*, only one strain (BIOML-A27) was present until week 25, when another strain appears (BIOML-A2).
+In *Parabacteroides distasonis*, the dominant strain switches at week 13 (20_3 to OF01-14), coincident with other strains appearing (BIOML-A21, BIOML-A26, BIOML-A32).
+Lastly, in *Phocaeicola vulgatus*, the dominant strain does not change through the time course, but multiple other strains are detected with one strain switch occurring at week 13 (H23 and AM38-19 to VPI-4496.2).
 
-In two bacterial species, antibiotic administration appears to spur on strain switching.
-In *Bacteroides uniformis*, one set of accessory elements present from weeks 0 - 11 is replaced by a new set in weeks 25-36.
-Similarly, in *Parabacteroides distasonis*, accessory elements present in weeks 4, 9, and 11 are replaced by new accessory elements in weeks 25-36. 
-Both switches occur during metronidazole administration after the bloom of *P. merdae* and *P. vulgatus*.
--->
+Taken together, these results demonstrate that k~aa~-mer metapangenomes built from metagenome assembly graph neighborhoods can capture species and strain dynamics in microbiome communities.
 
-![****
+
+![**K~aa~-mer metapangenomes reveal species and strain dynamics in time series gut microbiome metagenomes after antibiotic exposure.**
 **A)** Antibiotic courses and corresponding gut microbiome profiles for a single individual with Crohn's disease.
 Fractional abundances are colored by species, with only the six species that accounted for greater than 2% of all metagenome reads displayed.
 **B)** Upset plot of amino acid k-mers (*k* = 10) present in the k~aa~-mer metapangenomes, the *de novo* metapangenomes, and the reference pangenome. 
@@ -393,6 +388,8 @@ Intersections are colored by species.
 More reads mapped in amino acid space than in nucleotide space.
 Only the fraction of reads that mapped to the reference pangenome and the fraction reads that were unmapped are labelled.
 **D)** Bar plots of the fraction of k~aa~-mer metapangenome sequences that were anchored to a given strain using the sourmash gather algorithm against the GTDB rs202 database (*k* = 51).
+Colors represent strains, which are labelled by their NCBI strain name. 
+Missing fractions depicted as blank space between the bar and one represent novel k-mers not in the database.
 Only genomes that accounted for greater than 2% of the weighted fractional abundance and that were annotated as the same species are colored.
 Weeks in which the species was low-abundance are excluded.
 Starting at at week 13, sequences from previously unobserved strains were detected within each metapangenome.
@@ -406,57 +403,57 @@ We present a method to perform assembly-free metapangenomics that is minimally r
 We show that pangenome metrics like core, cloud, and shell pangenome fractions can be accurately estimated with long amino acid k-mers.
 We then demonstrate accurate prediction of open reading frames in highly accurate short sequencing reads by comparing amino acid k-mers in all translation frames against a database of k-mers from all known bacterial and archaeal genomes in GTDB (rs202).
 Combining these tools enables pangenome estimation directly from quality controlled short sequencing reads.
-In the context of metagenomes, these approaches enable metapangenome estimation without the need to *de novo* assemble and bin sequences, eliminating common sources of lost sequencing variation (cite spacegraphcats). These techniques also reduce the dependence of metapangenomics on complete or comprehensive reference databases, which can be important for understudied environments.
+In the context of metagenomes, these approaches enable metapangenome estimation without the need to *de novo* assemble and bin sequences, eliminating common sources of lost sequencing variation [@doi:10.1186/s13059-020-02066-4]. These techniques also reduce the dependence of metapangenomics on complete or comprehensive reference databases, which can be important for understudied environments.
 
-The combination of these approaches is potentially most useful in the context of analyzing metagenome assembly graphs.
+While we leverage open reading frame prediction from short reads and k~aa~-mer pangenomes in the context of metapangenomes, these approaches have additional applications. 
+Open reading frame prediction with orpheum can be executed on microbial Illumina short read data sets.
+This may improve functional recall from metagenome short reads from organisms without reference genomes and from communities that have low assembly rates [@doi:10.1371/journal.pone.0169662], or from metatranscriptomes, however these applications must be validated.
+Similarly, k~aa~-mer pangenomes built from sketches may offer benefits over other pangenome construction methods, many of which are predominately tied to exact matching of k-mers between genomes.
+Exact matching of k-mers between genomes enables additional genomes to be added to the pangenome without having to re-cluster gene sequences. 
+Exact matching also allows direct comparisons to distantly related organisms, which creates a unified framework for genome comparisons even when organisms are distantly related.
+While we predominately explored k~aa~-mers of length 10 in this paper, k-mers from other degenerate alphabets like Dayhoff or hydrophobic-polar encodings may allow for accurate comparisons at greater evolutionary distances (CITE: Tessa).
+When pangenomes are built from FracMinHashes as performed here, the scaled down sampling parameter may also enable even faster pangenome size estimation even for very large collections of genomes.
+genes in a genome, and could be potentially used a quality control metric for annotated genomes.
+While developed for the metapangenomics space, this study demonstrates that k~aa~-mer pangenomes also accurately estimate pangenomes built from isolate genomes. 
+Given that building k~aa~-mer sketches and exact matching of k~aa~-mers between genomes is fast, this provides an alternative approach for building pangenomes.
+Lastly, our results suggest that the number of k~aa~-mers in a genome strongly correlates with the number of genes; we observed that while the number of genes per genome is increased for genomes with this exclusion criteria, there is no commensurate increase in the number of k~aa~-mers observed. 
+This suggests that the number of k~aa~-mers in a genome could be used to predict the expected range of predicted genes, and could be used as a quality diagnostic criteria.
+
+We posit that the combination of these approaches is potentially most useful in the context of analyzing metagenome assembly graphs.
 Assembly graphs like compact de Bruijn graphs (cDBG) capture all sequences in a metagenome, including sequences with high strain variation or low coverage, which may not be captured by other analysis methods. 
-A targeted query of an assembly graph, for example with a metagenome-assembled genome bin, can recover all sequencing reads in a metagenome that originate from all genomes of the same species (cite spacegraphcats). 
+A targeted query of an assembly graph, for example with a metagenome-assembled genome bin, can recover all sequencing reads in a metagenome that originate from all genomes of the same species [@doi:10.1186/s13059-020-02066-4]. 
+Often, reads may be longer than unitigs (nodes) in the cDBG in regions of high variation making read retrieval desirable.
 While recovering these reads and assigning their taxonomic identity through graph queries is useful, many of the recovered reads cannot be assembled due to prolific sequencing variation attributable to strain diversity in the original microbial community.
-Yet, the sequences represented by these un-assembleable reads often encode functional potential, some of which may be key to a microorganisms functioning within its ecosystem (cite sumner paper?; metachercant).
+Yet, the sequences represented by these un-assembleable reads often encode functional potential, some of which may be key to a microorganisms functioning within its ecosystem [@doi:10.1093/bioinformatics/btx681; @doi:10.1038/s41396-018-0081-5].
 The approaches presented in this paper enable these sequences to be represented in metapangenome estimation.
+Indeed, as demonstrated by the number of bins generated per species at each time point, many species were observed in a sample for which no bin was produced, often because the species was present at low abundance (**Figure @metap_sfig**).
+K~aa~-mer metapangenomes rescue these sequences and include them in the analysis.
 
-+ from #2 titus: it might be good (somewhere) to talk about how working with reads is better than working with cDBGs, because in regions of high error / high variation, the cDBG nodes or often shorter than reads.
+Interestingly, in some samples, *de novo* metagenome analysis produced multiple MAGs (**Figure @metap_sfig**).
+While not explored here, it may be possible to estimate the number of strains present in a sample using k~aa~-mer abundances.
+FracMinHash sketches optionally retain abundance information, so it is possible that this information could be retrieved directly from these sketches.
 
-Long read sequencing of microbial communities stands to improve many of these challenges, particularly as lineage-resolved methods become mainstream (cite bickhart et al.).
-Even as long read technologies improve, short read sequences continue to better capture strain diversity from a community (Cite Maureen?). 
-Even with long read references from the same community, many of these short reads do not map and do not assemble (cite Maureen). 
-The approaches presented here will allow these sequences to be included in pangenome estimation.
+This method is not without shortcomings, the largest of which is the current lack of integration of k~aa~-mers with functional annotations.
+We see three avenues by which this could be ameliorated.
+First, the underlying cDBG used to produce assembly graph query neighborhoods could be annotated, and these annotations could be paired with k~aa~-mers. 
+The technology to do this exists (CITE: IBD) [@doi:10.1007/978-3-030-18174-1_6], however this approach is the least scalable option.
+Second, using the sequences included in the orpheum species databases, species-level protein databases that include functional annotations could be built and searched using sourmash gather. 
+While rapid, this approach is undesirable given its reliance on existing annotations for genes within a given species. 
+Lastly, a database such as the NCBI nr database could be made searchable in a similar capacity, increasing the breadth of possible matches. 
+This  may require new algorithm development to maintain scalability.
 
-Practically, open reading frame prediction with orpheum can be executed on microbial illumina short read data sets.
-<!-- Generalize? Include citation to olga paper here? -->
-The RAM used to run orpheum is dictated by the database size, as the database is loaded into to memory while its running.
-The GTDB rs202 nodegraph was 94 GB, and the RAM required to run orpheum never exceed 97GB, which makes database distribution and orpheum execution available on high performance compute clusters and other remote computers.
-To reduce ram, this data structure could be improved XXX.
-Alternatively, species level databases were ~5 Mb in size, reducing the RAM and CPU tiem needed to run orpheum.
-<!-- Titus/Tessa? -->
+While cDBGs are often common intermediary data structures in bioinformatics pipelines (e.g., metagenome assembly), the organization of cDBGs is still under explored.
+Sequences from a genome or from closely related genomes often co-locate in neighborhoods of the cDBG [@doi:10.1038/s41396-018-0081-5; @doi:10.1186/s13059-020-02066-4], but regions of high sequence conservation and horizontally transferred genes create bridges between otherwise distant neighborhoods in the graph [@doi:10.1093/bioinformatics/btx681, @doi:10.1038/s41396-018-0081-5]. 
+Even still, species-level neighborhoods are well conserved and can be extracted [@doi:10.1186/s13059-020-02066-4; 10.1101/2022.02.25.481923].
+As we observed in strain-level plots of query neighborhoods wherein a fraction of the graph fell in the "other category" and belonged to low-abundance strains of the same species or organisms of other closely-related species (**Figure @fig:metap_fig D**), it is unclear the extent to which assembly graph organization breaks down in real metagenomes. 
+Prolific horizontal gene transfer could account for shared sequencing content, either by collapsing neighborhoods in the graph or by increasing the fraction of shared sequences between community members.
+Deeply sequenced paired long and short reads from the same community could help resolve these questions.
 
-We demonstrated that orpheum is better able to predict open reading frames in genomes that have species-level representatives in the GTDB database. 
-To asses whether this criteria is satisfied by a query genome without performing genome assembly, we recommend sourmash gather. Sourmash gather will estimate the fraction of sequencing reads in a genome or metagenome that match to genomes in GTDB by comparing long nucleotide k-mers in the query against those in the database (cite gather paper).
-Alternatively, the tool SingleM could be used to perform this task. 
-SingleM estimates the taxonomic composition of sequencing reads by identifying fragments of single copy marker genes in short reads and comparing them against a database of taxonomically labelled sequences.
+While we observe strain dynamics, the ecological reason for those signals cannot be determined from short read sequences alone; the patterns we observe could be the result of strain turn over, the presence of multiple strains, horizontal gene transfer between strains, or some combination of all of these influences.
+Again, long read sequencing, or sequencing from isolate genomes, could resolve these questions, particularly as long read lineage-resolved methods become mainstream [@doi:10.1038/s41587-021-01130-z].
+In principle, the methods presented here should extend directly to long read sequences, however this remains a point of future research.
 
-These strategies may also be useful to predetermine the set of species-level databases to use for ORF prediction.
-<!-- Interestingly, while shared k-mer content between distantly related genomes improves ORF prediction, using reduced alphabets did not improve ORF recall. -->
-<!-- We only did this for panmers, not orpheum...so for. Could show e.g. within phlya or some small db.  -->
 
-Comparison between euks? Need to read orpheum paper.
-
-PANMER discussion
-
-+ sourmash signature generation is rapid.
-+ Exact matching scales (linearly?). May enable running on very large collections of genomes.
-+ Exact matching of k-mers enables additions of new species without having to rerun everything.
-+ Exact matching also allows direct comparisons to distantly related organisms. Unified framework for genome comparisons even when organisms are distantly related.
-+ scaled is handy parameter to potentially enable even larger comparisons
-+ sacrifice function -- annotating k-mers with function is good future work. 
-
-### Other points
-
-+ While the number of genes per genome is increased for genomes with this exclusion criteria, there is no commensurate increase in the number of k-mers observed. 
-This suggests that the number of k-mers in a genome could be used to predict the expected range of predicted genes in a genome, and could be potentially used a quality control metric for annotated genomes.
-+ While developed for the metapangenomics space, this study demonstrates that k-mer-based pangenomes will also work in isolate genomes. Given that building k-mer sketches and exact matching of k-mers between genomes is fast, this provides an alternative approach for building pangenomes. 
-+ De novo metagenome analysis probably dramatically improves ORF prediction because of the inclusion of these genomes in GTDB.
-+ annotation is substantial drawback. Integrate potential of assembly graph annotation.
 
 
 # Methods 
@@ -522,8 +519,8 @@ Reads are designated as non-coding if they don't reach the Jaccard similarity th
 We constructed a database from GTDB rs202 using sourmash XXX and using a k-mer size of 10.
 + @Tessa any relevant details would be very helpful :) 
 
-### Metapangenome analysis of iHMP metagenomes
-We used sourmash, spacegraphcats, and orpheum to peform metapangenome analysis of 12 iHMP time series gut microbiomes captured by short read shotgun metagenomes [@doi:10.1038/s41586-019-1237-9].
+### K~aa~-mer metapangenome analysis of iHMP metagenomes
+We used sourmash, spacegraphcats, and orpheum to perform k~aa~-mer metapangenome analysis of 12 iHMP time series gut microbiomes captured by short read shotgun metagenomes [@doi:10.1038/s41586-019-1237-9].
 We downloaded samples HSM6XRQB, HSM6XRQI, HSM6XRQK, HSM6XRQM, HSM6XRQO, HSM67VF9, HSM67VFD, HSM67VFJ, HSM7CYY7, HSM7CYYD, HSM7CYY9, HSM7CYYB from ibdmdb.org.
 We adapter and quality trimmed each sample with fastp (parameters `--detect_adapter_for_pe`, `--qualified_quality_phred 4`, `--length_required 31`, and `--correction`), removed human host sequencing reads with bbduk (parameters `k=31`, reference file https://drive.google.com/file/d/0B3llHR93L14wd0pSSnFULUlhcUk/edit?usp=sharing), and k-mer trimmed reads using khmer `trim-low-abund.py` (parameters `-C 3`, `-Z 18`, `-V`) [@doi:10.12688/f1000research.6924.1].
 We then used sourmash gather to infer the taxonomic profile of each sample, using the GTDB rs202 database (`k` = 31, https://osf.io/w4bcm/) [@doi:10.1038/s41586-019-1237-9].
@@ -546,6 +543,29 @@ We used pagoo methods `pg$gg_binmap()`, `pg$summary_stats()`, and `pg$pg_power_l
 Table: Query genome GTDB species names and GenBank accessions.
 {#tbl:acc}
 
+## Comparing k~aa~-mer, *de novo*, and reference (meta)pangenomes
+
+We compared the k~aa~-mer metapangenomes against other (meta)pangenomes. 
+We first constructed a reference pangenome for each query species as detailed in the methods section, "Calculated the gene-based pangenome with roary."
+We used all genomes in the GTDB rs202 database for a given species (**Table @tbl:acc**).
+We then constructed *de novo* metapangenomes for each species.
+Using quality controlled reads from each sample, we assembled each metagenome separately using megahit with default parameters [@doi:10.1093/bioinformatics/btv033].
+We binned the resultant assemblies using metabat2 with parameter `-m 1500` [@doi:10.7717/peerj.7359].
+We assigned GTDB species to each bin using sourmash `gather` (DNA, *k* = 31, scaled = 2000) against the GTDB rs202 database, selecting the species of the best match [@doi:10.1101/2022.01.11.475838].
+We decontaminated each bin using charcoal using default parameters (CITE: charcoal).
+We annotated each bin using prokka [@doi:10.1093/bioinformatics/btu153].
+To compare the sequence content of the (meta)pangenomes, we sketched the protein sequences from the *de novo* and reference (meta)pangenomes using sourmash `sketch` (protein, *k* = 10, scaled = 100).
+We intersected the hashes in these sketches to assess shared sequencing content, and visualized it using the R complexUpset package [@doi:10.5281/zenodo.3700590].
+
+To further compare the sequence content of the k~aa~-mer metapangenomes to the *de novo* and reference (meta)pangenomes, we mapped the reads used to build the k~aa~-mer metapangenomes iteratively against the (meta)pangenomes.
+We first mapped the reads against the reference pangenome using bwa `mem` with default parameters [@url:https://arxiv.org/abs/1303.3997].
+We used samtools `stat` to determine read mapping statistics, and samtools `view` and `fastq` to extract the unmapped reads [@doi:10.1093/bioinformatics/btp352].
+We then mapped the unmapped reads against the *de novo* metapangenome. 
+To prepare the *de novo* metapangenome for mapping, we clustered nucleotide sequences at 95% using cd-hit-est [@doi:10.1093/bioinformatics/btl158].
+We then mapped the unmapped reads using bwa `mem` with default parameters.
+We extracted unmapped reads using the same procedure as above.
+To determine whether more reads mapped in amino acid space, we translated the reference and *de novo* (meta)pangenomes into protein sequences using transeq (http://ebi.ac.uk/Tools/emboss/transeq/index.html), and then repeated the same iterative mapping procedure using paladin `align` [@doi:10.1093/bioinformatics/btx021].
+To test whether the fraction of mapped reads increased between the two mapping protocols, we used the R function `t.test()` using parameter `paired = TRUE`.
 
 ## References {.page_break_before}
 
@@ -647,3 +667,31 @@ Table: GTDB genomes used to benchmark orpheum accuracy.
 | GCF_018336995.1 | 239935     | Akkermansia muciniphila                 |
 Table: RefSeq genomes not in the GTDB rs202 database used to benchmark orpheum accuracy.
 {#tbl:refseq_acc}
+
+## Practical considerations for building k~aa~-mer metapangenomes
+
+### Open reading frame prediction with orpheum
+
+The RAM used to run orpheum is dictated by the database size, as the database is loaded into to memory while it is running.
+The GTDB rs202 nodegraph was 94 GB in size, and the RAM required to run orpheum never exceed 97GB, which makes database distribution and orpheum execution available on high performance compute clusters and other remote computers.
+Alternatively, species level databases were ~5 Mb in size, reducing the RAM and CPU time needed to run orpheum.
+
+We demonstrated that orpheum is better able to predict open reading frames in genomes that have species-level representatives in the GTDB database. 
+To asses whether this criteria is satisfied by a query genome without performing genome assembly, we recommend sourmash gather [@doi:10.1101/2022.01.11.475838]. 
+Sourmash gather will estimate the fraction of sequencing reads in a genome or metagenome that match to genomes in GTDB by comparing long nucleotide k-mers in the query against those in the database [@doi:10.1101/2022.01.11.475838].
+Alternatively, the tool SingleM could be used to perform this task (https://github.com/wwood/singlem). 
+SingleM estimates the taxonomic composition of sequencing reads by identifying fragments of single copy marker genes in short reads and comparing them against a database of taxonomically labelled sequences.
+
+These strategies may also be useful to predetermine the set of species-level databases to use for ORF prediction.
+
+### K~aa~-mer pangenome construction
+
+One consideration is for k~aa~-mer sketch creation is the scaled value.
+The scaled parameter controls the fraction on k~aa~-mers included in each sketch.
+We have found that a scaled value of 100 works well for comparing proteomes (cite TESSA?).
+For a subset of pangenomes benchmarked in results section, "K-mer methods accurately predict open reading frames in short sequencing reads", we tested scaled = 1 and scaled = 100 (n = 8; s__Akkermansia muciniphila, s__Chlamydia trachomatis, s__Faecalibacterium prausnitzii_D s__Gemmiger formicilis, s__Geothrix sp903857495, s__Methanobrevibacter_A-sp900314695, s__Thermus scotoductus, s__UBA2262 sp903869265).
+We correlated the number of k~aa~-mers and genes per pangenome, the number of unique k~aa~-mers and genes per pangenome, and the similarity between genomes using k~aa~-mers or genes with sketches generated using a scaled of 1 or a scaled of 100.
+When then performed a second order correlation to determine if both scaled values produced the same results.
+All values were strongly significantly correlated with an R^2^ > 0.99 (p < 0.001), indicating that scaled 100 sketches captured the same patterns as scaled 1 sketches.
+While we have not experimented with the upper bound of the scaled value that will still produce accurate results, using a scaled of 100 substantially decreased compute times.
+
