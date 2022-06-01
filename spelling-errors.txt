@@ -64,7 +64,7 @@ Clostridium
 complexUpset
 Crohn’s
 csv
-ctb
+CTB
 Cuniculiplasma
 Cutibacterium
 Cyanobacteria
@@ -73,7 +73,7 @@ Cyanobiaceae
 CYY
 CYYB
 CYYD
-dayhoff
+Dayhoff
 Dehalococcoidaceae
 Dehalococcoidales
 Dehalococcoides
@@ -90,6 +90,7 @@ Desulfurivibrionaceae
 Desulfuromonadia
 distasonis
 divulgatum
+DOIs
 Drosophila
 DSM
 encodings
@@ -123,7 +124,7 @@ Geobacterales
 Geothrix
 GFF
 granulosum
-gtdb
+GTDB
 GWC
 Halobacteriota
 HAR
@@ -172,7 +173,7 @@ metapalette
 metapangenome
 metapangenomes
 Metapangenomic
-metapangenomics
+Metapangenomics
 metatranscriptomes
 Methanobacteria
 Methanobacteriaceae
@@ -183,8 +184,8 @@ Methanosarcina
 Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
-metronidazole
-Microbiome
+Metronidazole
+microbiome
 microbiomes
 Moranbacterales
 muciniphila
@@ -201,7 +202,7 @@ novo
 nucleotides
 olgabot
 ORF
-orpheum
+Orpheum
 Oscillochloris
 oxidoreductase
 Paceibacteria
@@ -229,7 +230,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-refseq
+RefSeq
 Reiter
 ReiterTaylor
 Rhabdochlamydia
@@ -306,5 +307,6 @@ XRQO
 XXXXXXXX
 Youden’s
 YPL
+zenodo
 ZM
 Zuckerberg
