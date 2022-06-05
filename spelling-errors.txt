@@ -64,7 +64,7 @@ Clostridium
 complexUpset
 Crohn’s
 csv
-CTB
+ctb
 Cuniculiplasma
 Cutibacterium
 Cyanobacteria
@@ -133,7 +133,6 @@ Holophagaceae
 Holophagae
 Holophagales
 HSM
-IBD
 ibdmdb
 iHMP
 Illumina
@@ -169,7 +168,6 @@ metagenome
 metagenomes
 metagenomic
 metap
-metapalette
 metapangenome
 metapangenomes
 Metapangenomic
@@ -202,7 +200,7 @@ novo
 nucleotides
 olgabot
 ORF
-Orpheum
+orpheum
 Oscillochloris
 oxidoreductase
 Paceibacteria
@@ -230,7 +228,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-RefSeq
+refseq
 Reiter
 ReiterTaylor
 Rhabdochlamydia
@@ -249,7 +247,7 @@ sfig
 shibatae
 SingleM
 SNPs
-sourmash
+Sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
@@ -279,12 +277,13 @@ Thermoproteota
 Thermosipho
 Thermosulfurimonas
 Thermus
-tk
+Tk
 trachomatis
 transcriptome
 transeq
 UBA
 UC
+unanalyzed
 unbinnable
 Unbinned
 uniformis
