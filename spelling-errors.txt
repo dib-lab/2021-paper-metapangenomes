@@ -64,7 +64,7 @@ Clostridium
 complexUpset
 Crohn’s
 csv
-ctb
+CTB
 Cuniculiplasma
 Cutibacterium
 Cyanobacteria
@@ -182,7 +182,7 @@ Methanosarcina
 Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
-Metronidazole
+metronidazole
 microbiome
 microbiomes
 Moranbacterales
@@ -247,7 +247,7 @@ sfig
 shibatae
 SingleM
 SNPs
-Sourmash
+sourmash
 spacegraphcats
 sphagniphila
 Spirochaetota
@@ -277,7 +277,7 @@ Thermoproteota
 Thermosipho
 Thermosulfurimonas
 Thermus
-Tk
+tk
 trachomatis
 transcriptome
 transeq

@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-06-05'
+date-meta: '2022-06-19'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-06-05" />
-  <meta name="citation_publication_date" content="2022-06-05" />
+  <meta name="dc.date" content="2022-06-19" />
+  <meta name="citation_publication_date" content="2022-06-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -52,15 +52,15 @@ header-includes: |-
   <meta name="citation_author" content="C. Titus Brown" />
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
-  <link rel="canonical" href="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
-  <meta property="og:url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
-  <meta property="twitter:url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
-  <meta name="citation_fulltext_html_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/" />
-  <meta name="citation_pdf_url" content="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://taylorreiter.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://taylorreiter.github.io/2021-paper-metapangenomes/v/aedfa409920ad574728e0c569552b2265565c2ba/" />
-  <meta name="manubot_html_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/aedfa409920ad574728e0c569552b2265565c2ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://taylorreiter.github.io/2021-paper-metapangenomes/v/aedfa409920ad574728e0c569552b2265565c2ba/manuscript.pdf" />
+  <link rel="canonical" href="https://dib-lab.github.io/2021-paper-metapangenomes/" />
+  <meta property="og:url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
+  <meta property="twitter:url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
+  <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
+  <meta name="citation_pdf_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://taylorreiter.github.io/2021-paper-metapangenomes/v/aedfa409920ad574728e0c569552b2265565c2ba/))
+([permalink](https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/))
 was automatically generated
-from [taylorreiter/2021-paper-metapangenomes@aedfa40](https://github.com/taylorreiter/2021-paper-metapangenomes/tree/aedfa409920ad574728e0c569552b2265565c2ba)
-on June 5, 2022.
+from [dib-lab/2021-paper-metapangenomes@881b606](https://github.com/dib-lab/2021-paper-metapangenomes/tree/881b60695c281494e65b9e62ead9a2e99b10065b)
+on June 19, 2022.
 </em></small>
 
 ## Authors
