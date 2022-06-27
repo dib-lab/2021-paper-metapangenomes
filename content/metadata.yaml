@@ -17,7 +17,8 @@ authors:
     affiliations:
       - Department of Population Health and Reproduction, University of California, Davis
     funders:
-      - Grant XXXXXXXX
+      - Grant GBMF4551 from the Gordon and Betty Moore Foundation
+      - Grant R03OD030596 from the NIH Common Fund
   - github: bluegenes
     name: N. Tessa Pierce-Ward
     initials: NTP
@@ -26,7 +27,10 @@ authors:
     email: ntpierce@ucdavis.edu
     affiliations:
      - Department of Population Health and Reproduction, University of California, Davis
-    funders: NSF 1711984
+    funders:
+      - Grant 1711984 from the NSF
+      - Grant GBMF4551 from the Gordon and Betty Moore Foundation
+      - Grant 2018911 from the NSF
   - github: luizirber
     name: Luiz Irber
     initials: LI
@@ -36,6 +40,9 @@ authors:
     affiliations:
       - Graduate Group in Computer Science, UC Davis
       - Department of Population Health and Reproduction, University of California, Davis
+    funders:
+      - Grant GBMF4551 from the Gordon and Betty Moore Foundation
+      - Grant R01HG007513 from the NIH NHGRI
   - github: olgabot
     name: Olga Borisovna Botvinnik
     initials: OBB
@@ -51,3 +58,8 @@ authors:
     email: ctbrown@ucdavis.edu
     affiliations:
       - Department of Population Health and Reproduction, University of California, Davis
+    funders:
+      - Grant GBMF4551 from the Gordon and Betty Moore Foundation
+      - Grant R01HG007513 from the NIH NHGRI
+      - Grant 2018911 from the NSF
+      - Grant R03OD030596 from the NIH Common Fund
