@@ -57,6 +57,7 @@ Chlamydiales
 Chlamydiia
 Chlamydiota
 Chloroflexota
+clade
 Clostridia
 Clostridiaceae
 Clostridiales
@@ -219,6 +220,7 @@ plasmids
 porcellionis
 prausnitzii
 Prochlorococcus
+prokaryotes
 prokka
 Proteobacteria
 proteobacterium
@@ -228,7 +230,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-refseq
+RefSeq
 Reiter
 ReiterTaylor
 Rhabdochlamydia

@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-06-19'
+date-meta: '2022-06-27'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-06-19" />
-  <meta name="citation_publication_date" content="2022-06-19" />
+  <meta name="dc.date" content="2022-06-27" />
+  <meta name="citation_publication_date" content="2022-06-27" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/be300d6f0a8d50479352e52c9fc6a5d1c99f16c6/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/be300d6f0a8d50479352e52c9fc6a5d1c99f16c6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/be300d6f0a8d50479352e52c9fc6a5d1c99f16c6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2021-paper-metapangenomes/v/881b60695c281494e65b9e62ead9a2e99b10065b/))
+([permalink](https://dib-lab.github.io/2021-paper-metapangenomes/v/be300d6f0a8d50479352e52c9fc6a5d1c99f16c6/))
 was automatically generated
-from [dib-lab/2021-paper-metapangenomes@881b606](https://github.com/dib-lab/2021-paper-metapangenomes/tree/881b60695c281494e65b9e62ead9a2e99b10065b)
-on June 19, 2022.
+from [dib-lab/2021-paper-metapangenomes@be300d6](https://github.com/dib-lab/2021-paper-metapangenomes/tree/be300d6f0a8d50479352e52c9fc6a5d1c99f16c6)
+on June 27, 2022.
 </em></small>
 
 ## Authors
@@ -151,10 +151,11 @@ on June 19, 2022.
 
 ## Abstract {.page_break_before}
 
-Microbial pangenomes reflect the metabolic diversity of groups of organisms.
+An estimated 2 billion species of microbes exist on Earth with orders of magnitude more strains. 
+Microbial pangenomes are created by aggregating all genomes of a single clade and reflect the metabolic diversity of groups of organisms.
 As *de novo* metagenome analysis techniques have matured and reference genome databases have expanded, metapangenome analysis has risen in popularity as a tool to organize the functional potential of organisms in relation to the environment from which those organisms were sampled.
 However, the reliance on assembly and binning or on reference databases often leaves substantial portions of metagenomes unanalyzed, thereby underestimating the functional potential of a community.
-To address this challenge, we present a method for metapangenomics that relies on protein k-mers (k~aa~-mers) and metagenome assembly graph queries.
+To address this challenge, we present a method for metapangenomics that relies on amino acid k-mers (k~aa~-mers) and metagenome assembly graph queries.
 To enable this method, we first show that k~aa~-mers estimate pangenome characteristics and that open reading frames can be accurately predicted from short shotgun sequencing reads using the previously developed tool orpheum.
 These techniques enable pangenomics to be performed directly on short sequencing reads.
 To enable metapangenome analysis, we combine these approaches with compact de Bruijn assembly graph queries to directly generate sets of sequencing reads for a specific species from a metagenome.
@@ -162,21 +163,23 @@ When applied to stool metagenomes from an individual receiving antibiotics over 
 
 # Introduction
 
-Short read metagenomic sequencing has expanded our knowledge of microbial communities and diversity [@doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6; @doi:10.1038/s41579-019-0311-5].
-In particular, metagenome assembly and genome binning or annotation have produced catalogs of metagenome-assembled genomes and genes, revealing new species and functional potentially previously unobserved in cultured organisms [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6].
+Microbes are the most species-rich category of organisms on Earth [@doi:10.1086/693564], comprising an an estimated 2 billion species, and yet as fewer than 0.01% of species' genomes are deposited to NCBI Genomes [@url:https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/], their full diversity is under-described.
+Short read metagenomic sequencing expanded knowledge of microbial communities and diversity [@doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6; @doi:10.1038/s41579-019-0311-5].
+In particular, metagenome assembly and annotation produced catalogs of metagenome-assembled genomes and genes, revealing new species and functions previously unobserved in cultured organisms [@doi:10.1038/nature02340; @doi:10.1038/nmicrobiol.2016.48; @doi:10.1038/s41587-020-0718-6].
 
-Along with advances in metagenome sequencing and analysis, the concept of metapangenomics has arisen as a framework for understanding how sets of metagenome-derived genes that are attributable to a group of organisms correlate with parameters in the environments in which they are sampled from [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
+Along with advances in metagenome sequencing and analysis, the concept of "metapangenomics" arose as a framework for understanding how sets of metagenome-derived genes that are attributable to a group of organisms correlate with environmental parameters [@doi:10.7717/peerj.4320; @doi:10.1038/s41396-019-0516-7; @doi:10.1007/978-3-030-38281-0_9].
 Metapangenomic methods borrow heavily from pangenome analysis.
 Pangenomes comprise all genomic elements -- usually open reading frames or genes -- found within a group of organisms and reflect the metabolic and ecological plasticity of that group [@doi:10.1073/pnas.0506758102; @doi:10.1038/s41396-021-01149-9].
 The pangenome is divided into core and accessory genes, where core genes are shared by almost all members in the group and accessory genes are not.
 Core genes often encode primary metabolism or other functions necessary for a group to live in a given environment [@doi:10.1016/j.mib.2014.11.016], while accessory genes encode functions that facilitate adaptation to changing environments [@doi:10.1038/s41396-021-01149-9].
-The size of the pangenome reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches [@doi:10.1073/pnas.0506758102].
-Open pangenomes are those which increase indefinitely in size when adding new genomes, while closed pangenomes do not.
+The size of the pangenome (e.g. number of distinct sequences) reflects the diversity of the organisms in a pangenome (population size, number of organisms sampled) as well as the ability of those organisms to adapt to different niches [@doi:10.1073/pnas.0506758102].
+Open pangenomes are those which increase indefinitely in size when adding new genomes, while closed pangenomes do not. 
 
-While pangenomes are traditionally inferred from isolate genomes, metapangenomics extends the ecological framework of pangenomics to metagenomes.
+While pangenomes are traditionally inferred from genomes created from lab-cultured isolates ("isolates"), metapangenomics extends the ecological framework of pangenomics to metagenomes.
 Metapangenomics gives insight into the genes that support specific environmental adaptations by applying pangenome methods to metagenome assembled genomes (MAGs) [@doi:10.1038/s41396-019-0516-7], or by mapping metagenomes against isolate-inferred pangenomes [@doi:10.7717/peerj.4320].
 Both methods give valuable insight into the presence and distribution of functional content in natural microbial communities, but either may introduce biases associated with unknown sequencing content [@doi:10.1186/s12915-019-0667-z].
-MAGs are often incomplete or unrecoverable due to low sequencing coverage or large amounts of variation (SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, etc.), both of which cause short read assemblers to produce unbinnable short contiguous sequences.
+MAGs are often incomplete or unrecoverable due to low sequencing coverage or large amounts of variation caused by SNPs, indels, rearrangements, horizontal gene transfer, sequencing error, and so on. 
+Sequencing variation causes short read assemblers to produce unbinnable short contiguous sequences.
 Unbinned sequences are disproportionately comprised of genomic islands and plasmids [@doi:10.1099/mgen.0.000436], hot spots for evolution that support microbial adaptation to changing environments [@doi:10.1101/2021.03.15.435471].
 In contrast, read mapping against isolate-inferred pangenomes may miss functional content present in the metagenome but absent from references, especially for unknown or under-represented species.
 
@@ -184,7 +187,7 @@ These issues are not exclusive to metapangenome inference, and many recently dev
 These techniques largely rely on k-mers, words of length *k* in DNA or protein sequences.
 Metagenome k-mer profiles contain all sequences in a metagenome, including those which may not assemble or bin, or which aren't in reference databases.
 Long k-mers are also taxonomy-specific, where increasing k-mer length leads to sub-species discriminatory power [@doi:10.1128/mSystems.00020-16] (CITE: TESSA).
-These properties have popularized the use of k-mers for metagenome analysis, primarily through lightweight sketching and compact de Bruijn assembly graphs (cDBGs). 
+The ability to distinguish between species without alignment or assembly have popularized the use of k-mers for metagenome analysis, primarily through lightweight sketching and compact de Bruijn assembly graphs (cDBGs). 
 Lightweight sketching facilitates fast and accurate sequence comparisons between potentially large data sets through random but consistent sub-sampling [@doi:10.1186/s13059-016-0997-x; @doi:10.1101/2022.01.11.475838].
 cDBGs maintain connectivity between k-mers and organize them into species-specific neighborhoods [@doi:10.1038/s41396-018-0081-5; @doi:10.1186/s13059-020-02066-4].
 
@@ -219,17 +222,19 @@ The blue and orange lines correspond to steps tested in panels **A** and **B**.
 Pangenomes from isolates are typically built by assembling each isolate genome and predicting genes (open reading frames), clustering gene sequences from all genomes into a non-redundant set, and estimating the presence/absence or abundance of each gene in each genome. 
 To determine whether bacterial and archaeal pangenomes could be constructed from protein k-mers, we compared pangenomes estimated from genes against those estimated from k-mers.
 We compared pangenomes from 23 species belonging to 23 phyla in the GTDB taxonomy [@doi:10.1093/nar/gkab776], with pangenome size ranging from 20-972 genomes (mean = 203 genomes, median = 44 genomes) (**Figure S @fig:tree_fig**).
-For each pangenome, we compared the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
-We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test.
+For each pangenome, we computed the R^2^ between the total number of genes to the total number of k-mers, and the number of unique genes to the number of distinct k-mers within each genome.
+We also tested the similarity of presence/absence profiles between pangenomes constructed with different methods using the Mantel test [@pmid:6018555].
 
-For these three metrics, performance was stable across k~aa~-mer sizes, but varied dramatically for some pangenomes: both k-mers and genes are highly correlated for some pangenomes and are not correlated for others (**Figure S @fig:boxplt_fig**).
+The strength of the relationship between k-mers and genes varied dramatically for some pangenomes. 
+Both k-mers and genes are highly correlated in DNA, protein, or reduced amino acid alphabet space for most pangenomes, while a few pangenomes were outliers with low correlations (**Figure S @fig:boxplt_fig**).
 We investigated pangenomes more closely to determine the source of the poor correlations and found that they were caused by the presence of many frameshifted proteins, one of many potential criteria for exclusion of GenBank genomes from RefSeq.
-For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins. 
-Removing these genomes increased the R^2^ to 0.87 (**Figure @fig:panmers_fig A**).
-This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:panmers_fig B**).
+For example, *Leptospira interrogans* had an R^2^ of 0.12 between the total number of genes and k-mers in genomes in the pangenome, but 21 of 317 genomes contained frameshifted proteins.
+Removing genomes with many frameshifted proteins increased the R^2^ to 0.87 (**Figure @fig:panmers_fig A**).
+This trend was consistent across pangenomes, where pangenomes with one or more frameshift-excluded genome had significantly lower R^2^ values between total number of genes and k-mers per genome than pangenomes without (Welch Two Sample t-test, estimate = -0.36, p = 0.003) (**Figure @fig:panmers_fig B**). 
 Other RefSeq exclusion criteria did not impact the correlation between the total genes and k-mers per genome for a given pangenome.
 
-Using pangenomes that contained no genomes excluded from RefSeq for containing many frameshifted proteins (n = 13), we found that k-mer size encoding had little impact on the accuracy of pangenome estimation with k-mers (**Figure @fig:panmers_fig C**).
+A range of k-mer sizes in amino acid alphabets had comparable performance.
+Using pangenomes that contained no genomes excluded from RefSeq for containing many frameshifted proteins (n = 13), we found that k-mer size had little impact on the accuracy of pangenome estimation (**Figure @fig:panmers_fig C**).
 This is likely because the genomes of the same species are closely related, so protein k-mers are sufficient to overcome minor genomic variations such as those introduced by codon degeneracy or evolutionary drift [@doi:10.1111/jse.12233].
 The one exception was for nucleotide k-mers (*k* = 31), which did not correlate as strongly with gene-based pangenomes.
 This supports the use of reduced alphabet k-mer encodings over nucleotide k-mers for construction of pangenomes.
@@ -243,14 +248,14 @@ In addition, protein k-mers of length 10 have recently been shown to perform wel
 Removing genomes flagged with RefSeq exclusion criteria "many frameshifted proteins" improves the correlation between these variables. 
 **B)** Box plot of R^2^ values between the total number of genes and k-mers per genome. 
 Pangenomes that contain genomes with the RefSeq exclusion criteria of "many frameshifted proteins" have significantly lower R^2^ values.
-**C)** Box plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel) calculated for each pangenome. Only pangenomes that do not contain genomes with the RefSeq exclusion criteria "many frameshifted proteins" are plotted. K-mer size corresponds to the number of amino acid sequences used for the k-mer for all k-mers except *k* = 31, which corresponds to the number of nucleotides. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
+**C)** Box plots representing the distribution of R^2^ values for linear models (Total, Unique) or statistic values for mantel tests (Mantel [@pmid:6018555]). Only pangenomes that do not contain genomes with the RefSeq exclusion criteria "many frameshifted proteins" are plotted. K-mer size corresponds to the number of amino acid sequences used for the k-mer for all k-mers except *k* = 31, which corresponds to the number of nucleotides. *Total* corresponds to correlations between the total number of distinct genes and k-mers in a genome. *Unique* corresponds to correlations between the number of unique genes and k-mers in genome. *Mantel* corresponds to mantel tests between the gene and k-mer presence-absence matrices.
 **D)** Pangenome metrics strongly correlate between gene- and k-mer-based pangenomes. Pangenome categories core, shell, and cloud refer to genes or k-mers shared between the majority (>95%), some, or singleton genomes in the pangenome. Alpha is a value from Heaps law used to estimate whether a pangenome is open or closed.
 ](images/panmers_fig.png){#fig:panmers_fig}
 
-We next investigated whether other pangenome metrics were well correlated between our k-mer-based and the gene-based method roary (see Methods for details).
-For these 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:panmers_fig** D).
+We next investigated whether other pangenome metrics were well correlated between our k-mer-based method and the gene-based method roary (see Methods for details).
+For 13 pangenomes, the percent of k-mers or genes predicted to be part of the core, shell, or cloud pangenome was strongly correlated (**Figure @fig:panmers_fig** D).
 The content of the core genomes was also similar between pangenomes built with different methods.
-Focusing on genes or k-mers shared between all genomes in a pangenome, and limiting our inquiry to pangenomes with at least five genes shared between all genomes (n = 11), we found that the core k-mers contained an average of 83.9% (SD = 15.4%) of sequences in the core genes, while the core genes contained an average of 73.5% (SD = 16.9%) of the sequences in the core k-mers.
+Focusing on genes or k-mers shared between all genomes in a pangenome, and limiting our inquiry to pangenomes with at least five genes shared between all genomes (n = 11), we found core k-mers contained an average of 83.9% (SD = 15.4%) of sequences in core genes, while core genes contained an average of 73.5% (SD = 16.9%) of sequences in core k-mers.
 This indicates congruence in the functional content represented by the core fractions of both pangenome types.
 Lastly, we compared whether pangenomes would be designated as open or closed by calculating the alpha value for the Heaps law model [@doi:10.1016/j.mib.2008.09.006]. 
 Alpha values were strongly correlated between gene- and k-mer based pangenomes (**Figure @fig:panmers_fig** D). 
@@ -302,6 +307,7 @@ On average, there was no change between the percent of reads derived from coding
 Decreasing the Jaccard containment threshold increased the sensitivity and specificity of ORF prediction when there are no closely related genomes in the database (**Figure @fig:orpheum_fig C, Table @tbl:threshold**).
 The Jaccard containment threshold controls the final prediction of coding vs. non-coding, as well as the the number of open reading frames which a read is translated into.
 On average, increasing the rank of the closest taxonomic relative in the database by one taxonomic level decreased the optimal Jaccard containment threshold by 0.13.
+We note that orpheum performed well, achieving sensitivity > 0.9 or better, when genomes of the same strain, species, and genus are present, but decreases significantly when the next closest relative is at the family level (**Figure @fig:orpheum_fig C).
 
 
 |Jaccard threshold | closest rank | mean sensitivity| mean specificity | mean Youden's index |
@@ -377,7 +383,7 @@ We hypothesized that fluctuations in accessory k~aa~-mers reflected strain-level
 To confirm this, we compared the nucleotide k-mer content in each query neighborhood against the GTDB database to determine which strains were present (**Figure @fig:metap_fig D**).
 We used a k-mer size of 51, as this is indicative of strain-level similarity [@doi:10.1128/mSystems.00020-16] (CITE: tessa).
 In each of the three species we investigated, we identified different patterns of strain fluctuations.
-In *Bacteroides uniformis*, only one strain (BIOML-A27) was present until week 25, when another strain appears (BIOML-A2).
+In *Bacteroides uniformis*, only one strain of *B. uniformis* (BIOML-A27) was present until week 25, when another strain appears (BIOML-A2).
 In *Parabacteroides distasonis*, the dominant strain switches at week 13 (20_3 to OF01-14), coincident with other strains appearing (BIOML-A21, BIOML-A26, BIOML-A32).
 Lastly, in *Phocaeicola vulgatus*, the dominant strain does not change through the time course, but multiple other strains are detected with one strain switch occurring at week 13 (H23 and AM38-19 to VPI-4496.2).
 
@@ -405,7 +411,7 @@ This timing coincides with metronidazole administration.
 # Discussion
 
 We present a method to perform assembly-free metapangenomics that is minimally reliant on reference databases.
-We show that pangenome metrics like core, cloud, and shell pangenome fractions can be accurately estimated with long amino acid k-mers.
+We show that pangenome metrics like core, cloud, and shell pangenome fractions can be accurately estimated with short (k = 10) amino acid k-mers.
 We then demonstrate accurate prediction of open reading frames in highly accurate short sequencing reads by comparing amino acid k-mers in all translation frames against a database of k-mers from all known bacterial and archaeal genomes in GTDB (rs202).
 Combining these tools enables pangenome estimation directly from quality controlled short sequencing reads.
 In the context of metagenomes, these approaches enable metapangenome estimation without the need to *de novo* assemble and bin sequences, eliminating common sources of lost sequencing variation [@doi:10.1186/s13059-020-02066-4]. These techniques also reduce the dependence of metapangenomics on complete or comprehensive reference databases, which can be important for understudied environments.
@@ -416,7 +422,7 @@ This may improve functional recall from metagenome short reads from organisms wi
 Similarly, k~aa~-mer pangenomes built from sketches may offer benefits over other pangenome construction methods, many of which are predominately tied to exact matching of k-mers between genomes.
 Exact matching of k-mers between genomes enables additional genomes to be added to the pangenome without having to re-cluster gene sequences. 
 Exact matching also allows direct comparisons to distantly related organisms, which creates a unified framework for genome comparisons even when organisms are distantly related.
-While we predominantly explored k~aa~-mers of length 10 in this paper, k-mers from other degenerate alphabets like Dayhoff or hydrophobic-polar encodings may allow for accurate comparisons at greater evolutionary distances [@doi:10.1101/2021.07.09.450799].
+While we predominantly explored k~aa~-mers of length 10 in this paper, k-mers from other degenerate alphabets like Dayhoff or hydrophobic-polar encodings may allow for accurate comparisons at greater evolutionary distances [@doi:10.1101/2021.07.09.450799] + (cite:TESSA).
 When pangenomes are built from FracMinHashes as performed here, the scaled down sampling parameter may also enable faster pangenome size estimation even for very large collections of genomes and could be potentially used a quality control metric for annotated genomes.
 While developed for the metapangenomics space, this study demonstrates that k~aa~-mer pangenomes also accurately estimate pangenomes built from isolate genomes. 
 Since building k~aa~-mer sketches and searching for exact matches of k~aa~-mers between genomes is fast, this provides an alternative approach for building pangenomes.
