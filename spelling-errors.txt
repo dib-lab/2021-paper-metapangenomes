@@ -65,7 +65,7 @@ Clostridium
 complexUpset
 Crohn’s
 csv
-CTB
+ctb
 Cuniculiplasma
 Cutibacterium
 Cyanobacteria
@@ -91,7 +91,6 @@ Desulfurivibrionaceae
 Desulfuromonadia
 distasonis
 divulgatum
-DOIs
 Drosophila
 DSM
 encodings
@@ -115,6 +114,7 @@ Fusobacteriales
 Fusobacteriia
 Fusobacteriota
 Fusobacterium
+GBMF
 GCA
 GCF
 Gemmiger
@@ -125,7 +125,7 @@ Geobacterales
 Geothrix
 GFF
 granulosum
-GTDB
+gtdb
 GWC
 Halobacteriota
 HAR
@@ -172,7 +172,7 @@ metap
 metapangenome
 metapangenomes
 Metapangenomic
-Metapangenomics
+metapangenomics
 metatranscriptomes
 Methanobacteria
 Methanobacteriaceae
@@ -183,7 +183,7 @@ Methanosarcina
 Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
-metronidazole
+Metronidazole
 microbiome
 microbiomes
 Moranbacterales
@@ -195,6 +195,7 @@ NCBI
 NCTC
 necrophorum
 Negativicutes
+NHGRI
 Nitrospirota
 nodegraph
 novo
@@ -206,7 +207,7 @@ Oscillochloris
 oxidoreductase
 Paceibacteria
 pagoo
-pangenome
+Pangenome
 pangenomes
 pangenomics
 panmers
@@ -220,7 +221,6 @@ plasmids
 porcellionis
 prausnitzii
 Prochlorococcus
-prokaryotes
 prokka
 Proteobacteria
 proteobacterium
@@ -230,7 +230,7 @@ Pseudomonas
 Pseudopelobacter
 Pseudopelobacteraceae
 pyogenes
-RefSeq
+refseq
 Reiter
 ReiterTaylor
 Rhabdochlamydia
@@ -279,7 +279,7 @@ Thermoproteota
 Thermosipho
 Thermosulfurimonas
 Thermus
-tk
+Tk
 trachomatis
 transcriptome
 transeq
@@ -305,9 +305,7 @@ XRQI
 XRQK
 XRQM
 XRQO
-XXXXXXXX
 Youden’s
 YPL
-zenodo
 ZM
 Zuckerberg
