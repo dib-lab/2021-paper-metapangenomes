@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/dib-lab/2021-paper-metapangenomes/tree/gh-pages) branch hosts the contents of this directory at <https://dib-lab.github.io/2021-paper-metapangenomes/>.
-The permalink for this webpage version is <https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/>.
+The permalink for this webpage version is <https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://dib-lab.github.io/2021-paper-metapangenomes/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`4be2f6de3f6df3dde660b01976ba322bbd83eb4b`](https://github.com/dib-lab/2021-paper-metapangenomes/commit/4be2f6de3f6df3dde660b01976ba322bbd83eb4b).
+[`336cedaa0877356ea2bce4ddd555ddb64b59d05e`](https://github.com/dib-lab/2021-paper-metapangenomes/commit/336cedaa0877356ea2bce4ddd555ddb64b59d05e).
