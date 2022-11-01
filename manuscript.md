@@ -7,7 +7,7 @@ keywords:
 - reduced alphabet k-mer
 - open reading frame
 lang: en-US
-date-meta: '2022-06-27'
+date-meta: '2022-11-01'
 author-meta:
 - Taylor E. Reiter
 - N. Tessa Pierce-Ward
@@ -24,8 +24,8 @@ header-includes: |-
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-06-27" />
-  <meta name="citation_publication_date" content="2022-06-27" />
+  <meta name="dc.date" content="2022-11-01" />
+  <meta name="citation_publication_date" content="2022-11-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/))
+([permalink](https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/))
 was automatically generated
-from [dib-lab/2021-paper-metapangenomes@4be2f6d](https://github.com/dib-lab/2021-paper-metapangenomes/tree/4be2f6de3f6df3dde660b01976ba322bbd83eb4b)
-on June 27, 2022.
+from [dib-lab/2021-paper-metapangenomes@336ceda](https://github.com/dib-lab/2021-paper-metapangenomes/tree/336cedaa0877356ea2bce4ddd555ddb64b59d05e)
+on November 1, 2022.
 </em></small>
 
 ## Authors
@@ -291,7 +291,7 @@ We then BLASTed a subset of the remaining non-coding reads that were predicted t
 All reads we investigated had at least one match at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
 <!--Indeed, the worst performer was *Mycoplasmopsis bovis*, with 23% of non-coding reads predicted to be coding. 
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
-Because this method of open reading frame prediction cannot distinguish pseudogenes, it may not be appropriate for species with many pseudogenes.
+Because this method of open reading frame prediction cannot distinguish pseudogenes from genes, it may not be appropriate for species with many pseudogenes.
 
 Some coding sequences were also predicted to be non-coding. 
 We hypothesized that this was caused by sequencing error introduced into the simulated reads.
@@ -302,7 +302,7 @@ Protein k-mers from predicted open reading frames in the simulated short sequenc
 We estimated the Jaccard similarity between genomes using k~aa~-mers (*k* = 10) from annotated coding domain sequences, and compared this against Jaccard similarity between genomes using k~aa~-mers from predicted open read frames in the simulated short sequencing reads.
 Genomes that were most similar in one matrix were also most similar in another matrix (Mantel statistic = 0.9975, p < 0.001). 
 The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads.
-This demonstrates that information recovered from open reading frame prediction from short read is similar to that derived directly from the genome sequence.
+This demonstrates that information recovered from open reading frame prediction on short reads is similar to that derived directly from the genome sequence.
 
 The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database. 

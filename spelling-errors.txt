@@ -125,7 +125,7 @@ Geobacterales
 Geothrix
 GFF
 granulosum
-gtdb
+GTDB
 GWC
 Halobacteriota
 HAR
@@ -169,7 +169,7 @@ metagenome
 metagenomes
 metagenomic
 metap
-metapangenome
+Metapangenome
 metapangenomes
 Metapangenomic
 metapangenomics
@@ -183,7 +183,7 @@ Methanosarcina
 Methanosarcinaceae
 Methanosarcinales
 Methanosarcinia
-Metronidazole
+metronidazole
 microbiome
 microbiomes
 Moranbacterales
@@ -207,7 +207,7 @@ Oscillochloris
 oxidoreductase
 Paceibacteria
 pagoo
-Pangenome
+pangenome
 pangenomes
 pangenomics
 panmers

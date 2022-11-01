@@ -9,7 +9,7 @@
   <meta name="author" content="Luiz Irber" />
   <meta name="author" content="Olga Borisovna Botvinnik" />
   <meta name="author" content="C. Titus Brown" />
-  <meta name="dcterms.date" content="2022-06-27" />
+  <meta name="dcterms.date" content="2022-11-01" />
   <meta name="keywords" content="metapangenome, pangenome, assembly graph, reduced alphabet k-mer, open reading frame" />
   <title>Protein k-mers enable assembly-free microbial metapangenomics</title>
   <style>
@@ -51,8 +51,8 @@
   <meta name="citation_title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="og:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
   <meta property="twitter:title" content="Protein k-mers enable assembly-free microbial metapangenomics" />
-  <meta name="dc.date" content="2022-06-27" />
-  <meta name="citation_publication_date" content="2022-06-27" />
+  <meta name="dc.date" content="2022-11-01" />
+  <meta name="citation_publication_date" content="2022-11-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -85,9 +85,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2021-paper-metapangenomes/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2021-paper-metapangenomes/v/4be2f6de3f6df3dde660b01976ba322bbd83eb4b/">permalink</a>)
+(<a href="https://dib-lab.github.io/2021-paper-metapangenomes/v/336cedaa0877356ea2bce4ddd555ddb64b59d05e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2021-paper-metapangenomes/tree/4be2f6de3f6df3dde660b01976ba322bbd83eb4b">dib-lab/2021-paper-metapangenomes@4be2f6d</a>
-on June 27, 2022.
+from <a href="https://github.com/dib-lab/2021-paper-metapangenomes/tree/336cedaa0877356ea2bce4ddd555ddb64b59d05e">dib-lab/2021-paper-metapangenomes@336ceda</a>
+on November 1, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -281,7 +281,7 @@ We then BLASTed a subset of the remaining non-coding reads that were predicted t
 All reads we investigated had at least one match at 100% identity to protein sequences in the database, suggesting our test genomes contained additional pseudogenes not annotated by PGAP, or that the software we used to predict open reading frames missed some coding sequences (see Methods).
 <!--Indeed, the worst performer was *Mycoplasmopsis bovis*, with 23% of non-coding reads predicted to be coding. 
 *M. bovis* causes bovine tuberculosis and its genome contains signatures of genomic decay and pseudogenization [@doi:10.3389/fmicb.2017.02389], processes that may be linked to bacterial host specialization [@doi:10.1101/cshperspect.a010041; @doi:10.1093/gbe/evv135].-->
-Because this method of open reading frame prediction cannot distinguish pseudogenes, it may not be appropriate for species with many pseudogenes.</p>
+Because this method of open reading frame prediction cannot distinguish pseudogenes from genes, it may not be appropriate for species with many pseudogenes.</p>
 <p>Some coding sequences were also predicted to be non-coding.
 We hypothesized that this was caused by sequencing error introduced into the simulated reads.
 We mapped the simulated reads against the coding domain sequences from which they were derived and calculated mapping error rates.
@@ -290,7 +290,7 @@ While all reads mapped, the error rate was higher for reads that were predicted 
 We estimated the Jaccard similarity between genomes using k<sub>aa</sub>-mers (<em>k</em> = 10) from annotated coding domain sequences, and compared this against Jaccard similarity between genomes using k<sub>aa</sub>-mers from predicted open read frames in the simulated short sequencing reads.
 Genomes that were most similar in one matrix were also most similar in another matrix (Mantel statistic = 0.9975, p &lt; 0.001).
 The average similarity among all pairwise comparisons for the coding domain sequences was 2.6%, and this decreased to 2.5% when using the open reading frames predicted from reads.
-This demonstrates that information recovered from open reading frame prediction from short read is similar to that derived directly from the genome sequence.</p>
+This demonstrates that information recovered from open reading frame prediction on short reads is similar to that derived directly from the genome sequence.</p>
 <p>The majority of predictive capability originated from species-level databases.
 We performed ORF prediction using just species-level databases for genomes that had at least a species-level representative in GTDB, and compared this against ORF prediction using the full GTDB database.
 On average, there was no change between the percent of reads derived from coding domain sequences when a species-level database was used versus when all of GTDB was used to predict open reading frames (<strong>Figure <a href="#fig:orpheum_db">S3</a></strong>).</p>
@@ -650,7 +650,7 @@ To test whether the fraction of mapped reads increased between the two mapping p
 <div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>MetaPalette: a &lt;i&gt;k&lt;/i&gt; -mer Painting Approach for Metagenomic Taxonomic Profiling and Quantification of Novel Strain Variation</strong> <div class="csl-block">David Koslicki, Daniel Falush</div> <em>mSystems</em> (2016-06-28) <a href="https://doi.org/gg3gbd">https://doi.org/gg3gbd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1128/msystems.00020-16">10.1128/msystems.00020-16</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27822531">27822531</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5069763">PMC5069763</a></div></div>
 </div>
 <div id="ref-63pA9pO7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Protein k-mer analyses for assembly- and alignment-free sequence analysis</strong> <div class="csl-block">NTessa Pierce-Ward, Taylor E Reiter, CTitus Brown</div> <em>Manubot</em> (2022-06-22) <a href="https://bluegenes.github.io/2022-paper-protein-kmers/">https://bluegenes.github.io/2022-paper-protein-kmers/</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Amino Acid k-mers enable assembly- and alignment-free sequence analysis</strong> <div class="csl-block">NTessa Pierce-Ward, Olga Borisovna Botvinnik, Taylor E Reiter, Luiz Irber, CTitus Brown</div> <em>Manubot</em> (2022-09-02) <a href="https://bluegenes.github.io/2022-paper-protein-kmers/">https://bluegenes.github.io/2022-paper-protein-kmers/</a></div>
 </div>
 <div id="ref-mH9pzoIn" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Mash: fast genome and metagenome distance estimation using MinHash</strong> <div class="csl-block">Brian D Ondov, Todd J Treangen, Páll Melsted, Adam B Mallonee, Nicholas H Bergman, Sergey Koren, Adam M Phillippy</div> <em>Genome Biology</em> (2016-12) <a href="https://doi.org/gfx74q">https://doi.org/gfx74q</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-016-0997-x">10.1186/s13059-016-0997-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27323842">27323842</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4915045">PMC4915045</a></div></div>
@@ -725,7 +725,7 @@ To test whether the fraction of mapped reads increased between the two mapping p
 <div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>PathRacer: Racing Profile HMM Paths on Assembly Graph</strong> <div class="csl-block">Alexander Shlemov, Anton Korobeynikov</div> <em>Algorithms for Computational Biology</em> (2019) <a href="https://doi.org/gg8s3w">https://doi.org/gg8s3w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-030-18174-1_6">10.1007/978-3-030-18174-1_6</a> · ISBN: 9783030181734</div></div>
 </div>
 <div id="ref-107dOq4PT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Meta-analysis of metagenomes via machine learning and assembly graphs reveals strain switches in Crohn's disease</strong> <div class="csl-block">Taylor E Reiter, Luiz Irber, Alicia A Gingrich, Dylan Haynes, NTessa Pierce-Ward, Phillip T Brooks, Yosuke Mizutani, Dominik Moritz, Felix Reidl, Amy D Willis, … CTitus Brown</div> <em>Manubot</em> (2022-06-27) <a href="https://dib-lab.github.io/2021-paper-ibd/">https://dib-lab.github.io/2021-paper-ibd/</a></div>
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Meta-analysis of metagenomes via machine learning and assembly graphs reveals strain switches in Crohn's disease</strong> <div class="csl-block">Taylor E Reiter, Luiz Irber, Alicia A Gingrich, Dylan Haynes, NTessa Pierce-Ward, Phillip T Brooks, Yosuke Mizutani, Dominik Moritz, Felix Reidl, Amy D Willis, … CTitus Brown</div> <em>Manubot</em> (2022-06-30) <a href="https://dib-lab.github.io/2021-paper-ibd/">https://dib-lab.github.io/2021-paper-ibd/</a></div>
 </div>
 <div id="ref-1312j6vxL" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>Fast protein database as a service with kAAmer</strong> <div class="csl-block">Maxime Déraspe, Sébastien Boisvert, François Laviolette, Paul H Roy, Jacques Corbeil</div> <em>Bioinformatics</em> (2020-04-02) <a href="https://doi.org/ggrj73">https://doi.org/ggrj73</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2020.04.01.019984">10.1101/2020.04.01.019984</a></div></div>
